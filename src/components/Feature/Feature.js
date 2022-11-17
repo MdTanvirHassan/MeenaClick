@@ -21,10 +21,10 @@ import k3 from '../../image/k3.jpg';
 import k4 from '../../image/k4.jpg';
 import './Feature.css';
 
-export default function Feature() {
+export default function Feature(props) {
   return (
     <div className='mx-4 my-2'>
-        <a href="/" className='nav-link text-center'><h5 className="">Featured Brands</h5></a><hr />
+        <a href="/" className={`nav-link text-center  text-${props.mode==='dark'?'white':'dark'}`}><h5 className={`text-${props.mode==='dark'?'white':'dark'}`}>Featured Brands</h5><hr /></a>
 
         <div className="row mx-4">
             <div className="col-lg-4 col-sm-12 col-md-6  mb-1">
@@ -49,7 +49,7 @@ export default function Feature() {
         </div>
 
 {/* -------------------------------------------------core------------------------------------------------ */}
-        <a href="/" className='nav-link text-center mt-3'><h5 className="">Core Service</h5></a><hr />
+        <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">Core Service</h5><hr /></a>
 
         <div className="row mx-4">
             <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
@@ -97,7 +97,7 @@ export default function Feature() {
 
 
         {/* ------------------------------------how to order-------------------------- */}
-        <a href="/" className='nav-link text-center mt-3'><h5 className="">How to Order</h5></a><hr />
+        <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">How to Order</h5><hr /></a>
 
             <div className="row mx-4">
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
@@ -128,7 +128,7 @@ export default function Feature() {
             </div>
 
             {/* -------------------------category------------------------ */}
-            <a href="/" className='nav-link text-center mt-3'><h5 className="">Feature Categories</h5></a><hr />
+            <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">Feature Categories</h5><hr /></a>
 
             <div className="row mx-4">
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
@@ -159,7 +159,7 @@ export default function Feature() {
             </div>
 
             {/* -----------------------------------daily-------------------------------- */}
-            <a href="/" className='nav-link text-center mt-3'><h5 className="">Daily Essential</h5></a><hr />
+            <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">Daily Essential</h5><hr /></a>
 
             <div className="row mx-4">
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
