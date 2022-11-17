@@ -41,7 +41,7 @@ function App() {
       <Alert alert={alert}></Alert>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
-      <Product mode={mode}></Product>
+      <Product mode={mode} showAlert={showAlert}></Product>
       <Footer mode={mode}></Footer>
       <ScrollButton />
     </Fragment>
