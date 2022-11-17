@@ -6,6 +6,9 @@ import Carousel from './components/Carousel/Carousel';
 import Feature from './components/Feature/Feature';
 import Product from './components/Product/Product';
 import Footer from './components/Footer/Footer';
+import { Fragment } from 'react';
+import ScrollButton from './components/ScrollButton';
+// import { Content, Heading } from './components/Styles';
 
 function App() {
   const[mode,setMode]= useState('light');
@@ -33,12 +36,16 @@ function App() {
   }
   return (
     <div className="App">
+      <Fragment>
       <Header mode={mode} toggleMode={toggleMode}></Header>
       <Alert alert={alert}></Alert>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
       <Product mode={mode}></Product>
       <Footer mode={mode}></Footer>
+      <ScrollButton />
+    </Fragment>
+      
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.list-group{
+    border: 1px solid gray;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    
+}
+.list-group-item:hover{
+   background-color:black;
+    color:orange;
+}
+.list-group:hover{
+    color:orange;
+}

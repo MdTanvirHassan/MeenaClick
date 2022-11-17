@@ -1,63 +1,73 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css';
+import logo from '../../image/logo.png';
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <div>
+    <div className={`bg-${props.mode=='dark'?'secondary':'light'}`}>
         <div className="container">
   <footer className="py-5">
     <div className="row">
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
+    <img src={logo} className="img-fluid  col-sm-12 collapse " alt="logo" />
+      <div className="col-lg-3 col-md-6 mb-3">
+        <h5>Customer Services</h5>
         <ul className="nav flex-column">
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Home</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Features</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Pricing</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">FAQs</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">About</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>MeenaClick Stores</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>Frequently Asked Questions</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>Terms and Conditions</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>Privacy Policy</a></li>
+          
         </ul>
       </div>
 
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
+      <div className="col-lg-3 col-md-6 mb-3">
+        <h5>MeenaClick</h5>
         <ul className="nav flex-column">
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Home</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Features</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Pricing</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">FAQs</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">About</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>About MeenaClick</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>Shipping and Delivery</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>Customer Care</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}>Careers</a></li>
+        
         </ul>
       </div>
 
-      <div className="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
+      <div className="col-lg-3 col-md-6 mb-3">
+        <h5>Contact Us</h5>
         <ul className="nav flex-column">
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Home</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Features</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">Pricing</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">FAQs</a></li>
-          <li className="nav-item mb-2"><a href='/' className="nav-link p-0 text-muted">About</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}><i className=" bi bi-house me-1"></i>House: 44, Road: 16 (27 Old), Dhanmondi
+Dhaka - 1209, Bangladesh</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}> <i className=" bi bi-phone me-1"></i> 09678666111</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}><i className=" bi bi-envelope-fill me-1"></i>care@meenaclick.com
+</a></li>
+          <li className="nav-item mb-2"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'muted'}`}><i className=" bi bi-escape me-1"></i>blog.meenaclick.com
+</a></li>
+          
         </ul>
       </div>
 
-      <div className="col-md-5 offset-md-1 mb-3">
-        <form>
+      <div className="col-lg-3 col-md-6 mb-3">
+        
           <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" className="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" className="form-control" placeholder="Email address"/>
-            <button className="btn btn-primary" type="button">Subscribe</button>
-          </div>
-        </form>
+          <ul className="nav flex-column">
+            <li className='nav-link'>
+            <a href="/" className='social mx-1'><i className=" bi bi-facebook me-1 " width="24" height="24"></i></a>
+            <a href="/" className='social mx-1'><i className=" bi bi-instagram me-1 " width="24" height="24"></i></a>
+            <a href="/" className='social mx-1'><i className=" bi bi-twitter me-1 " width="24" height="24"></i></a>
+            <a href="/" className='social mx-1'><i className=" bi bi-linkedin me-1 " width="24" height="24"></i></a>
+            </li>
+            
+          </ul>
+          
       </div>
     </div>
 
-    <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    <div className={`d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-${props.mode==='dark'?'white':'muted'}`}>
       <p>&copy; 2022 Company, Inc. All rights reserved.</p>
       <ul className="list-unstyled d-flex">
-        <li className="ms-3"><a className="link-dark" href='/'><svg className="bi" width="24" height="24"><use  href="#twitter"/></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href='/'><svg className="bi" width="24" height="24"><use  href="#instagram"/></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href='/'><svg className="bi" width="24" height="24"><use  href="#facebook"/></svg></a></li>
+        <li className="ms-3"><a className="link-dark" href='/'><i className=" bi bi-facebook me-1"></i></a></li>
+        <li className="ms-3"><a className="link-dark" href='/'><i className=" bi bi-instagram me-1"></i></a></li>
+        <li className="ms-3"><a className="link-dark" href='/'><i className=" bi bi-twitter me-1"></i></a></li>
+        <li className="ms-3"><a className="link-dark" href='/'><i className=" bi bi-linkedin me-1"></i></a></li>
       </ul>
     </div>
   </footer>

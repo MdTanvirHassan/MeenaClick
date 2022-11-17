@@ -3,24 +3,25 @@ import slider from '../../image/s1.jpg';
 import slider2 from '../../image/s2.jpg';
 import slider3 from '../../image/s3.jpg';
 import slider4 from '../../image/s4.jpg';
+import './Carousel.css';
 
 export default function Carousel(props) {
   return (
     <div>
-        <div className="row my-2">
+        <div className="row my-2 mx-5">
             <div className="col-lg-3 ms-3">
-            <div className={`list-group bg-${props.mode==='dark'?'secondary':'body'}`}>
-                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'}`} aria-current="true">
-                        The current link item
+            <div className={`list-group bg-${props.mode==='dark'?'secondary':'body'} `}>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1 "></i>
+                    Essentials
                     </a>
-                    <a href='/' className="list-group-item list-group-item-action">A second link item</a>
-                    <a href='/' className="list-group-item list-group-item-action">A third link item</a>
-                    <a href='/' className="list-group-item list-group-item-action">A fourth link item</a>
-                    <a href='/' className="list-group-item list-group-item-action">A second link item</a>
-                    <a href='/' className="list-group-item list-group-item-action">A third link item</a>
-                    <a href='/' className="list-group-item list-group-item-action">A fourth link item</a>
-                    <a href='/' className="list-group-item list-group-item-action">A second link item</a>
-                    <a href='/' className="list-group-item list-group-item-action">A third link item</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-cart-fill me-1"></i>Frozen Item</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-geo-alt me-1"></i>Accessories</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Baby Care</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Bakery and Snacks</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Beauty and Hygiene</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Beverages</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Fish</a>
+                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Fresh Product</a>
                     
                     
                     </div>
