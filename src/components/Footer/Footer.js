@@ -4,7 +4,7 @@ import logo from '../../image/logo.png';
 
 export default function Footer(props) {
   return (
-    <div className={`bg-${props.mode=='dark'?'secondary':'light'}`}>
+    <div className={`bg-${props.mode==='dark'?'secondary':'light'}`}>
         <div className="container">
   <footer className="py-5">
     <div className="row">
