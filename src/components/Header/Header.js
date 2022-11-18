@@ -8,7 +8,7 @@ export default function Header(props) {
          <header className="p-3 mb-0 border-bottom ">
     <div className="full-container">
         
-      <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mx-3">
+      <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mx-3 me-5">
       <div className="col-lg-0 col-m-0 col-sm-12 ">
             <img src={logo2} className="img-fluid  col-sm-12 collapse " alt="logo" />
         </div>
