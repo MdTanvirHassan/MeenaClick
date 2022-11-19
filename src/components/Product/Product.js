@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img from '../../image/p1.jpg';
 import img2 from '../../image/p2.jpg';
 import img3 from '../../image/p6.jpg';
@@ -13,6 +13,12 @@ import dd5 from '../../image/dd5.jpg';
 import dd6 from '../../image/dd6.jpg';
 
 export default function Product(props) {
+    const [cart, setCart] = useState([]);
+    const handleAddProduct=(product)=> {
+        console.log("Product Added.",product);
+        const newCart = [...cart,product];
+        setCart(newCart);
+     }
   return (
     <div>
         <div className="mx-3 my-5 ">
@@ -31,7 +37,7 @@ export default function Product(props) {
                     <div className={`card-body text-center`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <a href='/' className="btn btn-success " alt='Added' onClick={handleAddProduct}><i className="bi bi-cart me-1"></i>Add to Cart</a>
                     </div>
                     </div>
                 </div>

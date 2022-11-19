@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../image/logo.png';
 import logo2 from '../../image/App-Download-Banner.jpg';
+import { Link } from 'react-router-dom';
 
 export default function Header(props) {
   return (
@@ -12,9 +13,9 @@ export default function Header(props) {
       <div className="col-lg-0 col-m-0 col-sm-12 ">
             <img src={logo2} className="img-fluid  col-sm-12 collapse " alt="logo" />
         </div>
-      <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+      <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
           <img src={logo} alt='...' className="bi me-2"  width="100" height="60"  aria-label="Bootstrap"/>
-        </a>
+        </Link>
         <form className="col-12 col-lg-4 mb-3 mb-lg-0 me-lg-0 text-center mx-5 me-10"  role="search">
           <input type="search" className="form-control border-success text-end mx-5" placeholder="Search Here..." aria-label="Search"/>
         </form>
@@ -27,33 +28,13 @@ export default function Header(props) {
           <li><a href='/' className="nav-link px-2 link-secondary">
   
 
-        <button className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <Link to='/Register'><button className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <i className="bi bi-person-circle me-1"></i> Log-in/Sign-Up
-        </button> </a></li>
+        </button></Link> </a></li>
 
-        <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" labelled="offcanvasExampleLabel">
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div className="offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-            </div>
-            <div className="dropdown mt-3">
-              <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Dropdown button
-              </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href='/'>Action</a></li>
-                <li><a className="dropdown-item" href='/'>Another action</a></li>
-                <li><a className="dropdown-item" href='/'>Something else here</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        
 
-          <li><a href='/' className="nav-link px-2 link-dark"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`}><i className="bi bi-cart me-1"></i>Cart <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></button></a></li>
+          <li><Link to='/Cart' className="nav-link px-2 link-dark"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i className="bi bi-cart me-1"></i>Cart <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></button></Link></li>
           {/* <li><a href='/' className="nav-link px-2 link-dark">Products</a></li> */}
         </ul>
        

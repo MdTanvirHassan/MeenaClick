@@ -10,6 +10,14 @@ import { Fragment } from 'react';
 import ScrollButton from './components/ScrollButton';
 // import { Content, Heading } from './components/Styles';
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Cart from './components/Cart/Cart';
+import Register from './components/Register/Register';
+
 function App() {
   const[mode,setMode]= useState('light');
   const toggleMode =()=>{
@@ -35,18 +43,27 @@ function App() {
     },1500)
   }
   return (
-    <div className="App">
-      <Fragment>
+    <>
+    
+      <Fragment>      
       <Header mode={mode} toggleMode={toggleMode}></Header>
       <Alert alert={alert}></Alert>
+      <Routes>
+        <Route path='/Home' element={<Header />} />
+        <Route path='/Cart' element={<Cart />} />
+        <Route path='/Register' element={<Register/>} />
+      </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
       <Product mode={mode} showAlert={showAlert}></Product>
       <Footer mode={mode}></Footer>
       <ScrollButton />
     </Fragment>
+    <div className="">
+    
       
     </div>
+    </>
   );
 }
 

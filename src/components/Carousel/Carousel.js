@@ -10,7 +10,7 @@ export default function Carousel(props) {
     <div>
         <div className="row my-2 mx-5">
             <div className="col-lg-3 ms-3">
-            <div className={`list-group bg-${props.mode==='dark'?'secondary':'body'} `}>
+            <div className={`list-group bg-${props.mode==='dark'?'secondary':'body'} overflow-scroll`}>
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1 "></i>
                     Essentials
                     </a>
@@ -21,7 +21,7 @@ export default function Carousel(props) {
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Beauty and Hygiene</a>
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Beverages</a>
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Fish</a>
-                    <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Fresh Product</a>
+                    {/* <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'body'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className="text-warning bi bi-bag-fill me-1"></i>Fresh Product</a> */}
                     
                     
                     </div>
