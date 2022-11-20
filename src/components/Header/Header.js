@@ -2,10 +2,11 @@ import React from 'react';
 import logo from '../../image/logo.png';
 import logo2 from '../../image/App-Download-Banner.jpg';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 export default function Header(props) {
   return (
-    <div>
+    <div className='sticky-top'>
          <header className="p-3 mb-0 border-bottom ">
     <div className="full-container">
         
@@ -13,17 +14,17 @@ export default function Header(props) {
       <div className="col-lg-0 col-m-0 col-sm-12 ">
             <img src={logo2} className="img-fluid  col-sm-12 collapse " alt="logo" />
         </div>
-      <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+      <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none ms-5">
           <img src={logo} alt='...' className="bi me-2"  width="100" height="60"  aria-label="Bootstrap"/>
         </Link>
-        <form className="col-12 col-lg-4 mb-3 mb-lg-0 me-lg-0 text-center mx-5 me-10"  role="search">
+        <form className="col-12 col-lg-4 mb-3 mb-lg-0 me-lg-5 text-center ms-5 m"  role="search">
           <input type="search" className="form-control border-success text-end mx-5" placeholder="Search Here..." aria-label="Search"/>
         </form>
 
-        <ul className="nav col-12 col-lg-auto me-lg-auto mb-2  mb-md-0 mx-5 d-flex justify-content-end">
+        <ul className="nav col-12 col-lg-4 col-sm-1 me-lg-2 me-sm-0 mb-2  mb-md-0 ms- d-flex justify-content-end">
             {/* <li><button className='col-sm-0 btn btn-success mt-1 p-2 px-3' type="submit"><i className="bi bi-search"></i></button></li> */}
 
-          <li><a href='/' className="nav-link px-2 link-secondary"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`}><i className="bi bi-geo-alt me-1"></i>Area</button></a></li>
+          <li><Link to='/' className="nav-link px-2 link-secondary"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`}><i className="bi bi-geo-alt me-1"></i>Area</button></Link></li>
 {/* ---------------------- */}
           <li><a href='/' className="nav-link px-2 link-secondary">
   
@@ -39,7 +40,7 @@ export default function Header(props) {
         </ul>
        
 
-        <div className={`nav-item nav-link form-check mx-2  form-switch text-${props.mode==='dark'?'light':'secondary'}`}>
+        <div className={`nav-item nav-link form-check mx-lg-2  form-switch text-${props.mode==='dark'?'light':'secondary'}`}>
                             {/* <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/> */}
                             <label className="form-check-label text-warning"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault"><i className={` w-10 bi bi-${props.mode==='dark'?'sun-fill':'moon-fill'}`}></i></label>
                         </div>
@@ -67,23 +68,23 @@ export default function Header(props) {
 
   
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-secondary" aria-label="Tenth navbar example">
+    <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'secondary':'success'}`} aria-label="Tenth navbar example">
     <div className="container-fluid">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+      <div className="collapse navbar-collapse justify-content-md-end container" id="navbarsExample08">
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href='/'>Offer</a>
+          <li className="nav-item justify-content-md-start">
+            <Link to='/' className="nav-link active bg-dark btn-btn-dark b" type='button' aria-current="page" href='/'>Offer <span className="badge text-bg-warning rounded-pill align-text-bottom"> 7</span></Link>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href='/'>Coupon</a>
+          <li className="nav-item b">
+            <Link to='/' className="nav-link bg-dark mx-5 active b" href='/'>Coupon</Link>
           </li>
           
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href='/' data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <a className="nav-link dropdown-toggle bg-dark text-white b" href='/' data-bs-toggle="dropdown" aria-expanded="false">Order Details</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href='/'>Action</a></li>
               <li><a className="dropdown-item" href='/'>Another action</a></li>

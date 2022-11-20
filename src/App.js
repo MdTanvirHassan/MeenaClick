@@ -55,7 +55,7 @@ function App() {
       </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
-      <Product mode={mode} showAlert={showAlert}></Product>
+      <Product mode={mode} showAlert={showAlert} title='Product Title Quantity' price='price'></Product>
       <Footer mode={mode}></Footer>
       <ScrollButton />
     </Fragment>

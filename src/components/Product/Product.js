@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types';
 import img from '../../image/p1.jpg';
 import img2 from '../../image/p2.jpg';
 import img3 from '../../image/p6.jpg';
@@ -162,7 +163,7 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd5} className="card-img-top" alt="..."/><hr />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
+                        <h5 className="card-title">{props.title}</h5>
                         <p className="card-text">tk. 360</p>
                         <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
                     </div>
@@ -186,4 +187,14 @@ export default function Product(props) {
 
     </div>
   )
+}
+
+
+Product.propTypes ={
+    title: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired
+}
+Product.defaultProps ={
+    title: 'Product Title',
+    price: 'Product Price'
 }
