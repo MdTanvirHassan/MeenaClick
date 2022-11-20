@@ -18,7 +18,8 @@ export default function Header(props) {
           <img src={logo} alt='...' className="bi me-2"  width="100" height="60"  aria-label="Bootstrap"/>
         </Link>
         <form className="col-12 col-lg-4 mb-3 mb-lg-0 me-lg-5 text-center ms-5 m"  role="search">
-          <input type="search" className="form-control border-success text-end mx-5" placeholder="Search Here..." aria-label="Search"/>
+          <input type="search" className="form-control border-success text-center mx-5" placeholder="Search Here..." aria-label="Search"/>
+          <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search'></i></button>
         </form>
 
         <ul className="nav col-12 col-lg-4 col-sm-1 me-lg-2 me-sm-0 mb-2  mb-md-0 ms- d-flex justify-content-end">
@@ -77,14 +78,14 @@ export default function Header(props) {
       <div className="collapse navbar-collapse justify-content-md-end container" id="navbarsExample08">
         <ul className="navbar-nav">
           <li className="nav-item justify-content-md-start">
-            <Link to='/' className="nav-link active bg-dark btn-btn-dark b" type='button' aria-current="page" href='/'>Offer <span className="badge text-bg-warning rounded-pill align-text-bottom"> 7</span></Link>
+            <Link to='/' className="nav-link active bg-dark btn-btn-dark b" type='button' aria-current="page" href='/'><i className='bi bi-cash-coin text-warning'></i> Offer <span className="badge text-bg-warning rounded-pill align-text-bottom"> 7</span></Link>
           </li>
           <li className="nav-item b">
-            <Link to='/' className="nav-link bg-dark mx-5 active b" href='/'>Coupon</Link>
+            <Link to='/' className="nav-link bg-dark mx-5 active b" href='/'><i className='bi bi-credit-card text-warning'></i>Coupon</Link>
           </li>
           
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle bg-dark text-white b" href='/' data-bs-toggle="dropdown" aria-expanded="false">Order Details</a>
+            <a className="nav-link dropdown-toggle bg-dark text-white b" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency-exchange text-warning'></i>Order Details</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href='/'>Action</a></li>
               <li><a className="dropdown-item" href='/'>Another action</a></li>
