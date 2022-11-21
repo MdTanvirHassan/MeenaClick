@@ -42,11 +42,16 @@ function App() {
       setAlert(null)
     },1500)
   }
+   const [cart, setCart] = useState(0);
+    const handleAddProduct=()=> {
+        const newCart = cart+1;
+        setCart(newCart);
+     }
   return (
     <>
     
       <Fragment>      
-      <Header mode={mode} toggleMode={toggleMode}></Header>
+      <Header mode={mode} toggleMode={toggleMode} handleAddProduct={handleAddProduct}></Header>
       <Alert alert={alert}></Alert>
       <Routes>
         <Route path='/Home' element={<Header />} />
@@ -55,7 +60,7 @@ function App() {
       </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
-      <Product mode={mode} showAlert={showAlert} title='Product Title Quantity' price='price'></Product>
+      <Product mode={mode} handleAddProduct={handleAddProduct} title='Product Title Quantity' price='price'></Product>
       <Footer mode={mode}></Footer>
       <ScrollButton />
     </Fragment>

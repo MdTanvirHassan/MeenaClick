@@ -14,12 +14,20 @@ import dd5 from '../../image/dd5.jpg';
 import dd6 from '../../image/dd6.jpg';
 
 export default function Product(props) {
-    const [cart, setCart] = useState([]);
-    const handleAddProduct=(product)=> {
-        console.log("Product Added.",product);
-        const newCart = [...cart,product];
-        setCart(newCart);
-     }
+    const [cart, setCart] = useState(0)
+    const handleCart=(item,action)=>{
+        setCart((prevCart)=>{
+            return{
+                ...prevCart,
+                [item]: action=="up"?cart[item]+1:cart[item]-1
+            }
+        })
+    }
+    // const handleAddProduct=(product)=> {
+    //     console.log("Product Added.",product);
+    //     const newCart = [...cart,product];
+    //     setCart(newCart);
+    //  }
   return (
     <div>
         <div className="mx-3 my-5 ">
@@ -38,7 +46,13 @@ export default function Product(props) {
                     <div className={`card-body text-center`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success " alt='Added' onClick={handleAddProduct}><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button>
+                        <div className="flex">
+                                <button className='btn' onClick={()=>setCart(cart+1)}>-</button>
+                                <span>{cart}</span>
+                                <button className='btn' onClick={()=>setCart(cart+1)}>+</button>
+                        </div>
+                        {/* <a href='/' className="btn btn-success " onClick={handleCart}><i className="bi bi-cart me-1"></i>Add to Cart</a> */}
                     </div>
                     </div>
                 </div>
@@ -50,7 +64,7 @@ export default function Product(props) {
                         <h5 className="card-title">Span Virgin Olive Oil 1ltr
 </h5>
                         <p className="card-text">tk. 660</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -61,7 +75,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -72,7 +86,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Aarong Ghee 1Ltr</h5>
                         <p className="card-text">tk. 560</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -83,7 +97,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -94,7 +108,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -121,7 +135,7 @@ export default function Product(props) {
                     <div className={`card-body text-center`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -132,7 +146,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -143,7 +157,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -154,7 +168,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -165,7 +179,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">{props.title}</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
@@ -176,7 +190,7 @@ export default function Product(props) {
                     <div className="card-body text-center">
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <a href='/' className="btn btn-success "><i className="bi bi-cart me-1"></i>Add to Cart</a>
+                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
                     </div>
                     </div>
                 </div>
