@@ -12,6 +12,7 @@ import dd3 from '../../image/dd3.jpg';
 import dd4 from '../../image/dd4.jpg';
 import dd5 from '../../image/dd5.jpg';
 import dd6 from '../../image/dd6.jpg';
+import './Product.css';
 
 export default function Product(props) {
     const [cart, setCart] = useState(0)
@@ -43,14 +44,16 @@ export default function Product(props) {
                 <div className={`col-lg-2 col-sm-12 col-md-6 mb-1 mb-1 `}>
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img} className="card-img-top" alt="..."/><hr />
-                    <div className={`card-body text-center`}>
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button>
-                        <div className="flex">
-                                <button className='btn' onClick={()=>setCart(cart+1)}>-</button>
-                                <span>{cart}</span>
-                                <button className='btn' onClick={()=>setCart(cart+1)}>+</button>
+                        {/* <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button> */}
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
                         </div>
                         {/* <a href='/' className="btn btn-success " onClick={handleCart}><i className="bi bi-cart me-1"></i>Add to Cart</a> */}
                     </div>
@@ -60,11 +63,17 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img4} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Span Virgin Olive Oil 1ltr
 </h5>
                         <p className="card-text">tk. 660</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -72,10 +81,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img3} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -83,10 +98,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img2} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Aarong Ghee 1Ltr</h5>
                         <p className="card-text">tk. 560</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -94,10 +115,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img5} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -105,10 +132,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img6} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -135,7 +168,13 @@ export default function Product(props) {
                     <div className={`card-body text-center`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -143,10 +182,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd2} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -154,10 +199,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd3} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -165,10 +216,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd4} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -176,10 +233,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd5} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">{props.title}</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -187,10 +250,16 @@ export default function Product(props) {
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd6} className="card-img-top" alt="..."/><hr />
-                    <div className="card-body text-center">
+                    <div className={`car text-center mb-4`}>
                         <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
                         <p className="card-text">tk. 360</p>
-                        <button href='/' className="btn btn-success " alt='Added' onClick={()=>setCart(cart+1)}><i className="bi bi-cart me-1"></i>Add to Cart({cart})</button>
+                        <div className="flex addBtn">
+                              <button  className='btn addBtn ' type='button'> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                            </button>
+                        </div>
                     </div>
                     </div>
                 </div>
