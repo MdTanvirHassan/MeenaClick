@@ -6,7 +6,7 @@ import './Header.css';
 
 export default function Header(props) {
   return (
-    <div className='sticky-top'>
+    <div className={`sticky-top bg-${props.mode==='dark'?'dark':'body'}`}>
          <header className="p-3 mb-0 border-bottom ">
     <div className="full-container">
         

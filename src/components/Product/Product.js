@@ -64,13 +64,15 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img4} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Span Virgin Olive Oil 1ltr
-</h5>
+                        <h5 className="card-title">Span Virgin Olive Oil 1ltr</h5>
                         <p className="card-text">tk. 660</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                              {/* Decrease */}
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>cart===0||cart<0?setCart(cart):setCart(cart-1)}>{cart===0 || cart<0?<i className='bi bi-cart'></i>:'-'}</button>
+
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0|| cart<0?'Add to Cart':cart}</span>
+                                    {/* increase */}
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
                             </button>
                         </div>
