@@ -44,8 +44,9 @@ function App() {
   }
    const [cart, setCart] = useState(0);
     const handleAddProduct=()=> {
-        const newCart = cart+1;
+        const newCart = [...cart,cart];
         setCart(newCart);
+        showAlert("Dark mode is Enable.","success");
      }
   return (
     <>

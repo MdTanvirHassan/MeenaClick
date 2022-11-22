@@ -73,7 +73,7 @@ export default function Product(props) {
 
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0|| cart<0?'Add to Cart':cart}</span>
                                     {/* increase */}
-                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                                <button className=' addBtn2' onClick={()=>props.handleAddProduct}>{cart===0?'':'+'}</button>
                             </button>
                         </div>
                     </div>
