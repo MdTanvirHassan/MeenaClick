@@ -84,7 +84,7 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img3} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
+                        <h5 className="card-title">Aarong Butter  200gm</h5>
                         <p className="card-text">tk. 360</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
@@ -101,7 +101,7 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img2} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Aarong Ghee 1Ltr</h5>
+                        <h5 className="card-title">Aarong Ghee  300gm</h5>
                         <p className="card-text">tk. 560</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
@@ -118,8 +118,8 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img5} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
-                        <p className="card-text">tk. 360</p>
+                        <h5 className="card-title">Olitalia Sunflower Oil 5ltr</h5>
+                        <p className="card-text">tk. 2450.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
@@ -135,8 +135,8 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={img6} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
-                        <p className="card-text">tk. 360</p>
+                        <h5 className="card-title">Olitalia Pomace Olive Oil 1ltr</h5>
+                        <p className="card-text">tk. 1160.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
@@ -164,12 +164,12 @@ export default function Product(props) {
                 </div>
             </div><hr />
             <div className={`row mx-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
-                <div className={`col-lg-2 col-sm-12 col-md-6 mb-1 mb-1 `}>
+                <div className={`col-lg-2 col-sm-12 col-md-6 mb-1  `}>
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd} className="card-img-top" alt="..."/><hr />
-                    <div className={`card-body text-center`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
-                        <p className="card-text">tk. 360</p>
+                    <div className={`car text-center mb-4`}>
+                        <h5 className="card-title">Aarong Dairy Laban(500ml)</h5>
+                        <p className="card-text">tk. 65.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
@@ -185,8 +185,9 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd2} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
-                        <p className="card-text">tk. 360</p>
+                        <h5 className="card-title">Farm Fresh Butter 200gm
+</h5>
+                        <p className="card-text">tk. 230.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
@@ -202,8 +203,8 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd3} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
-                        <p className="card-text">tk. 360</p>
+                        <h5 className="card-title">Danish Condensed Milk 397gm</h5>
+                        <p className="card-text">tk. 80.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
@@ -219,8 +220,8 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd4} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
-                        <p className="card-text">tk. 360</p>
+                        <h5 className="card-title">Farm Fresh Yoghurt Sour 500ml</h5>
+                        <p className="card-text">tk. 100.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
@@ -236,8 +237,8 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd5} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">{props.title}</h5>
-                        <p className="card-text">tk. 360</p>
+                        <h5 className="card-title">Diploma Milk Powder Poly 200gm</h5>
+                        <p className="card-text">tk. 180.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
@@ -253,8 +254,9 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd6} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni MAster Oil 1Ltr</h5>
-                        <p className="card-text">tk. 360</p>
+                        <h5 className="card-title">Radhuni Ready Mix Masala 80gm
+</h5>
+                        <p className="card-text">tk. 70.00</p>
                         <div className="flex addBtn">
                               <button  className='btn addBtn ' type='button'> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>

@@ -1,5 +1,4 @@
-.addBtn2{
-    
+.addBtn2{  
     border: none;
     background-color: #198754;
     color: #ffff;
@@ -7,14 +6,13 @@
 .addBtn{
     background-color: #198754!important;
     color:#ffff!important;
-    
     border-radius: 10px ;
     width: 100%;
     padding: 0px 0px;
 }
+.addBtn:hover{
+    border: 1px solid gray;
+}
 .addBtn2:hover,.addBtn:hover{
     border: none;
-}
-.w:hover{
-    color: lavender;;
 }
