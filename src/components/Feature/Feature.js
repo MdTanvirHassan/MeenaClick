@@ -24,7 +24,7 @@ import './Feature.css';
 export default function Feature(props) {
   return (
     <div className='mx-4 my-2'>
-        <a href="/" className={`nav-link text-center  text-${props.mode==='dark'?'white':'dark'}`}><h5 className={`text-${props.mode==='dark'?'white':'dark'}`}>Featured Brands</h5><hr /></a>
+        <a href="/" className={`nav-link text-center  text-${props.mode==='dark'?'white':'dark'} mt-2`}><h5 className={`text-${props.mode==='dark'?'white':'dark'} mt-5`}>Featured Brands</h5><hr /></a>
 
         <div className="row mx-4">
             <div className="col-lg-4 col-sm-12 col-md-6  mb-1">
@@ -49,10 +49,10 @@ export default function Feature(props) {
         </div>
 
 {/* -------------------------------------------------core------------------------------------------------ */}
-        <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">Core Service</h5><hr /></a>
+        <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="mt-5">Core Service</h5><hr /></a>
 
         <div className="row mx-4">
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-lg-4 col-sm-12 col-md-6 mb-2">
             <div className="card">
                 <img src={img4} className="card-img-top" alt="..."/>
      
@@ -97,7 +97,7 @@ export default function Feature(props) {
 
 
         {/* ------------------------------------how to order-------------------------- */}
-        <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">How to Order</h5><hr /></a>
+        <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="mt-5">How to Order</h5><hr /></a>
 
             <div className="row mx-4">
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
@@ -128,7 +128,7 @@ export default function Feature(props) {
             </div>
 
             {/* -------------------------category------------------------ */}
-            <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">Feature Categories</h5><hr /></a>
+            <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="mt-5">Feature Categories</h5><hr /></a>
 
             <div className="row mx-4">
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
@@ -159,7 +159,7 @@ export default function Feature(props) {
             </div>
 
             {/* -----------------------------------daily-------------------------------- */}
-            <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="">Daily Essential</h5><hr /></a>
+            <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="mt-5">Daily Essential</h5><hr /></a>
 
             <div className="row mx-4">
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
