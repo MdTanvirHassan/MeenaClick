@@ -6,9 +6,23 @@
 }
 .b:hover{
    
-    color: lightblue!important;
-    border:1px solid gray;
+    color:  forestgreen!important;
+    border:2px solid rgb(3, 129, 81);
     transition: all .2s;
+}
+.bn{
+    color: #ea2027!important;
+    font-weight: 500;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    background-color: #fbeb20!important;
+    border-color: #fbeb20!important;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    border-radius: 5%;
+    cursor: pointer;
+}
+.bn:hover{
+    color: #fbeb20!important;
+    background-color: #ea2027!important;
 }
 form{
     position: relative;

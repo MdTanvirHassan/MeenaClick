@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20221124T184500Z
+DTEND:20221124T194500Z
+DTSTAMP:20221124T095541Z
+ORGANIZER;CN=ryan@startupslang.com:mailto:ryan@startupslang.com
+UID:1ou6jpbtovfpq8sjei4vaurmsr@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=mdtanvirhassan236@gmail.com;X-NUM-GUESTS=0:mailto:mdtanvirhassan236
+ @gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-26210595
+CREATED:20221124T095539Z
+DESCRIPTION:<div dir="auto">Before the interview starts\, make sure to use 
+ zoom from a desktop/laptop computer\, have a working microphone and a stabl
+ e internet connection. There will be a technical screening as well<br><br>J
+ oin the interview using this link&nbsp\;<a href="https://us04web.zoom.us/j/
+ 3696283049?pwd=nCIX8qMzlHJwZN6rnlesNpZv0OViK1.1" style="background-color: v
+ ar(--textfield-surface)\;" id="ow3863" __is_owner="true">https://us04web.zo
+ om.us/j/3696283049?pwd=nCIX8qMzlHJwZN6rnlesNpZv0OViK1.1</a>
+LAST-MODIFIED:20221124T095539Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:mdtanvirhassan236@gmail.com Full Time React JS Front End Developer 
+ Interview
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

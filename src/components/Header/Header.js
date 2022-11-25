@@ -6,8 +6,8 @@ import './Header.css';
 
 export default function Header(props) {
   return (
-    <div className={`sticky-top bg-${props.mode==='dark'?'dark':'body'}`}>
-         <header className="p-3 mb-0 border-bottom ">
+    <div className={`sticky-top bg-${props.mode==='dark'?'dark':'secondary'}`}>
+         <header className="p-2 mb-0  ">
     <div className="full-container">
         
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mx-3 me-5">
@@ -25,18 +25,18 @@ export default function Header(props) {
         <ul className="nav col-12 col-lg-4 col-sm-1 me-lg-2 me-sm-0 mb-2  mb-md-0 ms- d-flex justify-content-end">
             {/* <li><button className='col-sm-0 btn btn-success mt-1 p-2 px-3' type="submit"><i className="bi bi-search"></i></button></li> */}
 
-          <li><Link to='/' className="nav-link px-2 link-secondary"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`}><i className="bi bi-geo-alt me-1"></i>Area</button></Link></li>
+          <li><Link to='/' className="nav-link px-2 link-secondary"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} b`}><i className="bi bi-geo-alt me-1"></i>Area</button></Link></li>
 {/* ---------------------- */}
           <li><a href='/' className="nav-link px-2 link-secondary">
   
 
-        <Link to='/Register'><button className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <Link to='/Register'><button className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} b`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <i className="bi bi-person-circle me-1"></i> Log-in/Sign-Up
         </button></Link> </a></li>
 
         
 
-          <li><Link to='/Cart' className="nav-link px-2 link-dark"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'}`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onClick={props.handleAddProduct}><i className="bi bi-cart me-1"></i>Cart <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></button></Link></li>
+          <li><Link to='/Cart' className="nav-link px-2 link-dark"><button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} b`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onClick={props.handleAddProduct}><i className="bi bi-cart me-1"></i>Cart <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></button></Link></li>
           {/* <li><a href='/' className="nav-link px-2 link-dark">Products</a></li> */}
         </ul>
        
@@ -69,23 +69,23 @@ export default function Header(props) {
 
   
 
-    <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'secondary':'success'}`} aria-label="Tenth navbar example">
-    <div className="container-fluid">
+    <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'secondary':'dark'} p-1`} aria-label="Tenth navbar example">
+    <div className="container-fluid p-0">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
 
       <div className="collapse navbar-collapse justify-content-md-end container" id="navbarsExample08">
         <ul className="navbar-nav">
-          <li className="nav-item justify-content-md-start">
-            <Link to='/' className="nav-link active bg-dark btn-btn-dark b" type='button' aria-current="page" href='/'><i className='bi bi-cash-coin text-warning'></i> Offer <span className="badge text-bg-warning rounded-pill align-text-bottom"> 7</span></Link>
+          <li className="nav-item justify-content-md-start d-flex align-items-center">
+            <Link to='/' className="nav-link active p-1  bn" type='button' aria-current="page" href='/'><i className='bi bi-cash-coin text-white'></i> Offer <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></Link>
           </li>
-          <li className="nav-item b">
-            <Link to='/' className="nav-link bg-dark mx-5 active b" href='/'><i className='bi bi-credit-card text-warning'></i>Coupon</Link>
+          <li className="nav-item mx-5 d-flex align-items-center">
+            <Link to='/' className="nav-link p-1  active bn" href='/'><i className='bi bi-credit-card text-white me-1'></i>Coupon</Link>
           </li>
           
-          <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle bg-dark text-white b" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency-exchange text-warning'></i>Order Details</a>
+          <li className="nav-item dropdown d-flex align-items-center ">
+            <a className="nav-link dropdown-toggle p-1 text-danger bn" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency-exchange text-white me-1'></i>Order Details</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href='/'>Action</a></li>
               <li><a className="dropdown-item" href='/'>Another action</a></li>
