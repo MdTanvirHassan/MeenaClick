@@ -85,33 +85,35 @@ export default function Header(props) {
             <Link to='/' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
               <select class="form-select bg-success text-white px-5 border-none w fw-bold" aria-label="Default select example">
                 <option className='fw-bold bg-light' selected><i class="bi bi-columns-gap  text-white"></i> All Categories</option>
-                <option value="1"><a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className={`text-${props.mode==='dark'?'white':'success'} bi bi-bag-fill me-1`}></i>
-                    Essentials  </a></option>
-                    
+                <option value="1">
+                  <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className={`text-${props.mode==='dark'?'white':'success'} bi bi-bag-fill me-1`}></i>
+                    Essentials  </a>
+                </option>
+
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
             </Link>
           </li>
         <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi-cash-coin text-white'></i> Combo </Link>
+            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Combo </Link>
           </li>
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
-            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi-cash-coin text-white'></i> Offer <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span></Link>
+            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Offer <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span></Link>
           </li>
           <li className="nav-item justify-content-md-start me-5 d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi-cash-coin text-white'></i> Wholesale </Link>
+            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Wholesale </Link>
           </li>
           {/* ------end */}
           <li className="nav-item justify-content-md-end d-flex align-items-center ms-5">
-            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi-cash-coin text-white'></i> Recipe <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></Link>
+            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Recipe <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></Link>
           </li>
           <li className="nav-item mx-2 d-flex align-items-center">
             <Link to='/' className="nav-link p-0 px-1  active bn" href='/'>Track Order</Link>
           </li>
           
           <li className="nav-item dropdown d-flex align-items-center ">
-            <a className="nav-link dropdown-toggle p-0 px-1 text-danger bn" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency-exchange text-white me-1'></i>Order Details</a>
+            <a className="nav-link dropdown-toggle p-0 px-1 text-danger bn" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency text-white me-1'></i>Order Details</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href='/'>Action</a></li>
               <li><a className="dropdown-item" href='/'>Another action</a></li>
