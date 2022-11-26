@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Alert from './components/Alert/Alert';
 import './App.css';
 import Header from './components/Header/Header';
@@ -17,6 +19,7 @@ import {
 } from "react-router-dom";
 import Cart from './components/Cart/Cart';
 import Register from './components/Register/Register';
+
 
 function App() {
   const[mode,setMode]= useState('light');
@@ -48,12 +51,26 @@ function App() {
         setCart(newCart);
         showAlert("Dark mode is Enable.","success");
      }
+     const notify = () => {
+      toast.success(' Product quantity updated!', {
+        position: "top-center",
+        autoClose: 1500,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+     };
+
   return (
     <>
     
       <Fragment>      
       <Header mode={mode} toggleMode={toggleMode} handleAddProduct={handleAddProduct}></Header>
       <Alert alert={alert}></Alert>
+      
       <Routes>
         <Route path='/Home' element={<Header />} />
         <Route path='/Cart' element={<Cart />} />
@@ -61,7 +78,20 @@ function App() {
       </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
-      <Product mode={mode} handleAddProduct={handleAddProduct} title='Product Title Quantity' price='price'></Product>
+      <Product mode={mode} notify={notify} handleAddProduct={handleAddProduct} title='Product Title Quantity' price='price'></Product>
+      <ToastContainer
+        position="top-center"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
+      
       <Footer mode={mode}></Footer>
       <ScrollButton />
     </Fragment>

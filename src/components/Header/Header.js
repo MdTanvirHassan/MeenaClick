@@ -19,7 +19,7 @@ export default function Header(props) {
         </Link>
         <form className="col-12 col-lg-4 mb-3 mb-lg-0 me-lg-5 text-center ms-5 m"  role="search">
           <input type="search" className="form-control border-success text-center mx-5" placeholder="Search Here..." aria-label="Search"/>
-          <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search'></i></button>
+          <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button>
         </form>
 
         <ul className="nav col-12 col-lg-4 col-sm-1 me-lg-2 me-sm-0 mb-2  mb-md-0 ms- d-flex justify-content-end">

@@ -49,10 +49,10 @@ export default function Product(props) {
                         <p className="card-text">tk. 360</p>
                         {/* <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button> */}
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
+                              <button  className='btn addBtn ' type='button' onClick={props.notify}> <span className='text- bg-'>
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:<span className='text- bg-'>-</span>}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':<span className='text- bg-'>{cart}</span>}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button></span>
                             </button>
                         </div>
                         {/* <a href='/' className="btn btn-success " onClick={handleCart}><i className="bi bi-cart me-1"></i>Add to Cart</a> */}
@@ -67,13 +67,10 @@ export default function Product(props) {
                         <h5 className="card-title">Span Virgin Olive Oil 1ltr</h5>
                         <p className="card-text">tk. 660</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
-                              {/* Decrease */}
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>cart===0||cart<0?setCart(cart):setCart(cart-1)}>{cart===0 || cart<0?<i className='bi bi-cart'></i>:'-'}</button>
-
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0|| cart<0?'Add to Cart':cart}</span>
-                                    {/* increase */}
-                                <button className=' addBtn2' onClick={()=>props.handleAddProduct}>{cart===0?'':'+'}</button>
+                        <button  className='btn addBtn ' type='button' onClick={props.notify}> 
+                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
+                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
                             </button>
                         </div>
                     </div>
@@ -87,7 +84,7 @@ export default function Product(props) {
                         <h5 className="card-title">Aarong Butter  200gm</h5>
                         <p className="card-text">tk. 360</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -104,7 +101,7 @@ export default function Product(props) {
                         <h5 className="card-title">Aarong Ghee  300gm</h5>
                         <p className="card-text">tk. 560</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -121,7 +118,7 @@ export default function Product(props) {
                         <h5 className="card-title">Olitalia Sunflower Oil 5ltr</h5>
                         <p className="card-text">tk. 2450.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -138,7 +135,7 @@ export default function Product(props) {
                         <h5 className="card-title">Olitalia Pomace Olive Oil 1ltr</h5>
                         <p className="card-text">tk. 1160.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -171,7 +168,7 @@ export default function Product(props) {
                         <h5 className="card-title">Aarong Dairy Laban(500ml)</h5>
                         <p className="card-text">tk. 65.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -189,7 +186,7 @@ export default function Product(props) {
 </h5>
                         <p className="card-text">tk. 230.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -206,7 +203,7 @@ export default function Product(props) {
                         <h5 className="card-title">Danish Condensed Milk 397gm</h5>
                         <p className="card-text">tk. 80.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -223,7 +220,7 @@ export default function Product(props) {
                         <h5 className="card-title">Farm Fresh Yoghurt Sour 500ml</h5>
                         <p className="card-text">tk. 100.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -240,7 +237,7 @@ export default function Product(props) {
                         <h5 className="card-title">Diploma Milk Powder Poly 200gm</h5>
                         <p className="card-text">tk. 180.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
@@ -258,7 +255,7 @@ export default function Product(props) {
 </h5>
                         <p className="card-text">tk. 70.00</p>
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button'> 
+                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
                                <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
                                 <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>

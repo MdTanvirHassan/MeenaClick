@@ -6,8 +6,8 @@
 }
 .b:hover{
    
-    color:  forestgreen!important;
-    border:2px solid rgb(3, 129, 81);
+    color:  rgb(9, 199, 9)!important;
+    border:2px solid white;
     transition: all .2s;
 }
 .bn{
