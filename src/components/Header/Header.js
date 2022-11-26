@@ -22,7 +22,7 @@ export default function Header(props) {
         </Link>
         {/* Searchbar */}
         <form className="col-12 col-lg-4 mb-3 mb-lg-0 me-lg-5 text-center ms-5 m"  role="search">
-          <input type="search" className="form-control border-success text-center mx-5" placeholder="Search Here..." aria-label="Search"/>
+          <input type="search" className="form-control border-success text-end px-5 mx-5" placeholder="Search Here..." aria-label="Search"/>
           <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button>
         </form>
 
@@ -47,7 +47,7 @@ export default function Header(props) {
         {/* MOde */}
         <div className={`nav-item nav-link form-check mx-lg-2  form-switch text-${props.mode==='dark'?'light':'secondary'}`}>
                             {/* <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/> */}
-                            <label className="form-check-label text-warning"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault"><i className={` w-10 bi bi-${props.mode==='dark'?'sun-fill':'moon-fill'}`}></i></label>
+                            <label className="form-check-label text-white"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault"><i className={` w-10 bi bi-${props.mode==='dark'?'sun-fill':'moon-fill'}`}></i></label>
                         </div>
           {/* Login icon */}
         <div className="dropdown text-end">
@@ -81,11 +81,13 @@ export default function Header(props) {
 
       <div className="collapse navbar-collapse justify-content-md-start container" id="navbarsExample08">
         <ul className="navbar-nav">
-        <li className="nav-item justify-content-md-start ms- d-flex align-items-center me-4">
-            <Link to='/' className="nav-link active p-0 px-1  bg-" type='button' aria-current="page" href='/'>
-              <select class="form-select bg-success text-white px-5 border-none w" aria-label="Default select example">
-                <option className='fw-bold' selected><i class="bi bi-columns-gap  text-white"></i> All Categories</option>
-                <option value="1">One</option>
+        <li className="nav-item justify-content-md-start ms- d-flex align-items-center me-4 border-none">
+            <Link to='/' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
+              <select class="form-select bg-success text-white px-5 border-none w fw-bold" aria-label="Default select example">
+                <option className='fw-bold bg-light' selected><i class="bi bi-columns-gap  text-white"></i> All Categories</option>
+                <option value="1"><a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className={`text-${props.mode==='dark'?'white':'success'} bi bi-bag-fill me-1`}></i>
+                    Essentials  </a></option>
+                    
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
