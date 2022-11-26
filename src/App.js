@@ -46,11 +46,14 @@ function App() {
     },1500)
   }
    const [cart, setCart] = useState(0);
-    const handleAddProduct=()=> {
-        const newCart = [...cart,cart];
-        setCart(newCart);
-        showAlert("Dark mode is Enable.","success");
-     }
+   const handleCart=(item,action)=>{
+    setCart((prevCart)=>{
+        return{
+            ...prevCart,
+            [item]: action=="up"?cart[item]+1:cart[item]-1
+        }
+    })
+}
      const notify = () => {
       toast.success(' Product quantity updated!', {
         position: "top-center",
@@ -68,7 +71,7 @@ function App() {
     <>
     
       <Fragment>      
-      <Header mode={mode} toggleMode={toggleMode} handleAddProduct={handleAddProduct}></Header>
+      <Header mode={mode} toggleMode={toggleMode} handleCart={handleCart}></Header>
       <Alert alert={alert}></Alert>
       
       <Routes>
@@ -78,7 +81,7 @@ function App() {
       </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
-      <Product mode={mode} notify={notify} handleAddProduct={handleAddProduct} title='Product Title Quantity' price='price'></Product>
+      <Product mode={mode} notify={notify} handleCart={handleCart} title='Product Title Quantity' price='price'></Product>
       <ToastContainer
         position="top-center"
         autoClose={1500}

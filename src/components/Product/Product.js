@@ -16,14 +16,14 @@ import './Product.css';
 
 export default function Product(props) {
     const [cart, setCart] = useState(0)
-    const handleCart=(item,action)=>{
-        setCart((prevCart)=>{
-            return{
-                ...prevCart,
-                [item]: action=="up"?cart[item]+1:cart[item]-1
-            }
-        })
-    }
+    // const handleCart=(item,action)=>{
+    //     setCart((prevCart)=>{
+    //         return{
+    //             ...prevCart,
+    //             [item]: action=="up"?cart[item]+1:cart[item]-1
+    //         }
+    //     })
+    // }
     // const handleAddProduct=(product)=> {
     //     console.log("Product Added.",product);
     //     const newCart = [...cart,product];

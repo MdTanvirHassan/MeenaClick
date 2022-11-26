@@ -8,7 +8,7 @@ import './Carousel.css';
 export default function Carousel(props) {
   return (
     <div>
-        <div className="row my-1 mx-5">
+        <div className="row my-1 mx-3">
             <div className="col-lg-3 ms-3">
             <div className={`list-group bg-${props.mode==='dark'?'secondary':'light'} overflow-scroll`}>
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} ><i className={`text-${props.mode==='dark'?'white':'success'} bi bi-bag-fill me-1`}></i>

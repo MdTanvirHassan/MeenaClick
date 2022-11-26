@@ -43,3 +43,9 @@ input{
     background: none;
     font-size: 18px;
 }
+option,select{
+    border: none;
+}
+.w{
+    width: 300px;
+}
