@@ -267,7 +267,7 @@ export default function Product(props) {
                 </div>
                 
             </div>
-            <Grocery mode={props.mode} title="Najir Rice Premium Bulk" price="80"></Grocery>
+            <Grocery mode={props.mode} notify={props.notify} category="Grocery" title="Najir Rice Premium Bulk" price="80"></Grocery>
         </div>
 
 
