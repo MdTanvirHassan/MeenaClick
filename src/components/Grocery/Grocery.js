@@ -15,15 +15,20 @@ export default function Grocery(props) {
                         <p className="card-text">tk. {props.price}</p>
                         {/* <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button> */}
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button' > <span className='text- bg-'>
-                               <button className=' addBtn2' disabled={cart<=0} 
-                               onClick={()=>setCart(cart-1)}>{cart<=0?<i className='bi bi-cart'></i>:<span className='fw-bold  bg- pe-2' onClick={props.notify}>-</span>}
-                               </button>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':
-                                <span className='text- bg-' onClick={props.notify}>{cart}</span>}
-                                </span>
-                                <button className=' addBtn2 fw-bold' onClick={()=>setCart(cart+1)}>{cart===0?'':
-                                <span className='ps-2 fw-bold'onClick={props.notify}>+</span>}</button></span>
+                              <button  className='btn addBtn ' type='button' > 
+                                <span className='text-'>
+                                    <button className=' addBtn2' disabled={cart<=0} 
+                                     onClick={()=>setCart(cart-1)}>{cart<=0?<i className='bi bi-cart'></i>:
+                                        <span className='fw-bold pe-2' onClick={props.notify}>-</span>}
+                                    </button>
+                                    <span onClick={props.notify}>
+                                    <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':
+                                        <span onClick={props.notify}>{cart}</span>}
+                                    </span></span>
+                                    <button className=' addBtn2 fw-bold' onClick={()=>setCart(cart+1)}>{cart===0?'':
+                                        <span className='ps-2 fw-bold'onClick={props.notify}>+</span>}
+                                    </button>
+                                    </span>
                             </button>
                         </div>
                         {/* <a href='/' className="btn btn-success " onClick={handleCart}><i className="bi bi-cart me-1"></i>Add to Cart</a> */}

@@ -13,7 +13,7 @@ import ScrollButton from './components/ScrollButton';
 // import { Content, Heading } from './components/Styles';
 
 import {
-  BrowserRouter,
+  
   Routes,
   Route,
 } from "react-router-dom";
@@ -50,7 +50,7 @@ function App() {
     setCart((prevCart)=>{
         return{
             ...prevCart,
-            [item]: action=="up"?cart[item]+1:cart[item]-1
+            [item]: action==="up"?cart[item]+1:cart[item]-1
         }
     })
 }
