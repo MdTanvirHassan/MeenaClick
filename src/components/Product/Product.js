@@ -13,6 +13,8 @@ import dd4 from '../../image/dd4.jpg';
 import dd5 from '../../image/dd5.jpg';
 import dd6 from '../../image/dd6.jpg';
 import './Product.css';
+import Grocery from '../Grocery/Grocery';
+
 
 export default function Product(props) {
     const [cart, setCart] = useState(0)
@@ -251,8 +253,7 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd6} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni Ready Mix Masala 80gm
-</h5>
+                        <h5 className="card-title">Radhuni Ready Mix Masala 80gm</h5>
                         <p className="card-text">tk. 70.00</p>
                         <div className="flex addBtn">
                              <button  className='btn addBtn ' type='button' onClick={props.notify}> 
@@ -266,6 +267,7 @@ export default function Product(props) {
                 </div>
                 
             </div>
+            <Grocery mode={props.mode} title="Najir Rice Premium Bulk" price="80"></Grocery>
         </div>
 
 
