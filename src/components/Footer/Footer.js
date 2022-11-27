@@ -49,7 +49,7 @@ Dhaka - 1209, Bangladesh</a></li>
       <div className="col-lg-3 col-md-6 mb-3">
         
           <h5 className='text-white fw-bold mb-2'>Subscribe to our newsletter</h5>
-          <ul className="nav flex-column mb-1">
+          <ul className="nav flex-column mb-">
             <li className='nav-link '>
             <a href="/" className='social text-center mx-1'>
               <i className=" bi bi-facebook  me-1" ></i>
