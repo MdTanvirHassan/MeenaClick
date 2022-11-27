@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../../image/logo.png';
+import playStore from '../../image/playstore.png';
 
 export default function Footer(props) {
   return (
@@ -47,16 +48,27 @@ Dhaka - 1209, Bangladesh</a></li>
 
       <div className="col-lg-3 col-md-6 mb-3">
         
-          <h5 className='text-white fw-bold mb-4'>Subscribe to our newsletter</h5>
-          <ul className="nav flex-column">
-            <li className='nav-link'>
-            <a href="/" className='social mx-1'><i className=" bi bi-facebook text-white me-1 " width="24" height="24"></i></a>
-            <a href="/" className='social mx-1'><i className=" bi bi-instagram text-white me-1 " width="24" height="24"></i></a>
-            <a href="/" className='social mx-1'><i className=" bi bi-twitter text-white me-1 " width="24" height="24"></i></a>
-            <a href="/" className='social mx-1'><i className=" bi bi-linkedin text-white text-hover me-1 " width="24" height="24"></i></a>
+          <h5 className='text-white fw-bold mb-2'>Subscribe to our newsletter</h5>
+          <ul className="nav flex-column mb-1">
+            <li className='nav-link '>
+            <a href="/" className='social text-center mx-1'>
+              <i className=" bi bi-facebook  me-1" ></i>
+              </a>
+            <a href="/" className='social text-center mx-1'>
+              <i className=" bi bi-instagram text-danger me-1 " width="24" height="24"></i>
+              </a>
+            <a href="/" className='social text-center mx-1'>
+              <i className=" bi bi-twitter  me-1 " width="24" height="24"></i>
+              </a>
+            <a href="/" className='social text-center mx-1'>
+              <i className=" bi bi-linkedin  text-hover me-1 " width="24" height="24"></i>
+            </a>
             </li>
             
           </ul>
+
+          <h6 className='text-white'> Download our Mobile Apps</h6>
+          <a href="/" className='text-center'><img src={playStore} width='100px' alt="" className='text-center' /></a>
           
       </div>
     </div>
