@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Category(props) {
   return (
-    <div className="mx- mt-3 ">
-    <div className={`row mx- my-1 mb-1 text-${props.mode==='dark'?'white':'body'} 
+    <div className=" mt-3 ">
+    <div className={`row  my-1 mb-1 text-${props.mode==='dark'?'white':'body'} 
     bg-${props.mode==='dark'?'secondary':'body'}`}>
         <div className="col-9">
                 <a href='/' className='nav-link'>

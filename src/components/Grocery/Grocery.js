@@ -5,8 +5,8 @@ import './Grocery.css';
 export default function Grocery(props) {
     const [cart, setCart] = useState(0)
   return (
-       <div className='mx-'>
-            <div className={` mx- my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
+       <div className=''>
+            <div className={` my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
                 <div className={` mb-1 mb-1 `}>
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={props.img} className="card-img-top" alt="..."/><hr />

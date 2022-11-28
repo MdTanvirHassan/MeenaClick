@@ -23,7 +23,7 @@ import './Feature.css';
 
 export default function Feature(props) {
   return (
-    <div className='mx-4 my-2'>
+    <div className='mx-lg-4 my-2'>
         <a href="/" className={`nav-link text-center  text-${props.mode==='dark'?'white':'dark'} mt-2`}><h5 className={`text-${props.mode==='dark'?'white':'dark'} mt-5`}>Featured Brands</h5><hr /></a>
 
         <div className="row mx-4">

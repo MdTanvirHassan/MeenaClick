@@ -47,10 +47,10 @@ export default function Product(props) {
   return (
     <div className=''>
         <div className=" my-5 ">
-            <div className={`row mx-4 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <div className={`row mx-lg-4 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
             <Category mode={props.mode} category="Cooking Oil & Ghee"> </Category><hr />
             <div className="row ">
-                <div className="col-lg-2 col-md-4 col-sm-12">
+                <div className="col-lg-2 col-md-4 col-sm-12 col-xl-2 col-xxl-2">
                 <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" price="80.00"></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-sm-12 col-xl-2 col-xxl-2">
@@ -77,7 +77,7 @@ export default function Product(props) {
 
         {/* -------BAkery and snacks------------------------- */}
         <div className=" my-3 ">
-            <div className={`row mx-4 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <div className={`row mx-lg-4 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
             <Category mode={props.mode} category="Bakery & Snacks"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-sm-12">
@@ -134,7 +134,7 @@ export default function Product(props) {
             
             </div>
 {/* --------------------------------------------------Dairy-------------------------- */}
-        <div className="mx-3 my-5 ">
+        <div className="mx-lg-3 my-5 ">
             <div className={`row mx-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} bg-${props.mode==='dark'?'secondary':'body'}`}>
                 <div className="col-9">
                         <h5 className={`text-${props.mode==='dark'?'warning':'body'}`}>Dairy</h5>

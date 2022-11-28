@@ -7,7 +7,7 @@ import './Carousel.css';
 
 export default function Carousel(props) {
   return (
-    <div className='my-2 mx-5'>
+    <div className='my-2 mx-lg-5'>
         <div className=" ">
             <div className="  px-4  ">
 
