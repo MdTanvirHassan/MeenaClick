@@ -53,7 +53,7 @@ export default function Header(props) {
           <Link to='/Cart' className="nav-link px-2 link-dark">
             <button type="button" className={`btn btn-outline-${props.mode==='dark'?'light':'light'} bg-${props.mode==='dark'?'success':'success'} b`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onClick={props.handleAddProduct}>
               <i className="bi bi-cart me-1"></i>
-              Cart <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span>
+              Cart <span className="badge text-bg-danger rounded-pill align-text-bottom"> 0</span>
              </button>
           </Link>
         </li>
@@ -129,13 +129,13 @@ export default function Header(props) {
           </li>
           {/* ------end */}
           <li className="nav-item justify-content-md-end d-flex align-items-center ms-5">
-            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Recipe <span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span></Link>
+            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Recipe </Link>
           </li>
-          <li className="nav-item mx-2 d-flex align-items-center">
+          <li className="nav-item mx-2  d-flex align-items-center">
             <Link to='/' className="nav-link p-0 px-1  active bn" href='/'>Track Order</Link>
           </li>
           
-          <li className="nav-item dropdown d-flex align-items-center ">
+          <li className="nav-item dropdown d-flex align-items-center me-5">
             <a className="nav-link dropdown-toggle p-0 px-1 text-danger bn" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency text-white me-1'></i>Order Details</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href='/'>Action</a></li>
@@ -143,10 +143,49 @@ export default function Header(props) {
               <li><a className="dropdown-item" href='/'>Something else here</a></li>
             </ul>
           </li>
+          {/* Notification */}
+          <li className="nav-item dropdown d-flex align-items-center ">
+          <div class="d-flex me-2 text-light">
+                    <div class="dropdown">
+                        <div class="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell bi-sm ms-3 fw-bold fs-5 hover-rounded-light bn2"></i><span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end pb-0" aria-labelledby="dropdownnotif">
+                            <div class="text-center border-bottom pb-1">
+                                <span class="text-center mx-auto">Notification</span>
+                            </div>
+                            <li><button class="dropdown-item" type="button">My Account</button></li>
+                            <li><button class="dropdown-item" type="button">My Profile</button></li>
+                            <li><button class="dropdown-item" type="button">Settings</button></li>
+                            <li>
+                                <button class="dropdown-item border-top text-center lsp-1" type="button">
+                    View All
+                  </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+          <i class="fa fa-bell bx-sm me-1 fw-lighter hover-rounded-light"></i>
+        <ul className="dropdown-menu dropdown-menu-end pb-0" aria-labelledby="dropdownnotif">
+                            <div className="text-center border-bottom pb-1">
+                                <span className="text-center mx-auto">Notification</span>
+                            </div>
+                            <li><button className="dropdown-item" type="button">My Account</button></li>
+                            <li><button className="dropdown-item" type="button">My Profile</button></li>
+                            <li><button className="dropdown-item" type="button">Settings</button></li>
+                            <li>
+                                <button className="dropdown-item border-top text-center lsp-1" type="button">
+                    View All
+                  </button>
+                            </li>
+                        </ul>
+          </li>
         </ul>
+        
       </div>
     </div>
   </nav>
+  
     </div>
   )
 }

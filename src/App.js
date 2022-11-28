@@ -12,16 +12,21 @@ import { Fragment } from 'react';
 import ScrollButton from './components/ScrollButton';
 // import { Content, Heading } from './components/Styles';
 
-import {
-  
-  Routes,
-  Route,
-} from "react-router-dom";
+import { Routes,  Route,} from "react-router-dom";
 import Cart from './components/Cart/Cart';
 import Register from './components/Register/Register';
 
 
 function App() {
+  const [loading,setLoading]= useState(true);
+  const preloader= document.getElementById('preloader-active');
+  if (preloader) {
+    setTimeout(() => {
+      preloader.style.display="none";
+      setLoading(false);
+    }, 200);
+  }
+  
   const[mode,setMode]= useState('light');
   const toggleMode =()=>{
     if(mode==='dark'){
@@ -68,7 +73,7 @@ function App() {
      };
 
   return (
-    <>
+    !loading&&<>
     
       <Fragment>      
       <Header mode={mode} toggleMode={toggleMode} handleCart={handleCart}></Header>

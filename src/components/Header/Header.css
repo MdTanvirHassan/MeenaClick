@@ -24,6 +24,10 @@
     color: #fbeb20!important;
     background-color: #ea2027!important;
 }
+.bn2:hover{
+    color: #fbeb20!important;
+    /* background-color: #ea2027!important; */
+}
 form{
     position: relative;
 }
