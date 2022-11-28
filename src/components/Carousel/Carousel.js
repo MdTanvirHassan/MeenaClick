@@ -12,7 +12,7 @@ export default function Carousel(props) {
             <div className="  px-4  ">
 
                 <div className="row flex-lg-row-reverse align-items-center g-5 ">
-                <div className=" col-sm-12 col-lg-9 col-md-6">
+                <div className=" col-sm-12 col-lg-9 col-md-6 col-xl-9 col-xxl-9">
 
                 <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
@@ -63,7 +63,7 @@ export default function Carousel(props) {
       </div>
 
       
-      <div className="col-lg-3 col-md-6 col-sm-12  mt-5">
+      <div className="col-lg-3 col-md-6 col-sm-12 col-xl-3 col-xxl-3 mt-5">
       <div className={`list-group bg-${props.mode==='dark'?'secondary':'light'} overflow-scroll`}>
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'danger':'danger'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'danger':'danger'} bi bi-bag-fill me-1`}></i>
