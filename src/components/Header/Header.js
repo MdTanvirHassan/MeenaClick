@@ -13,7 +13,7 @@ export default function Header(props) {
     <div className="full-container">
         
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mx-3 me-5">
-      <div className="col-lg-0 col-m-0 col-sm-12 ">
+      <div className="col-lg-0 col-md-0 col-sm-12 ">
             <img src={logo2} className="img-fluid  col-sm-12 collapse " alt="logo" />
         </div>
         {/* logo */}
@@ -21,7 +21,7 @@ export default function Header(props) {
           <img src={logo} alt='...' className="bi me-2"  width="100" height="60"  aria-label="Bootstrap"/>
         </Link>
         {/* Searchbar */}
-        <form className="col-sm-12 col-lg-4 mb-3 mb-lg-0 me-lg-5 text-center ms-5 m"  role="search">
+        <form className="col-sm-12 col-lg-4 mb-3 mb-lg-0 me-lg-5 text-center ms-lg-5 m"  role="search">
           <input type="search" className="form-control border-success text-end px-5 mx-5" placeholder="Search Here..." aria-label="Search"/>
           <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button>
         </form>
