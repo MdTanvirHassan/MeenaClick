@@ -95,7 +95,7 @@ export default function Header(props) {
               </select>
             </Link>
           </li>
-        <li className="nav-item justify-content-md-start ms-5 d-flex align-items-center">
+        <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
             <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Combo </Link>
           </li>
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
