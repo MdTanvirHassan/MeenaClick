@@ -74,14 +74,14 @@ export default function Header(props) {
   
 
     <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'secondary':'dark'} p-1`} aria-label="Tenth navbar example">
-    <div className="full-container-fluid p-2 mx-3">
+    <div className="full-container-fluid p-2 mx-5">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
 
       <div className="collapse navbar-collapse justify-content-md-start container" id="navbarsExample08">
         <ul className="navbar-nav">
-        <li className="nav-item justify-content-md-start ms- d-flex align-items-center me-4 border-none">
+        <li className="nav-item justify-content-md-start ms- d-flex align-items-center me-5 border-none">
             <Link to='/' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
               <select class="form-select bg-success text-white px-5 border-none w fw-bold" aria-label="Default select example">
                 <option className='fw-bold bg-light' selected><i class="bi bi-columns-gap  text-white"></i> All Categories</option>
@@ -95,7 +95,7 @@ export default function Header(props) {
               </select>
             </Link>
           </li>
-        <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
+        <li className="nav-item justify-content-md-start ms-5 d-flex align-items-center">
             <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Combo </Link>
           </li>
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
