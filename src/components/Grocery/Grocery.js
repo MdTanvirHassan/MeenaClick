@@ -26,7 +26,7 @@ export default function Grocery(props) {
                                         <span onClick={props.notify}>{cart}</span>}
                                     </span></span>
                                     <button className=' addBtn2 fw-bold' onClick={()=>setCart(cart+1)}>{cart===0?'':
-                                        <span className='ps-2 fw-bold'onClick={props.notify} type="button">+</span>}
+                                        <span className='ps-2 fw-bold'onClick={props.notify}>+</span>}
                                     </button>
                                     </span>
                             </button>
@@ -35,10 +35,6 @@ export default function Grocery(props) {
                     </div>
                     </div>
                 </div>
-
-                 
-
-
             </div>
         </div>
   )

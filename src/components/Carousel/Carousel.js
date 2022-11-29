@@ -7,9 +7,9 @@ import './Carousel.css';
 
 export default function Carousel(props) {
   return (
-    <div className='my- mx-lg-4'>
+    <div className=' mx-lg-4'>
         <div className=" ">
-            <div className="  px-  ">
+            <div className="   ">
 
                 <div className="row flex-row-reverse align-items-center g-4 ">
                 <div className=" col-sm-12 col-lg-9 col-md-12 col-xl-9 col-xxl-9 ">

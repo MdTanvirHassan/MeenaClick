@@ -17,6 +17,7 @@ import Cart from './components/Cart/Cart';
 import Register from './components/Register/Register';
 
 
+
 function App() {
   const [loading,setLoading]= useState(true);
   const preloader= document.getElementById('preloader-active');
