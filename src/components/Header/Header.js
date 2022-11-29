@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList} from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header(props) {
   const res= document.getElementsByClassName("col-sm-12");
@@ -30,7 +31,7 @@ export default function Header(props) {
 
         {/* Searchbar */}
         <form className="col-sm-12 col-lg-6 mb-3 mb-lg-0 me-lg-5 text-center ms-lg-3 m"  role="search">
-          <input type="search" className="form-control border-success text-end px-5  mx-5 text-line" placeholder="Search Here..." aria-label="Search"/>
+          <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
           <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button>
         </form>
         
@@ -115,7 +116,7 @@ export default function Header(props) {
           {/* category */}
             <Link to='/' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
               <div className="nav-item d-flex category px-lg-5">
-                <h5 className="p-1 text-center"><FontAwesomeIcon icon={faList} /> All Categories</h5>
+                <h5 className="p-1 text-center"><FontAwesomeIcon icon={faList} /> All Categories  <small className='px-1'><FontAwesomeIcon icon={faChevronDown} /></small></h5>
               </div>
             </Link>
           </li>
