@@ -22,11 +22,11 @@ export default function Grocery(props) {
                                         <span className='fw-bold pe-2' onClick={props.notify}>-</span>}
                                     </button>
                                     <span onClick={props.notify}>
-                                    <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':
+                                    <span className='mx-1 ' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':
                                         <span onClick={props.notify}>{cart}</span>}
                                     </span></span>
                                     <button className=' addBtn2 fw-bold' onClick={()=>setCart(cart+1)}>{cart===0?'':
-                                        <span className='ps-2 fw-bold'onClick={props.notify}>+</span>}
+                                        <span className='ps-2 fw-bold'onClick={props.notify} type="button">+</span>}
                                     </button>
                                     </span>
                             </button>

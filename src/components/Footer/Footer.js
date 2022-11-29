@@ -3,10 +3,11 @@ import './Footer.css';
 import logo from '../../image/logo.png';
 import playStore from '../../image/playstore.png';
 
+
 export default function Footer(props) {
   return (
     <div className={`bg-${props.mode==='dark'?'secondary':'secondary'}`}>
-        <div className="full-container mx-5">
+        <div className="full-container mx-lg-5">
   <footer className="py-5">
     <div className="row">
     <img src={logo} className="img-fluid  col-sm-12 collapse " alt="logo" />

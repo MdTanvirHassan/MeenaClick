@@ -17,3 +17,6 @@
 .list-group:hover{
     color: orange !important;;
 }
+.width{
+    width: 120%;
+}

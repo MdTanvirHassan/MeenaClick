@@ -24,7 +24,7 @@ function App() {
     setTimeout(() => {
       preloader.style.display="none";
       setLoading(false);
-    }, 200);
+    }, 300);
   }
   
   const[mode,setMode]= useState('light');
@@ -36,7 +36,7 @@ function App() {
     }
     else{
       setMode('dark');
-      document.body.style.backgroundColor='#041628';
+      document.body.style.backgroundColor='#132b54';
       showAlert("Dark mode is Enable.","success");
     }
   }
@@ -48,7 +48,7 @@ function App() {
     })
     setTimeout(()=>{
       setAlert(null)
-    },1500)
+    },2000)
   }
    const [cart, setCart] = useState(0);
    const handleCart=(item,action)=>{

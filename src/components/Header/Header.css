@@ -2,14 +2,56 @@
     box-sizing: border-box;
 }
 .m{
-    margin-left: 110px!important;
+    margin-left: 0px!important;
 }
+.margin{
+    margin-left: 165px!important;
+}
+.text-line{
+    line-height: 28px;
+    border:3px solid #20aa6b;
+}
+.bg-header{
+    background-color: #445268;
+}
+.bg-nav{
+    background-color: #313d51;
+}
+.bg-green{
+    background-color: #20aa6b!important;
+    border: none;
+    border-radius: 5px;
+    font-size: smaller;
+    width: 125px;
+    height: 45px;
+    padding: 2%;
+    font-weight: bold;
+    border: 2px solid rgba(0,0,0,.5);
+    transition: .8s;
+}
+.bg-green:hover{    
+    background-color: greenyellow!important;
+}
+.b{
+    background-color: white!important;
+    border: none;
+    border-radius: 5px;
+    font-size: smaller;
+    width: 125px;
+    height: 45px;
+    padding: 2%;
+    font-weight: bold;
+    border: 2px solid rgba(0,0,0,.5);
+    transition: .8s;
+}
+
 .b:hover{
-   
-    color:  rgb(9, 199, 9)!important;
-    border:2px solid white;
-    transition: all .2s;
+    color:  black!important;
+    background-color: greenyellow!important;
+    border:2px solid #20aa6b!important;;
+    transition: all .8s;
 }
+
 .bn{
     color: #ea2027!important;
     font-weight: 500;
@@ -23,6 +65,20 @@
 .bn:hover{
     color: #fbeb20!important;
     background-color: #ea2027!important;
+}
+.bnn{
+    color: black!important;
+    font-weight: 500;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    background-color: #ffff!important;
+    border-color: #ffff!important;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    border-radius: 5%;
+    cursor: pointer;
+}
+.bnn:hover{
+    color: #ea2027!important;
+    background-color: #20aa6b!important;
 }
 .bn2:hover{
     color: #fbeb20!important;
@@ -39,7 +95,7 @@ input{
     position: absolute;
     top: 0;
     right: -10%;
-    width: 50px;
+    width: 80px;
     height: 100%;
     border-radius: 50%;
     cursor: pointer;
@@ -52,4 +108,10 @@ option,select{
 }
 .w{
     width: 260px;
+}
+.category{
+    background-color: #20aa6b;
+    color: white;
+    padding: 2px;
+    
 }
