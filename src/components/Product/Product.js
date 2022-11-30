@@ -151,11 +151,11 @@ export default function Product(props) {
                         <h5 className="card-title">Aarong Dairy Laban(500ml)</h5>
                         <p className="card-text">tk. 65.00</p>
                         <div className="flex addBtn">
-                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                             <span  className='btn addBtn ' type='button' onClick={props.notify}> 
+                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
-                            </button>
+                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
+                            </span>
                         </div>
                     </div>
                     </div>

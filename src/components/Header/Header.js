@@ -38,8 +38,8 @@ export default function Header(props) {
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
         <li className="nav-item">
           {/* Area */}
-          <Link to='/' className="nav-link px-1 link-secondary">
-            <button type="button" className={` outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} btnStyle b`}>
+          <Link to='/Area' className="nav-link px-1 link-secondary">
+            <button type="button" className={` outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} btnStyle b`} data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i className="bi bi-geo-alt-fill me-1 text-success fw-bold"></i>
               <small>Area</small><br /><span className='fw-lighter'>Location</span>
             </button>
@@ -118,15 +118,15 @@ export default function Header(props) {
           </li>
           {/* combo */}
         <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Combo </Link>
+            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> <small>Combo</small> </Link>
           </li>
           {/* offer */}
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
-            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Offer <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span></Link>
+            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Offer</small> <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span></Link>
           </li>
           {/* wholesale */}
           <li className="nav-item justify-content-md-start me-5 d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Wholesale </Link>
+            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Wholesale </small></Link>
           </li></ul></div>
           {/* ------First-end */}
           {/* last-end-start */}
@@ -134,14 +134,14 @@ export default function Header(props) {
             <ul className="navbar-nav">
           
           <li className="nav-item justify-content-md-end d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> Recipe </Link>
+            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Recipe</small> </Link>
           </li>
           <li className="nav-item mx-2  d-flex align-items-center">
-            <Link to='/' className="nav-link p-0 px-1  active bnn" href='/'>Track Order</Link>
+            <Link to='/' className="nav-link p-0 px-1  active bnn" href='/' ><small>Track Order</small></Link>
           </li>
           
           <li className="nav-item dropdown d-flex align-items-center me-">
-            <a className="nav-link dropdown-toggle p-0 px-1 text-danger bnn" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency text-white me-1'></i>Order Details</a>
+            <a className="nav-link dropdown-toggle p-0 px-1 text-danger bnn" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency text-white me-1'></i><small>Order Details</small></a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href='/'>Action</a></li>
               <li><a className="dropdown-item" href='/'>Another action</a></li>
@@ -153,7 +153,8 @@ export default function Header(props) {
             <div className="d-flex me- text-light">
                     <div className="dropdown">
                         <div className="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i className="bi bi-bell bi-sm ms-1 fw-bold fs-5 hover-rounded-light bn2"></i><span className="badge text-bg-danger rounded-pill align-text-bottom"> 7</span>
+                            <i className="bi bi-bell bi-sm ms-1 fw-bold fs-5 hover-rounded-light bn2"></i>
+                            <span className="badge text-bg-danger rounded-pill align-text-bottom">0</span>
                         </div>
                         <ul className="dropdown-menu dropdown-menu-end pb-0" aria-labelledby="dropdownnotif">
                             <div className="text-center border-bottom pb-1">
