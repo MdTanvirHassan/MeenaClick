@@ -15,7 +15,7 @@ export default function Grocery(props) {
                         <p className="card-text">tk. {props.price}</p>
                         {/* <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button> */}
                         <div className="flex addBtn">
-                              <button  className='btn addBtn ' type='button' > 
+                              <span  className='btn addBtn ' type='button' > 
                                 <span className='text-'>
                                     <button className=' addBtn2' disabled={cart<=0} 
                                      onClick={()=>setCart(cart-1)}>{cart<=0?<i className='bi bi-cart'></i>:
@@ -29,7 +29,7 @@ export default function Grocery(props) {
                                         <span className='ps-2 fw-bold'onClick={props.notify}>+</span>}
                                     </button>
                                     </span>
-                            </button>
+                            </span>
                         </div>
                         {/* <a href='/' className="btn btn-success " onClick={handleCart}><i className="bi bi-cart me-1"></i>Add to Cart</a> */}
                     </div>

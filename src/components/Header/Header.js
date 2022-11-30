@@ -23,7 +23,7 @@ export default function Header(props) {
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse mx-lg-4" id="navbarTogglerDemo01">
+    <div className="collapse navbar-collapse mx-lg-4 mx-xl-4 mx-xxl-4" id="navbarTogglerDemo01">
       {/* logo */}
       <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-1">
           <img src={logo} alt='...' className="bi me-2"  width="140" height="60"  aria-label="Bootstrap"/>
@@ -100,7 +100,7 @@ export default function Header(props) {
   
 
     <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'nav':'nav'} p-0`} aria-label="Tenth navbar example">
-    <div className="container-fluid p-0 mx-lg-4 ">
+    <div className="container-fluid p-0 mx-lg-4 mx-xl-4 mx-xxl-4 ">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>

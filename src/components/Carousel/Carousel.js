@@ -7,7 +7,7 @@ import './Carousel.css';
 
 export default function Carousel(props) {
   return (
-    <div className=' mx-lg-4'>
+    <div className=' mx-lg-4 mx-xl-4 mx-xxl-4 mx-sm-4 mx-xs-4'>
         <div className=" ">
             <div className="   ">
 
@@ -63,7 +63,7 @@ export default function Carousel(props) {
       </div>
 
       
-      <div className="col-lg-3 col-md-12 col-sm-12 col-xl-3 col-xxl-3 mt- overflow-scroll">
+      <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-xl-3 col-xxl-3 ">
       <div className={`list-group bg-${props.mode==='dark'?'secondary':'light'} `}>
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'danger':'danger'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'danger':'danger'} bi bi-bag-fill me-1`}></i>
@@ -92,6 +92,9 @@ export default function Carousel(props) {
                     <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-bag me-1`}></i>
                         Fresh Product</a>
+                        <a href='/' className={`list-group-item list-group-item-action bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                        <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-house me-1`}></i>
+                        Housing & cleaning</a>
                     
                     
                     </div>
