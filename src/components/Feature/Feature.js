@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import img from '../../image/f1.jpg';
 import img2 from '../../image/f2.jpg';
 import img3 from '../../image/f3.jpg';
@@ -29,27 +28,23 @@ export default function Feature(props) {
 
         <div className="row">
             <div className="col-lg-4 col-sm-12 col-md-6  mb-1">
-                <Link to='/' className='text-decoration-none'>
-                    <div className="card">
-                    <img src={img} className="card-img-top" alt="..."/>
-                </div>
-                </Link>
-            </div>
+            <div className="card">
+                <img src={img} className="card-img-top" alt="..."/>
+     
+             </div>
 
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'>
-                    <div className="card">
-                    <img src={img2} className="card-img-top" alt="..."/>
-                    </div>
-                </Link>
             </div>
             <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
-            <Link to='/' className='text-decoration-none'> 
+            <div className="card">
+                <img src={img2} className="card-img-top" alt="..."/>
+     
+             </div>
+            </div>
+            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img3} className="card-img-top" alt="..."/>
      
              </div>
-             </Link>
             </div>
         </div>
 
@@ -58,45 +53,45 @@ export default function Feature(props) {
 
         <div className="row mx-">
             <div className="col-lg-4 col-sm-12 col-md-6 mb-2">
-            <Link to='/' className='text-decoration-none'> <div className="card">
+            <div className="card">
                 <img src={img4} className="card-img-top" alt="..."/>
      
-             </div></Link>
+             </div>
 
             </div>
             <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
-           <Link to='/' className='text-decoration-none'> <div className="card">
+            <div className="card">
                 <img src={img5} className="card-img-top" alt="..."/>
      
-             </div></Link>
+             </div>
             </div>
             <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
-           <Link to='/' className='text-decoration-none'> <div className="card">
+            <div className="card">
                 <img src={img6} className="card-img-top" alt="..."/>
      
-             </div></Link>
+             </div>
             </div>
         </div>
 
         <div className="row mt-3 mx-">
             <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
-            <Link to='/' className='text-decoration-none'><div className="card">
+            <div className="card">
                 <img src={img2} className="card-img-top" alt="..."/>
      
-             </div></Link>
+             </div>
 
             </div>
             <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
-            <Link to='/' className='text-decoration-none'><div className="card">
+            <div className="card">
                 <img src={img3} className="card-img-top" alt="..."/>
      
-             </div></Link>
+             </div>
             </div>
             <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
-           <Link to='/' className='text-decoration-none'> <div className="card">
+            <div className="card">
                 <img src={img} className="card-img-top" alt="..."/>
      
-             </div></Link>
+             </div>
             </div>
         </div>
 
@@ -106,29 +101,29 @@ export default function Feature(props) {
 
             <div className="row mx-">
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'> <div className="card">
+                <div className="card">
                     <img src={o1} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
 
                 </div>
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-               <Link to='/' className='text-decoration-none'> <div className="card">
+                <div className="card">
                     <img src={o2} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={o3} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={o4} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
             </div>
 
@@ -137,29 +132,29 @@ export default function Feature(props) {
 
             <div className="row mx-">
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={k} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
 
                 </div>
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={k2} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={k3} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
                 <div className="col-lg-3 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={k4} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
             </div>
 
@@ -168,42 +163,42 @@ export default function Feature(props) {
 
             <div className="row mx-">
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'> <div className="card">
+                <div className="card">
                     <img src={d1} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
 
                 </div>
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={d2} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={d3} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={d4} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
 
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={d5} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
                 <div className="col-lg-2 col-sm-12 col-md-6 mb-1">
-                <Link to='/' className='text-decoration-none'><div className="card">
+                <div className="card">
                     <img src={d6} className="card-img-top" alt="..."/>
 
-                </div></Link>
+                </div>
                 </div>
             </div>
 

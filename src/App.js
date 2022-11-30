@@ -12,7 +12,7 @@ import { Fragment } from 'react';
 import ScrollButton from './components/ScrollButton';
 // import { Content, Heading } from './components/Styles';
 
-import { Routes,  Route, Navigate,} from "react-router-dom";
+import { Routes,  Route,} from "react-router-dom";
 import Cart from './components/Cart/Cart';
 import Register from './components/Register/Register';
 import Area from './components/Area/Area';
@@ -86,7 +86,6 @@ function App() {
         <Route path='/Area' element={<Area />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Register' element={<Register/>} />
-        <Route path='/*' element={<Navigate to='/'/>} />
       </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
