@@ -15,7 +15,7 @@ export default function Area() {
             <div className="mb-3">
               <label htmlFor="recipient-name" className="col-form-label">Select Area:</label>
               {/* <input type="search" className="form-control" id="recipient-name"/> */}
-              <select class="form-select" aria-label="Default select example">select Area
+              <select className="form-select" aria-label="Default select example">select Area
                 <option ></option>
                 <option value="1">60 Feet Road</option>
                 <option value="2">Abul Hotel</option>

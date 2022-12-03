@@ -1,0 +1,70 @@
+import React from 'react';
+import './LogIn.css';
+import logo from '../../image/fvicon.jpg';
+import Footer from '../Footer/Footer';
+
+export default function LogIn() {
+  return (
+    <>
+    <div className='rb'>
+    <div className='container my-2'>
+       <div className="area justify-content-center mt-1">
+            <div className="login mx-3">
+              <img src={logo} alt="" className='' width="72" height="57"/>
+              <h5 className='text-success'>Sign-IN</h5><hr />
+            <form className="row g-4 needs-validation" noValidate>
+                    
+
+                    <div className="col-md-12 col-sm-12 col-xs-12">
+                      <label htmlFor="validationCustom02" className="form-label">Email</label>
+                      <input type="mailto" className="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder='Enter your email' required/><br />
+                      <div id="validationServer03Feedback" class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                      
+                    </div><br />
+
+                    
+                    <div className="col-md-12">
+                      <label htmlFor="validationCustom03" className="form-label">Password</label>
+                      <input type="password" className="form-control" id="validationCustom03" placeholder='Password' required/>
+                      <div className="invalid-feedback">
+                        Please provide a valid password.
+                      </div>
+                    </div>
+                    
+                    
+                    
+                    <div className="col-12">
+                      <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
+                        <label className="form-check-label" htmlFor="invalidCheck">
+                          Keep me sing-in
+                        </label>
+                        <div className="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <button className="btn btn-primary" type="submit">Sign-In</button>
+                    </div>
+                    <div className="">
+                      <small>Create an account? <a href='/'>Sign-Up</a></small>
+                    </div>
+                  </form>
+            </div>
+
+            </div>
+
+            
+            
+          
+    </div>
+    
+    </div>
+    <Footer/>
+    </>
+   
+  )
+}

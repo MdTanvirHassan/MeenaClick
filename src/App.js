@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+  import { ToastContainer, toast } from 'react-toastify';
+
+  import 'react-toastify/dist/ReactToastify.css';
 import Alert from './components/Alert/Alert';
 import './App.css';
 import Header from './components/Header/Header';
@@ -16,6 +17,8 @@ import { Routes,  Route,} from "react-router-dom";
 import Cart from './components/Cart/Cart';
 import Register from './components/Register/Register';
 import Area from './components/Area/Area';
+import LogIn from './components/LogIn/LogIn';
+// import LogIn from './components/LogIn/LogIn';
 
 
 
@@ -62,13 +65,13 @@ function App() {
     })
 }
      const notify = () => {
-      toast.success(' Product quantity updated!', {
+      toast.success('Product quantity updated!', {
         position: "top-center",
         autoClose: 1500,
         hideProgressBar: true,
         closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
+        pauseOnHover: false,
+        draggable: false,
         progress: undefined,
         theme: "light",
         });
@@ -86,22 +89,25 @@ function App() {
         <Route path='/Area' element={<Area />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Register' element={<Register/>} />
+        <Route path='/signIn' element={<LogIn/>} />
+        {/* <Route path='/Register' element={<LogIn/>} /> */}
       </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>
       <Product mode={mode} notify={notify} handleCart={handleCart} title='Product Title Quantity' price='price'></Product>
       <ToastContainer
-        position="top-center"
-        autoClose={1500}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        />
+          position="top-center"
+          autoClose={1500}
+          limit={6}
+          hideProgressBar
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable={false}
+          pauseOnHover={false}
+          theme="light"
+          />
       
       <Footer mode={mode}></Footer>
       <ScrollButton />

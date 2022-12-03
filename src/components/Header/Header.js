@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../image/logo.png';
-import logo2 from '../../image/App-Download-Banner.jpg';
+// import logo2 from '../../image/App-Download-Banner.jpg';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,14 +8,14 @@ import { faList} from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header(props) {
-  const res= document.getElementsByClassName("col-sm-12");
+  //const res= document.getElementsByClassName("col-sm-12");
 
   return (
     //sticky wrapper
-    <div className={`sticky-top bg-${props.mode==='dark'?'dark':'header'}`}>
-      <div className="col-lg-0 col-md-0 col-sm-12 ">
-            <img src={logo2} className={`img-fluid  col-sm-12 ${res?'collapse':''} `} alt="logo" />
-        </div>
+    <div className={`sticky-top bg-${props.mode==='dark'?'dark':'header'} row`}>
+      {/* <div className="col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 ">
+            <img src={logo2} className={`img-fluid  col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 collapse} `} alt="logo" data-bs-toggle="collapse"/>
+        </div> */}
       
     {/* ------------------------------------navHeader--------------- */}
     <nav className={`navbar navbar-expand-lg bg-${props.mode==='dark'?'dark':'header'}`}>
@@ -47,7 +47,7 @@ export default function Header(props) {
         </li>
         <li className="nav-item">
           {/* Log-in/Sign-Up         */}
-          <Link to='/Register' className="nav-link px-1 link-secondary">
+          <Link to='/signIn' className="nav-link px-1 link-secondary">
             <button type="button" className={`outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} b`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
               <i className="bi bi-person-circle me-1 text-success fw-bold"></i>
               <small className=''>Log-in/Sign-Up</small> 

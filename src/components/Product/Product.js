@@ -169,11 +169,11 @@ export default function Product(props) {
 </h5>
                         <p className="card-text">tk. 230.00</p>
                         <div className="flex bg-secondary p-0 rounded">
-                             <button  className='btn bg-secondary ' type='button' > 
+                             <span  className='btn bg-secondary ' type='button' > 
                                {/* <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button> */}
                                 <span className='mx-1 w text-white' >Out of Stock</span>
                                 {/* <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button> */}
-                            </button>
+                            </span>
                         </div>
                     </div>
                     </div>
@@ -186,11 +186,11 @@ export default function Product(props) {
                         <h5 className="card-title">Danish Condensed Milk 397gm</h5>
                         <p className="card-text">tk. 80.00</p>
                         <div className="flex addBtn">
-                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
+                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
-                            </button>
+                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
+                            </span>
                         </div>
                     </div>
                     </div>
@@ -203,11 +203,11 @@ export default function Product(props) {
                         <h5 className="card-title">Farm Fresh Yoghurt Sour 500ml</h5>
                         <p className="card-text">tk. 100.00</p>
                         <div className="flex addBtn">
-                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
+                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
-                            </button>
+                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
+                            </span>
                         </div>
                     </div>
                     </div>
@@ -220,11 +220,11 @@ export default function Product(props) {
                         <h5 className="card-title">Diploma Milk Powder Poly 200gm</h5>
                         <p className="card-text">tk. 180.00</p>
                         <div className="flex addBtn">
-                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
+                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
-                            </button>
+                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
+                            </span>
                         </div>
                     </div>
                     </div>
@@ -237,11 +237,11 @@ export default function Product(props) {
                         <h5 className="card-title">Radhuni Ready Mix Masala 80gm</h5>
                         <p className="card-text">tk. 70.00</p>
                         <div className="flex addBtn">
-                             <button  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button>
+                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
+                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
                                 <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button>
-                            </button>
+                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
+                            </span>
                         </div>
                     </div>
                     </div>
