@@ -47,8 +47,8 @@ export default function Header(props) {
         </li>
         <li className="nav-item">
           {/* Log-in/Sign-Up         */}
-          <Link to='/signIn' className="nav-link px-1 link-secondary">
-            <button type="button" className={`outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} b`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <Link to='/LogIn' className="nav-link px-1 link-secondary">
+            <button type="button" className={`outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} b`} >
               <i className="bi bi-person-circle me-1 text-success fw-bold"></i>
               <small className=''>Log-in/Sign-Up</small> 
             </button>
@@ -74,18 +74,7 @@ export default function Header(props) {
          </span>
         </li>
 
-        {/* <li className="nav-item">
-        <Link to='/' className="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle mt-2"/>
-          </Link>
-          <ul className="dropdown-menu text-small">
-            <li><a className="dropdown-item" href='/'>New project...</a></li>
-            <li><a className="dropdown-item" href='/'>Settings</a></li>
-            <li><a className="dropdown-item" href='/'>Profile</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href='/'>Sign out</a></li>
-          </ul>
-        </li> */}
+        
       </ul>
 
     </div>
@@ -100,7 +89,7 @@ export default function Header(props) {
   
 
     <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'nav':'nav'} p-0`} aria-label="Tenth navbar example">
-    <div className="container-fluid p-0 mx-lg-4 mx-xl-4 mx-xxl-4 ">
+    <div className="container-fluid p-0 mx-lg-4 mx-xl-4 mx-xxl-4  px-2">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -176,7 +165,20 @@ export default function Header(props) {
         
       </div>
     </div>
+
   </nav>
+  {/* <li className="nav-item">
+        <Link to='/' className="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle mt-2"/>
+          </Link>
+          <ul className="dropdown-menu text-small">
+            <li><a className="dropdown-item" href='/'>New project...</a></li>
+            <li><a className="dropdown-item" href='/'>Settings</a></li>
+            <li><a className="dropdown-item" href='/'>Profile</a></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><a className="dropdown-item" href='/'>Sign out</a></li>
+          </ul>
+        </li> */}
   
     </div>
   )

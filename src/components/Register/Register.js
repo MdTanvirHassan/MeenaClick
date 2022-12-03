@@ -9,24 +9,7 @@ export default function Register() {
   return (
     <>
     <div className='rb '>
-    <div className='container mb-5 my-2'>
-        {/* <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" labelled="offcanvasExampleLabel">
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div className="offcanvas-body">
-            <div>Log-in /Sign-Up Area            </div>
-            <div className="dropdown mt-3">
-              <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Select Option
-              </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href='/'>Log in </a></li>
-                <li><a className="dropdown-item" href='/'>Sign-Up</a></li>
-                <li><a className="dropdown-item" href='/'>Something else here</a></li>
-              </ul>
-            </div> */}
+    <div className='container mb-5 '>
             <div className="area justify-content-center mt-1">
             <div className="login mx-3">
               <img src={logo} alt="" className='' width="72" height="57"/>
