@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import logo from '../../image/fvicon.jpg';
 import Footer from '../Footer/Footer';
 import './Register.css'
@@ -109,7 +111,7 @@ export default function Register() {
                       <button className="btn btn-primary" type="submit">Sign-Up</button>
                     </div>
                     <div className="">
-                      <small>Have an account? <a href='/'>Log-in</a></small>
+                      <small>Have an account? <Link to='/LogIn'>Log-in</Link></small>
                     </div>
                   </form>
             </div>

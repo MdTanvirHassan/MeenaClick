@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './LogIn.css';
 import logo from '../../image/fvicon.jpg';
 import Footer from '../Footer/Footer';
@@ -19,7 +21,7 @@ export default function LogIn() {
                       <label htmlFor="validationCustom02" className="form-label">Email</label>
                       <input type="mailto" className="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder='Enter your email' required/><br />
                       <div id="validationServer03Feedback" class="invalid-feedback">
-                        Please provide a valid city.
+                        Please provide a valid email.
                       </div>
                       
                     </div><br />
@@ -50,7 +52,7 @@ export default function LogIn() {
                       <button className="btn btn-primary" type="submit">Sign-In</button>
                     </div>
                     <div className="">
-                      <small>Create an account? <a href='/'>Sign-Up</a></small>
+                      <small>Create an account? <Link to='/Register'>Sign-Up</Link></small>
                     </div>
                   </form>
             </div>

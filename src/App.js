@@ -89,7 +89,7 @@ function App() {
         <Route path='/Area' element={<Area />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Register' element={<Register/>} />
-        <Route path='/signIn' element={<LogIn/>} />
+        <Route path='/LogIn' element={<LogIn/>} />
         {/* <Route path='/Register' element={<LogIn/>} /> */}
       </Routes>
       <Carousel mode={mode}></Carousel>
