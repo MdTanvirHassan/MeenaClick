@@ -125,8 +125,8 @@ export default function Header(props) {
           <li className="nav-item justify-content-md-end d-flex align-items-center">
             <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Recipe</small> </Link>
           </li>
-          <li className="nav-item mx-2  d-flex align-items-center">
-            <Link to='/' className="nav-link p-0 px-1  active bnn" href='/' ><small>Track Order</small></Link>
+          <li className="nav-item mx-2  d-flex align-items-center track-order">
+            <Link to='/TrackOrder' className='text-decoration-none'> <button className="nav-link p-0 px-1  active bnn border-none" href='/' data-bs-toggle="modal" data-bs-target="#exampleModal"><small>Track Order</small></button></Link>
           </li>
           
           <li className="nav-item dropdown d-flex align-items-center me-">

@@ -54,13 +54,13 @@ export default function Product(props) {
                 <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" price="80.00"></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00"></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00"></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" title="Aarong Butter  200gm" price="160.00"></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Aarong Ghee  300gm" price="12.00"></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" title="Aarong Ghee  300gm" price="12.00"></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" price="105.00"></Grocery>

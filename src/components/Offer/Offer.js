@@ -12,10 +12,10 @@ export default function Offer(props) {
   return (
     <div className='mx-4'>
         <div className="text-success text-center">
-            <h4 className="">Offers</h4>
+            <h4 className="">Offers</h4><hr />
         </div>
-        <div className="">
-            <Grocery notify={props.notify}></Grocery>
+        <div className="mx-4">
+        <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00"/>
         </div>
         <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -37,6 +37,20 @@ export default function Offer(props) {
                 <Grocery mode={props.mode} notify={props.notify} img={img6} category="Grocery" title="Olitalia Pomace Olive Oil 1ltr" price="273.00"></Grocery>
                 </div>
                </div> 
+               {/* pagination */}
+               <nav aria-label="Page navigation example">
+                <ul className="pagination justify-content-end">
+                  <li className="page-item disabled">
+                    <a className="page-link" href='/'>Previous</a>
+                  </li>
+                  <li className="page-item"><a className="page-link" href='/'>1</a></li>
+                  <li className="page-item"><a className="page-link" href='/'>2</a></li>
+                  <li className="page-item"><a className="page-link" href='/'>3</a></li>
+                  <li className="page-item">
+                    <a className="page-link" href='/'>Next</a>
+                  </li>
+                </ul>
+              </nav>
                <Footer/>
     </div>
   )

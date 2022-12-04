@@ -20,6 +20,7 @@ import Area from './components/Area/Area';
 import LogIn from './components/LogIn/LogIn';
 import Combo from './components/Combo/Combo';
 import Offer from './components/Offer/Offer';
+import TrackOrder from './components/TrackOrder/TrackOrder';
 
 
 
@@ -92,8 +93,9 @@ function App() {
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Register' element={<Register/>} />
         <Route path='/LogIn' element={<LogIn/>} />
-        <Route path='/Combo' element={<Combo />} />
-        <Route path='/offer' element={<Offer notify={notify}/>} />
+        <Route path='/Combo' element={<Combo mode={mode} notify={notify}/>} />
+        <Route path='/offer' element={<Offer mode={mode} notify={notify} />} />
+        <Route path='/TrackOrder' element={<TrackOrder />} />
         
       </Routes>
       <Carousel mode={mode}></Carousel>
