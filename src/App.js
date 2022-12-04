@@ -18,7 +18,9 @@ import Cart from './components/Cart/Cart';
 import Register from './components/Register/Register';
 import Area from './components/Area/Area';
 import LogIn from './components/LogIn/LogIn';
-// import LogIn from './components/LogIn/LogIn';
+import Combo from './components/Combo/Combo';
+import Offer from './components/Offer/Offer';
+
 
 
 
@@ -90,7 +92,9 @@ function App() {
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Register' element={<Register/>} />
         <Route path='/LogIn' element={<LogIn/>} />
-        {/* <Route path='/Register' element={<LogIn/>} /> */}
+        <Route path='/Combo' element={<Combo />} />
+        <Route path='/offer' element={<Offer notify={notify}/>} />
+        
       </Routes>
       <Carousel mode={mode}></Carousel>
       <Feature mode={mode}></Feature>

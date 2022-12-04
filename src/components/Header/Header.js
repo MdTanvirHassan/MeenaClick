@@ -99,7 +99,7 @@ export default function Header(props) {
         <ul className="navbar-nav d-flex">
         <li className="nav-item justify-content-md-start  d-flex align-items-center me-5 border-none">
           {/* category */}
-            <Link to='/' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
+            <Link to='/Combo' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
               <div className="nav-item d-flex category px-lg-5">
                 <h5 className="p-1 text-center"><FontAwesomeIcon icon={faList} /> All Categories  <small className='px-1'><FontAwesomeIcon icon={faChevronDown} /></small></h5>
               </div>
@@ -107,11 +107,11 @@ export default function Header(props) {
           </li>
           {/* combo */}
         <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> <small>Combo</small> </Link>
+            <Link to='/Combo' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> <small>Combo</small> </Link>
           </li>
           {/* offer */}
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
-            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Offer</small> <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span></Link>
+            <Link to='/offer' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Offer</small> <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span></Link>
           </li>
           {/* wholesale */}
           <li className="nav-item justify-content-md-start me-5 d-flex align-items-center">
