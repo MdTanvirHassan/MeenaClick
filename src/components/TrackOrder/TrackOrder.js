@@ -14,9 +14,12 @@ export default function TrackOrder() {
             <span><small className='text-danger'>* </small><small>Phone Number</small></span>
             {/* <span className="input-group-text" id="inputGroupPrepend3">+88</span> */}
 
-      <input type="text" className="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required/><br />
-            <span><small className='text-danger'>* </small><small>Oder Id</small></span>
-            <input type="text" className='form-control' name="" id="" required/>
+      <input type="text" className="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder='Ex. 01XXXXXXXXX' required/>
+      <br />
+            <span>
+                <small className='text-danger'>* </small><small>Oder Id</small>
+            </span>
+            <input type="text" className='form-control' name="" id="" placeholder='Enter your oder-id' required/>
          
         </div>
         <div className="modal-footer">
