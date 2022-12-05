@@ -30,10 +30,15 @@ export default function Header(props) {
         </Link>
 
         {/* Searchbar */}
-        <form className="col-sm-12 col-lg-6 mb-3 mb-lg-0 me-lg-5 text-center ms-lg-3 m"  role="search">
+        <form className="col-sm-12 col-lg-6 mb-3 mb-lg-0 me-lg- text-center ms-lg- m"  role="search">
           <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
-          <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button>
+          {/* inside search-input */}
+          {/* <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button> */}
+          
         </form>
+        <button className='src' type="submit"  aria-hidden="false">
+          <i className='bi bi-search text-white fw-bold'></i>
+          </button>
         
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
         <li className="nav-item">
