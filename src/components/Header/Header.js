@@ -25,7 +25,7 @@ export default function Header(props) {
     </button>
     <div className="collapse navbar-collapse mx-lg-4 mx-xl-4 mx-xxl-4" id="navbarTogglerDemo01">
       {/* logo */}
-      <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-1">
+      <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-1 ">
           <img src={logo} alt='...' className="bi me-2"  width="140" height="60"  aria-label="Bootstrap"/>
         </Link>
 
