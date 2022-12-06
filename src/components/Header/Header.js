@@ -9,6 +9,7 @@ import { faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header(props) {
   //const res= document.getElementsByClassName("col-sm-12");
+  //categories dropdown
   document.addEventListener("click", e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
     if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
@@ -24,6 +25,7 @@ export default function Header(props) {
       dropdown.classList.remove("active")
     })
   })
+  //categories dropdown end
   
 
   return (
@@ -46,7 +48,7 @@ export default function Header(props) {
         </Link>
 
         {/* Searchbar */}
-        <form className="col-sm-8 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg- text-center ms-lg- m"  role="search">
+        <form className="col-sm-8 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg- text-center ms-lg- m collapse navbar-collapse"  role="search">
           <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
           {/* inside search-input */}
           {/* <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button> */}
@@ -106,9 +108,6 @@ export default function Header(props) {
     {/* --------------------------------------------second-navbar-sticky-------------------------------------------- */}
     
 
-
-  
-
     <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'nav':'nav'} p-0`} aria-label="Tenth navbar example">
     <div className="container-fluid p-0 mx-lg-4 mx-xl-4 mx-xxl-4  px-2">
       
@@ -117,22 +116,22 @@ export default function Header(props) {
       </button>
 
       <div className="collapse navbar-collapse d-flex justify-content-md-between " id="navbarsExample08">
-        <div className=" d-flex justify-content-md-start">
-        <ul className="navbar-nav d-flex">
-        <li className="nav-item justify-content-md-start  d-flex align-items-center me-5 border-none">
-          {/*start-- category */}
-          <div className=" header px-5">
-          
-          <div className="dropdown" data-dropdown>
-          <button className="link " >
-            <h5 className='link text-white'data-dropdown-button>
-                    <FontAwesomeIcon icon={faList}className='pe-3' data-dropdown-button/>
-                     All Categories 
-                    <small className='px-4'>
-                      <FontAwesomeIcon icon={faChevronDown} data-dropdown-button/>
-                    </small>
-                </h5>
-          </button>
+        <div className=" collapse navbar-collapse  justify-content-md-start" id="navbarsExample08">
+          <ul className="navbar-nav d-flex">
+          <li className="nav-item justify-content-md-start  d-flex align-items-center me-5 border-none">
+            {/*start-- category */}
+            <div className=" header px-5  " id="navbarsExample">
+            
+            <div className="dropdown " data-dropdown id="navbarsExample08">
+            <button className="link " >
+              <h5 className='link text-white'data-dropdown-button>
+                      <FontAwesomeIcon icon={faList}className='pe-3' data-dropdown-button/>
+                      All Categories 
+                      <small className='px-4 collapse navbar-collapse'>
+                        <FontAwesomeIcon icon={faChevronDown} data-dropdown-button/>
+                      </small>
+                  </h5>
+            </button>
       <div className="dropdown-menu information-grid">
         <div>
         
@@ -200,7 +199,7 @@ export default function Header(props) {
 
           {/* combo */}
         <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
-            <Link to='/Combo' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> <small>Combo</small> </Link>
+            <Link to='/Combo' className="nav-link active p-0 px-1  bn " type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> <small>Combo</small> </Link>
           </li>
           {/* offer */}
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
@@ -209,10 +208,13 @@ export default function Header(props) {
           {/* wholesale */}
           <li className="nav-item justify-content-md-start me-5 d-flex align-items-center">
             <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Wholesale </small></Link>
-          </li></ul></div>
+          </li>
+          </ul>
+        </div>
           {/* ------First-end */}
+          
           {/* last-end-start */}
-          <div className="d-flex justify-content-md-end">
+          <div className="collapse navbar-collapse  justify-content-md-end" id="navbarsExample08">
             <ul className="navbar-nav">
           
           <li className="nav-item justify-content-md-end d-flex align-items-center">

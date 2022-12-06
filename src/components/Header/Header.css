@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 .m{
     margin-left: 0px!important;
 }
@@ -191,3 +192,65 @@ option,select{
   .login-form > input {
     margin-bottom: .5rem;
   }
+  @media (max-width: 800px) {
+    #navbarsExample{
+        background-color: none !important;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: none;
+        width:20px;
+        height: 10px;
+        top:0;
+        left:-15%;
+    }
+    .bn,.bnn{
+        background: none !important;
+        border: none !important;
+        display: flex;
+        color: white!important;
+        margin: 0;
+        padding: 0;
+    }
+    .bn:hover,.bnn:hover{
+        background: none !important;
+        border: none !important;
+        display: flex;
+        color:lightblue!important;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .nav-link.active {
+        display: flex;
+    }
+}
