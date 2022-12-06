@@ -27,6 +27,8 @@ import b6 from '../../image/b6.jpg';
 import './Product.css';
 import Grocery from '../Grocery/Grocery';
 import Category from '../Category/Category';
+// import { Route, Router } from 'react-router';
+// import { Link } from 'react-router-dom';
 
 
 export default function Product(props) {
@@ -44,8 +46,24 @@ export default function Product(props) {
     //     const newCart = [...cart,product];
     //     setCart(newCart);
     //  }
+    // let products=[
+    //     {id:1, name:'title', price:110.00, quantity:10, img:{img}},
+    //     {id:2, name:'title2', price:110.00, quantity:10},
+    //     {id:3, name:'title3', price:110.00, quantity:10},
+    //     {id:4, name:'title4', price:110.00, quantity:10},
+    //     {id:5, name:'title5', price:110.00, quantity:10},
+    //     {id:6, name:'title6', price:110.00, quantity:10},
+    // ]
   return (
     <div className=''>
+        {/* <div className="">
+            <Router>
+                {
+                    products.map((product) =><div><Link to={'/Product/'+product.id+'/'}></Link></div>)
+                }
+                <Route path='/Product/:id'> <Grocery /></Route>
+            </Router>
+        </div> */}
         <div className=" my-5 ">
             <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
             <Category mode={props.mode} category="Cooking Oil & Ghee"> </Category><hr />
@@ -60,7 +78,7 @@ export default function Product(props) {
                 <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" title="Aarong Butter  200gm" price="160.00"></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" title="Aarong Ghee  300gm" price="12.00"></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" title="Aarong Ghee  300gm" price="120.00"></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" price="105.00"></Grocery>
@@ -107,7 +125,7 @@ export default function Product(props) {
         {/* ------------------------------Grocery----------------------------- */}
         <div className=" my-3 ">
             <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
-            <Category mode={props.mode} category="Grocery"> </Category>
+            <Category mode={props.mode} category="Grocery"> </Category> <hr />
             <div className="row">
                 <div className="col-lg-2 col-md-4 col-6">
                 <Grocery mode={props.mode} notify={props.notify} img={g} category="Grocery" title="Najir Rice Premium Bulk" price="80.00"></Grocery>
@@ -134,7 +152,7 @@ export default function Product(props) {
             
             </div>
 {/* --------------------------------------------------Dairy-------------------------- */}
-        <div className="mx-lg my-5 ">
+        <div className="mx-lg-3 my-5 ">
             <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} bg-${props.mode==='dark'?'secondary':'body'}`}>
                 <div className="col-9">
                         <h5 className={`text-${props.mode==='dark'?'warning':'body'}`}>Dairy</h5>
@@ -165,8 +183,7 @@ export default function Product(props) {
                  <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
                     <img src={dd2} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Farm Fresh Butter 200gm
-</h5>
+                        <h5 className="card-title">Farm Fresh Butter 200gm</h5>
                         <p className="card-text">tk. 230.00</p>
                         <div className="flex bg-secondary p-0 rounded">
                              <span  className='btn bg-secondary ' type='button' > 

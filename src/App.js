@@ -84,7 +84,14 @@ function App() {
     !loading&&<>
     
       <Fragment>      
-      <Header mode={mode} toggleMode={toggleMode} handleCart={handleCart}></Header>
+      <Header mode={mode} toggleMode={toggleMode} handleCart={handleCart} style={({ isActive, isPending }) => {
+    return {
+      color: isActive ? "red" : "inherit",
+    };
+  }}
+  className={({ isActive, isPending }) => {
+    return isActive ? "active" : isPending ? "pending" : "";
+  }}></Header>
       <Alert alert={alert}></Alert>
       
       <Routes>

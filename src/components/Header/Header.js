@@ -9,6 +9,22 @@ import { faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header(props) {
   //const res= document.getElementsByClassName("col-sm-12");
+  document.addEventListener("click", e => {
+    const isDropdownButton = e.target.matches("[data-dropdown-button]")
+    if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+  
+    let currentDropdown
+    if (isDropdownButton) {
+      currentDropdown = e.target.closest("[data-dropdown]")
+      currentDropdown.classList.toggle("active")
+    }
+  
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+      if (dropdown === currentDropdown) return
+      dropdown.classList.remove("active")
+    })
+  })
+  
 
   return (
     //sticky wrapper
@@ -30,7 +46,7 @@ export default function Header(props) {
         </Link>
 
         {/* Searchbar */}
-        <form className="col-sm-12 col-lg-6 mb-3 mb-lg-0 me-lg- text-center ms-lg- m"  role="search">
+        <form className="col-sm-8 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg- text-center ms-lg- m"  role="search">
           <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
           {/* inside search-input */}
           {/* <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button> */}
@@ -95,21 +111,93 @@ export default function Header(props) {
 
     <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'nav':'nav'} p-0`} aria-label="Tenth navbar example">
     <div className="container-fluid p-0 mx-lg-4 mx-xl-4 mx-xxl-4  px-2">
+      
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
 
       <div className="collapse navbar-collapse d-flex justify-content-md-between " id="navbarsExample08">
-        <div className="collapse navbar-collapse d-flex justify-content-md-start">
+        <div className=" d-flex justify-content-md-start">
         <ul className="navbar-nav d-flex">
         <li className="nav-item justify-content-md-start  d-flex align-items-center me-5 border-none">
-          {/* category */}
-            <Link to='/Combo' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
-              <div className="nav-item d-flex category px-lg-5">
-                <h5 className="p-1 text-center"><FontAwesomeIcon icon={faList} /> All Categories  <small className='px-1'><FontAwesomeIcon icon={faChevronDown} /></small></h5>
-              </div>
+          {/*start-- category */}
+          <div className=" header px-5">
+          
+          <div className="dropdown" data-dropdown>
+          <button className="link " >
+            <h5 className='link text-white'data-dropdown-button>
+                    <FontAwesomeIcon icon={faList}className='pe-3' data-dropdown-button/>
+                     All Categories 
+                    <small className='px-4'>
+                      <FontAwesomeIcon icon={faChevronDown} data-dropdown-button/>
+                    </small>
+                </h5>
+          </button>
+      <div className="dropdown-menu information-grid">
+        <div>
+        
+          <div className="dropdown-heading">Categories</div>
+          <div className="dropdown-links">
+            <Link to='/Combo' className="link">
+              <i className={`text-${props.mode==='dark'?'danger':'danger'} bi bi-bag-fill me-1`}></i>
+                    Essentials
             </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'danger':'danger'} bi bi-box-fill me-1`}></i>
+                        Frozen Item
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-alexa me-1`}></i>
+                        Accessories
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-people-fill me-1`}>
+                            </i>Baby Care
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-columns-gap me-1`}></i>
+                        Bakery and Snacks
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-amd me-1`}></i>
+                        Beauty and Hygiene
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-archive-fill me-1`}></i>
+                        Beverages
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-slack me-1`}></i>
+                        Fish
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-bag me-1`}></i>
+                        Fresh Product
+            </Link>
+            <Link to='/Combo' className="link">
+            <i className={`text-${props.mode==='dark'?'success':'success'} bi bi-house me-1`}></i>
+                        Housing & cleaning
+            </Link>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    </div>
+    
+            {/* <Link to='/Combo' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
+              <div className="nav-item d-flex category px-lg-5">
+                <h5 className="p-1 text-center">
+                <FontAwesomeIcon icon={faList} /> All Categories 
+                 <small className='px-1'><FontAwesomeIcon icon={faChevronDown} />
+                 </small>
+                 </h5>
+              </div>
+            </Link> */}
           </li>
+          {/* End ---categories */}
+
           {/* combo */}
         <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
             <Link to='/Combo' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> <small>Combo</small> </Link>
