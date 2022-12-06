@@ -12,6 +12,7 @@ export default function Grocery(props) {
                     <img src={props.img} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
                         <h5 className="card-title">{props.title}</h5>
+                        <small className="card-text text-decoration-line-through text-muted"> {props.offerPrice}</small>
                         <p className="card-text">tk. {props.price}</p>
                         {/* <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button> */}
                         <div className="flex addBtn">
