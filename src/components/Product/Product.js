@@ -27,6 +27,7 @@ import b6 from '../../image/b6.jpg';
 import './Product.css';
 import Grocery from '../Grocery/Grocery';
 import Category from '../Category/Category';
+import { Link } from 'react-router-dom';
 // import { Route, Router } from 'react-router';
 // import { Link } from 'react-router-dom';
 
@@ -69,22 +70,34 @@ export default function Product(props) {
             <Category mode={props.mode} category="Cooking Oil & Ghee"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" price="80.00"></Grocery>
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" price="80.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00"></Grocery>
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" title="Aarong Butter  200gm" price="160.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" title="Aarong Ghee  300gm" price="120.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" price="105.00"></Grocery>
+                <Link to='/details' className='text-decoration-none'>
+                <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" price="1505.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={img6} category="Grocery" title="Olitalia Pomace Olive Oil 1ltr" price="273.00"></Grocery>
+                </Link>
                 </div>
              
             
@@ -99,22 +112,34 @@ export default function Product(props) {
             <Category mode={props.mode} category="Bakery & Snacks"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xs-2">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={b1} category="Grocery" title="Meena Sweets Sweet Toast-        :350gm" price="135.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={b2} category="Grocery" title="SUNFEAST D FANTASY CHOCO FILLS BIS 300G" price="420.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={b3} category="Grocery" title="MEENA SWEETS DRY CAKE  --  300GM" price="225.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={b4} category="Grocery" title="PRAN  CHICKEN MINI SAMOSA 250GM 25PCS" price="189.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={b5} category="Grocery" title="Cadbury Oreo Ori C San Biscuit 120/150gm" price="135.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={b6} category="Grocery" title="Ruchi Premium Mix Chanachur ....    :100gm" price="27.00"></Grocery>
+                </Link>
                 </div>
              
             
@@ -128,23 +153,35 @@ export default function Product(props) {
             <Category mode={props.mode} category="Grocery"> </Category> <hr />
             <div className="row">
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={g} category="Grocery" title="Najir Rice Premium Bulk" price="80.00"></Grocery>
+                </Link>
 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={g2} category="Grocery" title="Musur Dal (Lentil) Local Premium  Bulk" price="145.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={g3} category="Grocery" title="Maggi Noodles Masala 8PX62g" price="160.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={g4} category="Grocery" title="Banana (Sagor) Ripe Regular Pcs" price="12.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={g5} category="Grocery" title="Coconut (Narikel] Pcs" price="105.00"></Grocery>
+                </Link>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
+                <Link to='/details' className='text-decoration-none'>
                 <Grocery mode={props.mode} notify={props.notify} img={g6} category="Grocery" title="Fresh Malta Yellow 1KG" price="273.00"></Grocery>
+                </Link>
                 </div>
                 </div>
                 </div>
@@ -186,9 +223,9 @@ export default function Product(props) {
                         <h5 className="card-title">Farm Fresh Butter 200gm</h5>
                         <p className="card-text">tk. 230.00</p>
                         <div className="flex bg-secondary p-0 rounded">
-                             <span  className='btn bg-secondary ' type='button' > 
+                             <span  className='btn bg-secondary p-0' type='button' > 
                                {/* <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button> */}
-                                <span className='mx-1 w text-white' >Out of Stock</span>
+                                <span className='mx-1 w text-white ' >Out of Stock</span>
                                 {/* <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button> */}
                             </span>
                         </div>
