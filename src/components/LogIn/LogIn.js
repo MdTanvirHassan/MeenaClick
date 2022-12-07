@@ -21,7 +21,7 @@ export default function LogIn() {
                       <label htmlFor="validationCustom02" className="form-label">Email</label>
                       <input type="mailto" className="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder='Enter your email' required/><br />
                       <div id="validationServer03Feedback" className="invalid-feedback">
-                        Please provide a valid city.
+                        Please provide a valid email.
                       </div>
                       
                     </div><br />

@@ -26,6 +26,7 @@ import TrackOrder from './components/TrackOrder/TrackOrder';
 
 
 function App() {
+  //* preloader
   const [loading,setLoading]= useState(true);
   const preloader= document.getElementById('preloader-active');
   if (preloader) {
@@ -34,7 +35,7 @@ function App() {
       setLoading(false);
     }, 300);
   }
-  
+  //todo Dark mode
   const[mode,setMode]= useState('light');
   const toggleMode =()=>{
     if(mode==='dark'){
@@ -48,6 +49,7 @@ function App() {
       showAlert("Dark mode is Enable.","success");
     }
   }
+  //*Alert
   const [alert,setAlert]= useState(null);
   const showAlert =(message,type)=>{
     setAlert({
@@ -67,6 +69,7 @@ function App() {
         }
     })
 }
+//*React-notification
      const notify = () => {
       toast.success('Product quantity updated!', {
         position: "top-center",
@@ -97,10 +100,10 @@ function App() {
       <Routes>
         <Route path='/Home' element={<Header />} />
         <Route path='/Area' element={<Area />} />
-        <Route path='/Cart' element={<Cart />} />
+        <Route path='/Cart' element={<Cart mode={mode}/>} />
         <Route path='/Register' element={<Register/>} />
         <Route path='/LogIn' element={<LogIn/>} />
-        <Route path='/Combo' element={<Combo mode={mode} notify={notify}/>} />
+        <Route path='/Combo' element={<Combo c notify={notify}/>} />
         <Route path='/offer' element={<Offer mode={mode} notify={notify} />} />
         <Route path='/TrackOrder' element={<TrackOrder />} />
         

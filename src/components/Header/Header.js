@@ -9,8 +9,8 @@ import { faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header(props) {
   //const res= document.getElementsByClassName("col-sm-12");
-  //categories dropdown
-  document.addEventListener("click", e => {
+  //!categories dropdown-start
+  document.addEventListener("mouseover", e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
     if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
   
@@ -25,7 +25,7 @@ export default function Header(props) {
       dropdown.classList.remove("active")
     })
   })
-  //categories dropdown end
+  //*categories dropdown end
   
 
   return (
@@ -48,7 +48,7 @@ export default function Header(props) {
         </Link>
 
         {/* Searchbar */}
-        <form className="col-sm-12 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg-0 text-center ms-lg- m "  role="search">
+        <form className="col-sm-6 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg-0 text-center ms-lg- m "  role="search">
           <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
           {/* inside search-input */}
           {/* <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button> */}

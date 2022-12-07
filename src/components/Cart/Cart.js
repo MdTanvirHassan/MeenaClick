@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-export default function Cart() {
+export default function Cart(props) {
   return (
-    <div className='container my-2'>
+    <div className={`container my-2 text-${props.mode==='dark'?'white':'dark'}`}>
     
-      <h1 className='text-center'>Cart</h1><hr />
+      <h1 className={`text-center bg-${props.mode==='dark'?'secondary':'secondary'} text-${props.mode==='dark'?'white':'white'}`}>Cart</h1><hr />
       
       
 
@@ -179,6 +179,10 @@ export default function Cart() {
             <div className="form-check">
               <input id="paypal" name="paymentMethod" type="radio" className="form-check-input" required/>
               <label className="form-check-label" htmlFor="paypal">PayPal</label>
+            </div>
+            <div className="form-check">
+              <input id="cashOn" name="paymentMethod" type="radio" className="form-check-input" required/>
+              <label className="form-check-label" htmlFor="cashOn">Cash on delivery</label>
             </div>
           </div>
 
