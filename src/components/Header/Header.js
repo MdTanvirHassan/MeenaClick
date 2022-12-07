@@ -48,7 +48,7 @@ export default function Header(props) {
         </Link>
 
         {/* Searchbar */}
-        <form className="col-sm-8 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg- text-center ms-lg- m collapse navbar-collapse"  role="search">
+        <form className="col-sm-12 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg-0 text-center ms-lg- m "  role="search">
           <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
           {/* inside search-input */}
           {/* <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button> */}
@@ -127,7 +127,7 @@ export default function Header(props) {
               <h5 className='link text-white'data-dropdown-button>
                       <FontAwesomeIcon icon={faList}className='pe-3' data-dropdown-button/>
                       All Categories 
-                      <small className='px-4 collapse navbar-collapse'>
+                      <small className='px-4'>
                         <FontAwesomeIcon icon={faChevronDown} data-dropdown-button/>
                       </small>
                   </h5>
