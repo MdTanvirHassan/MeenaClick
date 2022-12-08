@@ -23,24 +23,24 @@ import './Feature.css';
 
 export default function Feature(props) {
   return (
-    <div className='mx-lg-4 mx-xxl-5 mx-xl-5 my-2'>
+    <div className='mx-lg-4 mx-xxl-5 mx-xl-5 mx-sm-4 mx-xs-4 my-2'>
         <a href="/" className={`nav-link text-center  text-${props.mode==='dark'?'white':'dark'} mt-2`}><h5 className={`text-${props.mode==='dark'?'white':'dark'} mt-5`}>Featured Brands</h5><hr /></a>
 
         <div className="row">
-            <div className="col-lg-4 col-sm-12 col-md-6  mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6  mb-1">
             <div className="card">
                 <img src={img} className="card-img-top" alt="..."/>
      
              </div>
 
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img2} className="card-img-top" alt="..."/>
      
              </div>
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img3} className="card-img-top" alt="..."/>
      
@@ -52,20 +52,20 @@ export default function Feature(props) {
         <a href="/" className={`nav-link text-center text-${props.mode==='dark'?'white':'dark'}`}><h5 className="mt-5">Core Service</h5><hr /></a>
 
         <div className="row mx-">
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-2">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-2">
             <div className="card">
                 <img src={img4} className="card-img-top" alt="..."/>
      
              </div>
 
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img5} className="card-img-top" alt="..."/>
      
              </div>
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img6} className="card-img-top" alt="..."/>
      
@@ -74,20 +74,20 @@ export default function Feature(props) {
         </div>
 
         <div className="row mt-3 mx-">
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img2} className="card-img-top" alt="..."/>
      
              </div>
 
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img3} className="card-img-top" alt="..."/>
      
              </div>
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-6 mb-1">
+            <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <div className="card">
                 <img src={img} className="card-img-top" alt="..."/>
      

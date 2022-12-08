@@ -7,13 +7,13 @@
 }
 .link-list{
     /* padding: .45rem; */
-    padding: .35rem 2rem;
+    padding: .45rem 1.8rem;
 }
 .link-list:hover{
    
     color: white !important;;
     border-bottom: 1px solid green;
-    border-left:3px solid orange;
+    border-left:3px solid orangered;
     background-color: #20aa6b!important;
    
     background-color: green;

@@ -66,7 +66,7 @@ export default function Product(props) {
             </Router>
         </div> */}
         <div className=" my-5 ">
-            <div className={`row mx-lg-4 mx-xxl-4 mx-xl-4 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <div className={`row mx-lg-4 mx-xxl-5 mx-xl-5 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
             <Category mode={props.mode} category="Cooking Oil & Ghee"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -108,7 +108,7 @@ export default function Product(props) {
 
         {/* -------BAkery and snacks------------------------- */}
         <div className=" my-3 ">
-            <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <div className={`row mx-lg-4 mx-xxl-5 mx-xl-5 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
             <Category mode={props.mode} category="Bakery & Snacks"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xs-2">
@@ -149,7 +149,7 @@ export default function Product(props) {
 
         {/* ------------------------------Grocery----------------------------- */}
         <div className=" my-3 ">
-            <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <div className={`row mx-lg-4 mx-xxl-5 mx-xl-5 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
             <Category mode={props.mode} category="Grocery"> </Category> <hr />
             <div className="row">
                 <div className="col-lg-2 col-md-4 col-6">
@@ -190,7 +190,7 @@ export default function Product(props) {
             </div>
 {/* --------------------------------------------------Dairy-------------------------- */}
         <div className="mx-lg-3 my-5 ">
-            <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} bg-${props.mode==='dark'?'secondary':'body'}`}>
+            <div className={`row mx-lg-4 mx-xxl-5 mx-xl-5 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} bg-${props.mode==='dark'?'secondary':'body'}`}>
                 <div className="col-9">
                         <h5 className={`text-${props.mode==='dark'?'warning':'body'}`}>Dairy</h5>
                 </div>
