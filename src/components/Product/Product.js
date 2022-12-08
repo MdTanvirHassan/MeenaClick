@@ -34,7 +34,7 @@ import { Link } from 'react-router-dom';
 
 export default function Product(props) {
     const [cart, setCart] = useState(0)
-    // const handleCart=(item,action)=>{
+    //todo const handleCart=(item,action)=>{
     //     setCart((prevCart)=>{
     //         return{
     //             ...prevCart,
@@ -66,7 +66,7 @@ export default function Product(props) {
             </Router>
         </div> */}
         <div className=" my-5 ">
-            <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <div className={`row mx-lg-4 mx-xxl-4 mx-xl-4 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
             <Category mode={props.mode} category="Cooking Oil & Ghee"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">

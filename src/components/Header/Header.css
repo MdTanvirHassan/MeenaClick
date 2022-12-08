@@ -6,7 +6,7 @@
     margin-left: 0px!important;
 }
 .margin{
-    margin-left: 165px!important;
+    margin: 0px  15px!important;
 }
 .text-line{
     line-height: 28px;
@@ -192,6 +192,8 @@ option,select{
   .login-form > input {
     margin-bottom: .5rem;
   }
+
+/* responsive for mobile---------- */
   @media (max-width: 800px) {
     #navbarsExample{
         background-color: none !important;
@@ -253,4 +255,10 @@ option,select{
     .nav-link.active {
         display: flex;
     }
+}
+@media only screen and (min-width: 1400px) and (max-width: 2200px) {
+    /* .full-container{
+        width:100%;
+        margin: 0px 10%;
+    } */
 }

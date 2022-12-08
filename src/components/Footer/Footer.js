@@ -8,11 +8,11 @@ import store from '../../image/store.jpg';
 export default function Footer(props) {
   return (
     <div className={`bg-${props.mode==='dark'?'footer':'footer'}`}>
-        <div className="full-container mx-lg-5 mx-xl-4 mx-xxl-4">
+        <div className="full-container mx-lg-5 mx-xl-5 mx-xxl-5">
   <footer className="py-0">
     <div className="row pt-3 pb-2">
     <img src={logo} className="img-fluid  col-sm-12 collapse " alt="logo" />
-      <div className=" col-xl-3 col-lg-3 col-md-6 mb-1 ">
+      <div className="col-xl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-1 ">
         <h5 className='text-white fw-bold'>Customer Services</h5>
         <ul className="nav flex-column">
           <li className="nav-item mb-1"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'white'}`}><small>MeenaClick Stores</small></a></li>
@@ -23,7 +23,7 @@ export default function Footer(props) {
         </ul>
       </div>
 
-      <div className="col-lg-3 col-md-6 mb-1">
+      <div className="col-xl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-1">
         <h5 className='text-white fw-bold'>MeenaClick</h5>
         <ul className="nav flex-column">
           <li className="nav-item mb-1"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'white'}`}><small>About MeenaClick</small></a></li>
@@ -34,7 +34,7 @@ export default function Footer(props) {
         </ul>
       </div>
 
-      <div className="col-lg-3 col-md-6 mb-1">
+      <div className="col-xl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-1">
         <h5 className='text-white fw-bold'>Contact Us</h5>
         <ul className="nav flex-column">
           <li className="nav-item mb-1"><a href='/' className={`nav-link p-0 text-${props.mode==='dark'?'white':'white'}`}> <small><i className=" bi bi-house me-1"></i>House: 44, Road: 16 (27 Old), Dhanmondi Dhaka - 1209, Bangladesh</small></a>
@@ -48,10 +48,10 @@ export default function Footer(props) {
         </ul>
       </div>
 
-      <div className="col-lg-3 col-md-6 ">
+      <div className="col-xl-3 col-xxl-3 col-xl-3 col-lg-3 col-md-6 text-center justify-content-end">
         
           <h6 className='text-white fw-bold '><small>Subscribe to our newsletter</small></h6>
-          <ul className="nav flex-column ">
+          <ul className="nav flex-column text-center">
             <li className='nav-link '>
             <a href="/" className='social text-center mx-1'>
               <i className=" bi bi-facebook  me-1" ></i>

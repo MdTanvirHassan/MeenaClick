@@ -8,11 +8,11 @@ import './Carousel.css';
 
 export default function Carousel(props) {
   return (
-    <div className=' mx-lg-4 mx-xl-4 mx-xxl-4 mx-sm-4 mx-xs-4 my-1'>
+    <div className=' mx-lg-4 mx-xl-5 mx-xxl-5 mx-sm-4 mx-xs-4 my-2'>
         <div className=" ">
             <div className="   ">
 
-                <div className="row flex-row-reverse align-items-center g-4 ">
+                <div className="row flex-row-reverse align-items-center g-5 ">
                 <div className=" col-sm-12 col-lg-9 col-md-12 col-xl-9 col-xxl-9 ">
 
                 <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -32,24 +32,12 @@ export default function Carousel(props) {
                         </div>
                         <div className="carousel-item" data-bs-interval="2500">
                         <img src={slider2} className="d-block w-100" alt="..."/>
-                        {/* <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div> */}
                         </div>
                         <div className="carousel-item" data-bs-interval="3000">
                         <img src={slider3} className="d-block w-100" alt="..."/>
-                        {/* <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div> */}
                         </div>
                         <div className="carousel-item " data-bs-interval="3000">
                         <img src={slider4} className="d-block w-100" alt="..."/>
-                        {/* <div className="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div> */}
                         </div>
                     </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">

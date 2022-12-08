@@ -7,8 +7,8 @@ export default function Grocery(props) {
   return (
        <div className=''>
             <div className={` my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
-                <div className={` mb-1 mb-1 `}>
-                 <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
+                <div className={` mb-1`}>
+                 <div className={`card xl p-2 bg-${props.mode==='dark'?'secondary':'body'}`}  >
                     <img src={props.img} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
                         <h5 className="card-title">{props.title}</h5>

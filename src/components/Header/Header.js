@@ -30,7 +30,7 @@ export default function Header(props) {
 
   return (
     //sticky wrapper
-    <div className={`sticky-top bg-${props.mode==='dark'?'dark':'header'} row`}>
+    <div className={`sticky-top bg-${props.mode==='dark'?'dark':'header'} row full-container`}>
       {/* <div className="col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 ">
             <img src={logo2} className={`img-fluid  col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 collapse} `} alt="logo" data-bs-toggle="collapse"/>
         </div> */}
@@ -41,7 +41,7 @@ export default function Header(props) {
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse mx-lg-4 mx-xl-4 mx-xxl-4 " id="navbarTogglerDemo01">
+    <div className="collapse navbar-collapse mx-lg-4 mx-xl-5 mx-xxl-5 " id="navbarTogglerDemo01">
       {/* logo */}
       <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-1 ">
           <img src={logo} alt='...' className="bi me-2"  width="140" height="60"  aria-label="Bootstrap"/>
@@ -109,7 +109,7 @@ export default function Header(props) {
     
 
     <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'nav':'nav'} p-0`} aria-label="Tenth navbar example">
-    <div className="container-fluid p-0 mx-lg-4 mx-xl-4 mx-xxl-4  px-2">
+    <div className="container-fluid p-0 mx-lg-4 mx-xl-5 mx-xxl-5  px-2">
       
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -118,9 +118,9 @@ export default function Header(props) {
       <div className="collapse navbar-collapse d-flex justify-content-md-between " id="navbarsExample08">
         <div className=" collapse navbar-collapse  justify-content-md-start" id="navbarsExample08">
           <ul className="navbar-nav d-flex">
-          <li className="nav-item justify-content-md-start  d-flex align-items-center me-5 border-none">
+          <li className="nav-item justify-content-md-start  d-flex align-items-center me-5 border-none ">
             {/*start-- category */}
-            <div className=" header px-5  " id="navbarsExample">
+            <div className=" header px-5  me-xl- me-xxl-5" id="navbarsExample">
             
             <div className="dropdown " data-dropdown id="navbarsExample08">
             <button className="link " >
@@ -184,36 +184,34 @@ export default function Header(props) {
       </div>
     </div>
     </div>
-    
-            {/* <Link to='/Combo' className="nav-link active p-0 px-1  fw-bold border-none" type='button' aria-current="page" href='/'>
-              <div className="nav-item d-flex category px-lg-5">
-                <h5 className="p-1 text-center">
-                <FontAwesomeIcon icon={faList} /> All Categories 
-                 <small className='px-1'><FontAwesomeIcon icon={faChevronDown} />
-                 </small>
-                 </h5>
-              </div>
-            </Link> */}
-          </li>
-          {/* End ---categories */}
 
-          {/* combo */}
-        <li className="nav-item justify-content-md-start ms- d-flex align-items-center">
-            <Link to='/Combo' className="nav-link active p-0 px-1  bn " type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i> <small>Combo</small> </Link>
+      </li>
+          {/* End ---categories---------- */}
+
+          {/* combo -----------------------*/}
+        <li className="nav-item justify-content-md-start ms-xl- ms-xxl-5 d-flex align-items-center">
+            <Link to='/Combo' className="nav-link active p-0 px-1  bn " type='button' aria-current="page" href='/'><i className='bi bi- text-white'> </i>
+             <small>Combo</small> 
+             </Link>
           </li>
-          {/* offer */}
+          {/* offer -----------------------*/}
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
-            <Link to='/offer' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Offer</small> <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span></Link>
+            <Link to='/offer' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'> </i>
+            <small> Offer</small> 
+              <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span>
+            </Link>
           </li>
-          {/* wholesale */}
+          {/* wholesale ---------------------*/}
           <li className="nav-item justify-content-md-start me-5 d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Wholesale </small></Link>
+            <Link to='/' className="nav-link active p-0 px-1  bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i>
+            <small> Wholesale </small>
+            </Link>
           </li>
-          </ul>
+        </ul>
         </div>
-          {/* ------First-end */}
+          {/* ------First-end-------- */}
           
-          {/* last-end-start */}
+          {/* last-end-start ------------*/}
           <div className="collapse navbar-collapse  justify-content-md-end" id="navbarsExample08">
             <ul className="navbar-nav">
           
