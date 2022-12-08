@@ -11,6 +11,7 @@ export default function Carousel(props) {
     <div className=' mx-lg-4 mx-xl-5 mx-xxl-5 mx-sm-4 mx-xs-4 my-2'>
         <div className=" ">
             <div className="   ">
+                {/* //!Slider----start----- */}
 
                 <div className="row flex-row-reverse align-items-center g-5 ">
                 <div className=" col-sm-12 col-lg-9 col-md-12 col-xl-9 col-xxl-9 ">
@@ -50,8 +51,9 @@ export default function Carousel(props) {
             </button>
             </div>
       </div>
+                        {/* //!--Slider-End------ */}
 
-      
+      {/* //todo List-item-start----- */}
       <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-xl-3 col-xxl-3 ">
         <div className="mx-4">
       <div className={`list bg-${props.mode==='dark'?'secondary':'light'} `}>
@@ -90,7 +92,7 @@ export default function Carousel(props) {
                     </div>
                 </div>     
             </div>
-
+            {/*//todo List-item----end---------  */}
             </div>
         </div>           
         </div>

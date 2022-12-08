@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
   import { ToastContainer, toast } from 'react-toastify';
 
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import Alert from './components/Alert/Alert';
 import './App.css';
 import Header from './components/Header/Header';
@@ -26,7 +26,7 @@ import TrackOrder from './components/TrackOrder/TrackOrder';
 
 
 function App() {
-  //* preloader
+  //! preloader
   const [loading,setLoading]= useState(true);
   const preloader= document.getElementById('preloader-active');
   if (preloader) {
@@ -69,7 +69,7 @@ function App() {
         }
     })
 }
-//*React-notification
+//todo React-notification
      const notify = () => {
       toast.success('Product quantity updated!', {
         position: "top-center",
@@ -103,7 +103,7 @@ function App() {
         <Route path='/Cart' element={<Cart mode={mode}/>} />
         <Route path='/Register' element={<Register/>} />
         <Route path='/LogIn' element={<LogIn/>} />
-        <Route path='/Combo' element={<Combo c notify={notify}/>} />
+        <Route path='/Combo' element={<Combo  notify={notify}/>} />
         <Route path='/offer' element={<Offer mode={mode} notify={notify} />} />
         <Route path='/TrackOrder' element={<TrackOrder />} />
         

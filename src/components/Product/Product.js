@@ -34,7 +34,7 @@ import { Link } from 'react-router-dom';
 
 export default function Product(props) {
     const [cart, setCart] = useState(0)
-    //todo const handleCart=(item,action)=>{
+    //* const handleCart=(item,action)=>{
     //     setCart((prevCart)=>{
     //         return{
     //             ...prevCart,

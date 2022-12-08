@@ -71,8 +71,8 @@ export default function Footer(props) {
 
           <span className='text-white'><small> Download our Mobile Apps</small><br />
           <a href="/" className='text-center'>
-            <img src={playStore} width='110px' alt="" className='text-center me-1' />
-            <img src={store} width='105px' alt="" className='text-center' />
+            <img src={playStore} width='110px' alt="" className='text-center me-2' />
+            <img src={store} width='105px' alt="" className=' text-center' />
           </a>
           </span>
           

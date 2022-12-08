@@ -29,13 +29,13 @@ export default function Header(props) {
   
 
   return (
-    //sticky wrapper
+    //*sticky wrapper
     <div className={`sticky-top bg-${props.mode==='dark'?'dark':'header'} row full-container`}>
       {/* <div className="col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 ">
             <img src={logo2} className={`img-fluid  col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 collapse} `} alt="logo" data-bs-toggle="collapse"/>
         </div> */}
       
-    {/* ------------------------------------navHeader--------------- */}
+    {/* //*------------------------------------navHeader--------------- */}
     <nav className={`navbar navbar-expand-lg bg-${props.mode==='dark'?'dark':'header'}`}>
   <div className="container-fluid ">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@ export default function Header(props) {
           <img src={logo} alt='...' className="bi me-2"  width="140" height="60"  aria-label="Bootstrap"/>
         </Link>
 
-        {/* Searchbar */}
+        {/*//* Searchbar */}
         <form className="col-sm-6 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg-0 text-center ms-lg- m flex-grow-1"  role="search">
           <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
           {/* inside search-input */}
@@ -69,7 +69,7 @@ export default function Header(props) {
           </Link>
         </li>
         <li className="nav-item">
-          {/* Log-in/Sign-Up         */}
+          {/*//* Log-in/Sign-Up         */}
           <Link to='/LogIn' className="nav-link px-1 link-secondary">
             <button type="button" className={`outline-${props.mode==='dark'?'light':'secondary'} bg-${props.mode==='dark'?'secondary':'body'} b`} >
               <i className="bi bi-person-circle me-1 text-success fw-bold"></i>
@@ -88,7 +88,7 @@ export default function Header(props) {
           </Link>
         </li>
         <li className="nav-item">
-            {/* MOde */}
+            {/*//todo MOde */}
         <span className={`nav-item nav-link form-check mx-lg-1 fs-5 mt-1 form-switch text-${props.mode==='dark'?'light':'secondary'}`}>
                             {/* <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/> */}
                <label className="form-check-label text-white"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault">
@@ -105,7 +105,7 @@ export default function Header(props) {
 </nav>
 
 
-    {/* --------------------------------------------second-navbar-sticky-------------------------------------------- */}
+    {/* //! --------------------------------------------second-navbar-sticky-------------------------------------------- */}
     
 
     <nav className={`navbar navbar-expand-lg navbar-dark bg-${props.mode==='dark'?'nav':'nav'} p-0`} aria-label="Tenth navbar example">
@@ -119,7 +119,7 @@ export default function Header(props) {
         <div className=" collapse navbar-collapse  justify-content-md-start" id="navbarsExample08">
           <ul className="navbar-nav d-flex">
           <li className="nav-item justify-content-md-start  d-flex align-items-center me-5 border-none ">
-            {/*start-- category */}
+            {/* //todo start-- category */}
             <div className=" header px-5  me-xl- me-xxl-5" id="navbarsExample">
             
             <div className="dropdown " data-dropdown id="navbarsExample08">
@@ -135,7 +135,7 @@ export default function Header(props) {
       <div className="dropdown-menu information-grid">
         <div>
         
-          <div className="dropdown-heading">Categories</div>
+          <div className="dropdown-heading"></div>
           <div className="dropdown-links">
             <Link to='/Combo' className="link">
               <i className={`text-${props.mode==='dark'?'danger':'danger'} bi bi-bag-fill me-1`}></i>
@@ -186,15 +186,15 @@ export default function Header(props) {
     </div>
 
       </li>
-          {/* End ---categories---------- */}
+          {/* //todo End ---categories---------- */}
 
-          {/* combo -----------------------*/}
+          {/* //*combo -----------------------*/}
         <li className="nav-item justify-content-md-start ms-xl- ms-xxl-5 d-flex align-items-center">
             <Link to='/Combo' className="nav-link active p-0 px-1  bn " type='button' aria-current="page" href='/'><i className='bi bi- text-white'> </i>
              <small>Combo</small> 
              </Link>
           </li>
-          {/* offer -----------------------*/}
+          {/* //*offer -----------------------*/}
           <li className="nav-item justify-content-md-start d-flex align-items-center mx-2">
             <Link to='/offer' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'> </i>
             <small> Offer</small> 
@@ -209,15 +209,16 @@ export default function Header(props) {
           </li>
         </ul>
         </div>
-          {/* ------First-end-------- */}
+          {/*//* ------First-end-------- */}
           
-          {/* last-end-start ------------*/}
+          {/*//* last-end-start ------------*/}
           <div className="collapse navbar-collapse  justify-content-md-end" id="navbarsExample08">
             <ul className="navbar-nav">
           
           <li className="nav-item justify-content-md-end d-flex align-items-center">
             <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Recipe</small> </Link>
           </li>
+          {/* //*TrackOrder */}
           <li className="nav-item mx-2  d-flex align-items-center track-order">
             <Link to='/TrackOrder' className='text-decoration-none'> <button className="nav-link p-0 px-1  active bnn border-none" href='/' data-bs-toggle="modal" data-bs-target="#exampleModal"><small>Track Order</small></button></Link>
           </li>
@@ -230,7 +231,7 @@ export default function Header(props) {
               <li><a className="dropdown-item" href='/'>Something else here</a></li>
             </ul>
           </li>
-          {/* Notification */}
+          {/*//* Notification */}
           <li className="nav-item dropdown d-flex align-items-center ">
             <div className="d-flex me- text-light">
                     <div className="dropdown">
