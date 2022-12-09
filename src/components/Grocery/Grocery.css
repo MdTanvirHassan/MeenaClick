@@ -1,6 +1,9 @@
 .xl{
     width:200px;
 }
+.box{
+    box-shadow: 1px 1px 5px lightgray;
+}
 @media only screen and (min-width: 1400px) and (max-width: 2500px) {
     .xl{
         width: 300px;
