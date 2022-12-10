@@ -33,7 +33,7 @@ import org9 from "../../image/org9.jpg";
 import './Product.css';
 import Grocery from '../Grocery/Grocery';
 import Category from '../Category/Category';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 // import { Route, Router } from 'react-router';
 // import { Link } from 'react-router-dom';
 
@@ -66,7 +66,7 @@ export default function Product(props) {
         {/* <div className="">
             <Router>
                 {
-                    products.map((product) =><div><Link to={'/Product/'+product.id+'/'}></Link></div>)
+                    products.map((product) =><div><Link to={'/Product/'+product.id+'/'}></div>)
                 }
                 <Route path='/Product/:id'> <Grocery /></Route>
             </Router>
@@ -76,34 +76,34 @@ export default function Product(props) {
             <Category mode={props.mode} category="Cooking Oil & Ghee"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" price="380.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" title="Aarong Butter  200gm" price="160.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" title="Aarong Ghee  300gm" price="120.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" price="1505.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={img6} category="Grocery" title="Olitalia Pomace Olive Oil 1ltr" price="273.00"></Grocery>
-                </Link>
+                
                 </div>
              
             
@@ -118,34 +118,34 @@ export default function Product(props) {
             <Category mode={props.mode} category="Bakery & Snacks"> </Category><hr />
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xs-2">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={b1} category="Grocery" title="Meena Sweets Sweet Toast-        :350gm" price="135.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={b2} category="Grocery" title="SUNFEAST D FANTASY CHOCO FILLS BIS 300G" price="420.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={b3} category="Grocery" title="MEENA SWEETS DRY CAKE  --  300GM" price="225.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={b4} category="Grocery" title="PRAN  CHICKEN MINI SAMOSA 250GM 25PCS" price="189.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={b5} category="Grocery" title="Cadbury Oreo Ori C San Biscuit 120/150gm" price="135.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={b6} category="Grocery" title="Ruchi Premium Mix Chanachur ....    :100gm" price="27.00"></Grocery>
-                </Link>
+                
                 </div>
              
             
@@ -159,35 +159,35 @@ export default function Product(props) {
             <Category mode={props.mode} category="Grocery"> </Category> <hr />
             <div className="row">
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={g} category="Grocery" title="Najir Rice Premium Bulk" price="80.00"></Grocery>
-                </Link>
+                
 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={g2} category="Grocery" title="Musur Dal (Lentil) Local Premium  Bulk" price="145.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={g3} category="Grocery" title="Maggi Noodles Masala 8PX62g" price="160.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={g4} category="Grocery" title="Banana (Sagor) Ripe Regular Pcs" price="12.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={g5} category="Grocery" title="Coconut (Narikel] Pcs" price="105.00"></Grocery>
-                </Link>
+                
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                 <Grocery mode={props.mode} notify={props.notify} img={g6} category="Grocery" title="Fresh Malta Yellow 1KG" price="273.00"></Grocery>
-                </Link>
+                
                 </div>
                 </div>
                 </div>
@@ -201,45 +201,45 @@ export default function Product(props) {
             <Category mode={props.mode} category="Beauty & Hygiene"> </Category><hr />
             {/* <div className="row my-2"> */}
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} 
                     img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" price="130.00" />
-                </Link>
+                
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} 
                     img={org5} category="Grocery" title="Organikare Skin Lotion Dry Skin 200ml" price="175.00" />
-                </Link>
+                
                 </div>
                 
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} 
                     img={org6} category="Grocery" title="Organikare Glycerine 120ml" price="160.00" />
-                </Link>
+                
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} 
                     img={org7} category="Grocery" title="Organikare Glycerine 60ml" price="120.00" />
-                </Link>
+                
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} 
                     img={org8} category="Grocery" title="Organikare Hair Oil 75ml" price="995.00" />
-                </Link>
+                
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Link to='/details' className='text-decoration-none'>
+                
                     <Grocery mode={props.mode} notify={props.notify} 
                     img={org9} category="Grocery" title="Organikare Face Wash Cleansing Milk 100gm" price="328.00" />
-                </Link>
+                
                 </div>
                        
             </div>
