@@ -22,6 +22,7 @@ import Combo from './components/Combo/Combo';
 import Offer from './components/Offer/Offer';
 import TrackOrder from './components/TrackOrder/TrackOrder';
 import Details from './components/Details/Details';
+import Brands from './components/Brands/Brands';
 
 
 
@@ -108,6 +109,7 @@ function App() {
         <Route path='/offer' element={<Offer mode={mode} notify={notify} />} />
         <Route path='/TrackOrder' element={<TrackOrder />} />
         <Route path='/details' element={<Details mode={mode} notify={notify} />} />
+        <Route path='/brands' element={<Brands mode={mode} notify={notify}/>} />
         
       </Routes>
       <Carousel mode={mode}/>

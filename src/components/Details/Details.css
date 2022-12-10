@@ -2,3 +2,9 @@
     border: 1px solid lightgray;
     text-align: center;
 }
+.bg-green{
+    background-color: #20aa6b;
+}
+.text-green{
+    color: #20aa6b;
+}

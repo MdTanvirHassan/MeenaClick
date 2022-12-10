@@ -13,7 +13,7 @@ export default function Grocery(props) {
                     <div className={`car text-center mb-4`}>
                         <h5 className="card-title">{props.title}</h5>
                         <small className="card-text text-decoration-line-through text-muted"> {props.offerPrice}</small>
-                        <p className="card-text">tk. {props.price}</p>
+                        <h6 className="card-text text-green fw-bold mb-5"><small>tk{props.price}/EA</small></h6>
                         {/* <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button> */}
                         <div className="flex addBtn">
                               <span  className='btn addBtn ' type='button' > 

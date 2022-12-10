@@ -4,6 +4,12 @@
 .box{
     box-shadow: 1px 1px 5px lightgray;
 }
+.bg-green{
+    background-color: #20aa6b;
+}
+.text-green{
+    color: #20aa6b;
+}
 @media only screen and (min-width: 1400px) and (max-width: 2500px) {
     .xl{
         width: 300px;
