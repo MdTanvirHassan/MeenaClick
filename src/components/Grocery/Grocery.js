@@ -19,14 +19,18 @@ export default function Grocery(props) {
                               <span  className='btn addBtn ' type='button' > 
                                 <span className='text-'>
                                     <span className=' addBtn2' disabled={cart<=0} 
-                                     onClick={()=>setCart(cart-1)}>{cart<=0?<i className='bi bi-cart'></i>:
+                                     onClick={()=>setCart(cart-1)}>
+                                        {cart<=0?<i className='bi bi-cart'></i>:
                                         <span className='fw-bold pe-2' onClick={props.notify}>-</span>}
                                     </span>
                                     <span onClick={props.notify}>
-                                    <span className='mx-1 ' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':
+                                    <span className='mx-1 ' onClick={()=>setCart(cart+1)}>
+                                        {cart===0?'Add to Cart':
                                         <span onClick={props.notify}>{cart}</span>}
-                                    </span></span>
-                                    <span className=' addBtn2 fw-bold' onClick={()=>setCart(cart+1)}>{cart===0?'':
+                                    </span>
+                                    </span>
+                                    <span className=' addBtn2 fw-bold' onClick={()=>setCart(cart+1)}>
+                                        {cart===0?'':
                                         <span className='ps-2 fw-bold'onClick={props.notify}>+</span>}
                                     </span>
                                     </span>

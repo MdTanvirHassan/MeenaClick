@@ -160,7 +160,7 @@ option,select{
   .dropdown-menu {
     position: absolute;
     left: -22%;
-    top: calc(100% + .30rem);
+    top: calc(100% + .27rem);
     background-color: white;
     padding: .75rem;
     border-radius: .25rem;

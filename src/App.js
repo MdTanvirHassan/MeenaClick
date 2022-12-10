@@ -21,6 +21,7 @@ import LogIn from './components/LogIn/LogIn';
 import Combo from './components/Combo/Combo';
 import Offer from './components/Offer/Offer';
 import TrackOrder from './components/TrackOrder/TrackOrder';
+import Details from './components/Details/Details';
 
 
 
@@ -95,7 +96,7 @@ function App() {
   className={({ isActive, isPending }) => {
     return isActive ? "active" : isPending ? "pending" : "";
   }}></Header>
-      <Alert alert={alert}></Alert>
+      <Alert alert={alert} />
       
       <Routes>
         <Route path='/Home' element={<Header />} />
@@ -106,11 +107,12 @@ function App() {
         <Route path='/Combo' element={<Combo  notify={notify}/>} />
         <Route path='/offer' element={<Offer mode={mode} notify={notify} />} />
         <Route path='/TrackOrder' element={<TrackOrder />} />
+        <Route path='/details' element={<Details mode={mode} notify={notify} />} />
         
       </Routes>
-      <Carousel mode={mode}></Carousel>
-      <Feature mode={mode}></Feature>
-      <Product mode={mode} notify={notify} handleCart={handleCart} title='Product Title Quantity' price='price'></Product>
+      <Carousel mode={mode}/>
+      <Feature mode={mode}/>
+      <Product mode={mode} notify={notify} handleCart={handleCart} title='Product Title Quantity' price='price'/>
       <ToastContainer
           position="top-center"
           autoClose={1500}
@@ -125,7 +127,7 @@ function App() {
           theme="light"
           />
       
-      <Footer mode={mode}></Footer>
+      <Footer mode={mode}/>
       <ScrollButton />
     </Fragment>
     <div className="">

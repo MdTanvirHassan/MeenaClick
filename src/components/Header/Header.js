@@ -216,20 +216,26 @@ export default function Header(props) {
             <ul className="navbar-nav">
           
           <li className="nav-item justify-content-md-end d-flex align-items-center">
-            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'></i><small> Recipe</small> </Link>
+            <Link to='/' className="nav-link active p-0 px-1 bn" type='button' aria-current="page" href='/'>
+              <i className='bi bi- text-white'></i>
+              <small> Recipe</small>
+             </Link>
           </li>
           {/* //*TrackOrder */}
           <li className="nav-item mx-2  d-flex align-items-center track-order">
-            <Link to='/TrackOrder' className='text-decoration-none'> <button className="nav-link p-0 px-1  active bnn border-none" href='/' data-bs-toggle="modal" data-bs-target="#exampleModal"><small>Track Order</small></button></Link>
+            <Link to='/TrackOrder' className='text-decoration-none'>
+               <button className="nav-link p-0 px-1  active bnn border-none" href='/' data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <small>Track Order</small>
+                </button>
+              </Link>
           </li>
-          
-          <li className="nav-item dropdown d-flex align-items-center me-">
-            <a className="nav-link dropdown-toggle p-0 px-1 text-danger bnn" href='/' data-bs-toggle="dropdown" aria-expanded="false"><i className='bi bi-currency text-white me-1'></i><small>Order Details</small></a>
-            <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href='/'>Action</a></li>
-              <li><a className="dropdown-item" href='/'>Another action</a></li>
-              <li><a className="dropdown-item" href='/'>Something else here</a></li>
-            </ul>
+          {/* order-details */}
+          <li className="nav-item  d-flex align-items-center me-">
+            <a className="nav-link  p-0 px-1 text-danger bnn" href='/' >
+              
+              <small>Order Details</small>
+            </a>
+            
           </li>
           {/*//* Notification */}
           <li className="nav-item dropdown d-flex align-items-center ">
