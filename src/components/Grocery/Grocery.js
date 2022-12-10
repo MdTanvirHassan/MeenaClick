@@ -11,7 +11,10 @@ export default function Grocery(props) {
                  <div className={`card xl p-2 bg-${props.mode==='dark'?'secondary':'body'} box`}  >
                     <img src={props.img} className="card-img-top" alt="..."/><hr />
                     <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">{props.title}</h5>
+                        <div className="title">
+                            <h6 className="card-title">{props.title}</h6>
+                        </div>
+                        
                         <small className="card-text text-decoration-line-through text-muted"> {props.offerPrice}</small>
                         <h6 className="card-text text-green fw-bold mb-5"><small>tk{props.price}/EA</small></h6>
                         {/* <button href='/' className="btn btn-success " alt='Added' ><i className="bi bi-cart me-1"></i>Add to Cart</button> */}
