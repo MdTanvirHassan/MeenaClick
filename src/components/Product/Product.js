@@ -24,6 +24,12 @@ import b3 from '../../image/b3.jpg';
 import b4 from '../../image/b4.jpg';
 import b5 from '../../image/b5.jpg';
 import b6 from '../../image/b6.jpg';
+import org4 from "../../image/org4.jpg";
+import org5 from "../../image/org5.jpg";
+import org6 from "../../image/org6.jpg";
+import org7 from "../../image/org7.jpg";
+import org8 from "../../image/org8.jpg";
+import org9 from "../../image/org9.jpg";
 import './Product.css';
 import Grocery from '../Grocery/Grocery';
 import Category from '../Category/Category';
@@ -187,6 +193,56 @@ export default function Product(props) {
                 </div>
              
             
+            </div>
+
+            {/* ------------------------------------Beauty & Hygiene---------------------------------------- */}
+            <div className=" my-5 ">
+            <div className={`row mx-lg-4 mx-xxl-5 mx-xl-5 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <Category mode={props.mode} category="Beauty & Hygiene"> </Category><hr />
+            {/* <div className="row my-2"> */}
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} 
+                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" price="130.00" />
+                </Link>
+                </div>
+
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} 
+                    img={org5} category="Grocery" title="Organikare Skin Lotion Dry Skin 200ml" price="175.00" />
+                </Link>
+                </div>
+                
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} 
+                    img={org6} category="Grocery" title="Organikare Glycerine 120ml" price="160.00" />
+                </Link>
+                </div>
+
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} 
+                    img={org7} category="Grocery" title="Organikare Glycerine 60ml" price="120.00" />
+                </Link>
+                </div>
+
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} 
+                    img={org8} category="Grocery" title="Organikare Hair Oil 75ml" price="995.00" />
+                </Link>
+                </div>
+
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                <Link to='/details' className='text-decoration-none'>
+                    <Grocery mode={props.mode} notify={props.notify} 
+                    img={org9} category="Grocery" title="Organikare Face Wash Cleansing Milk 100gm" price="328.00" />
+                </Link>
+                </div>
+                       
+            </div>
             </div>
 {/* --------------------------------------------------Dairy-------------------------- */}
         <div className="mx-lg-3 my-5 ">
