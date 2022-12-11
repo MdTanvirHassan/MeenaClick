@@ -29,11 +29,12 @@ export default function Header(props) {
   
 
   return (
+    
     //*sticky wrapper
     <div className={`sticky-top bg-${props.mode==='dark'?'dark':'header'} row full-container`}>
       {/* <div className="col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 ">
             <img src={logo2} className={`img-fluid  col-xl-0 col-xxl-0 col-lg-0 col-md-0 col-sm-12 col-xs-12 collapse} `} alt="logo" data-bs-toggle="collapse"/>
-        </div> */}
+        </> */}
       
     {/* //*------------------------------------navHeader--------------- */}
     <nav className={`navbar navbar-expand-lg bg-${props.mode==='dark'?'dark':'header'}`}>
@@ -43,12 +44,12 @@ export default function Header(props) {
     </button>
     <div className="collapse navbar-collapse mx-lg-4 mx-xl-5 mx-xxl-5 " id="navbarTogglerDemo01">
       {/* logo */}
-      <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-1 ">
+      <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none me-lg-1 " id='margin-right'>
           <img src={logo} alt='...' className="bi me-2"  width="140" height="60"  aria-label="Bootstrap"/>
         </Link>
 
         {/*//* Searchbar */}
-        <form className="col-sm-6 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg-0 text-center ms-lg- m flex-grow-1"  role="search">
+        <form className="col-sm-6 col-xs-6 col-lg-6 mb-3 mb-lg-0 me-lg-0 text-center ms-lg- m flex-grow-1 "  role="search">
           <input type="search" className="form-control border-success text-start px-5  mx-5 text-line" placeholder="Search your desired product or brand here..." aria-label="Search"/>
           {/* inside search-input */}
           {/* <button className='button' type="submit"  aria-hidden="true"><i className='bi bi-search text-success'></i></button> */}

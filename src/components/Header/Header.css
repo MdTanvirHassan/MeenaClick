@@ -256,9 +256,24 @@ option,select{
         display: flex;
     }
 }
-@media only screen and (min-width: 1400px) and (max-width: 2200px) {
+@media only screen and (min-width: 1600px) and (max-width: 2400px) {
     /* .full-container{
         width:100%;
-        margin: 0px 10%;
+        margin-right: 20%;
     } */
+    #margin-right{
+        margin-right: 350px;
+    }
+    .m{
+        margin-left: 15% !important;
+    }
+}
+@media (max-width: 500px) {
+    .m{
+        width: 100%;
+        display: flex;
+    }
+    .src{
+        display: none;
+    }
 }
