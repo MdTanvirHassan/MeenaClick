@@ -18,7 +18,7 @@ export default function Grocery(props) {
                             <h6 className={`card-title text-${props.mode==='dark'?'white':'dark'}`}>{props.title}</h6>
                         </div>
                         
-                        <small className="card-text text-decoration-line-through text-muted"> tk{props.offerPrice}/EA</small>
+                        <small className="card-text text-decoration-line-through text-muted"> {props.offerPrice}</small>
                         <h6 className="card-text text-green fw-bold mb-5"><small>tk{props.price}/EA</small></h6>
                         </div>
                         </Link>
