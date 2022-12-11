@@ -1,8 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 
 
 export default function Cart(props) {
+    //! preloader2
+    const [preLoading,setPreLoading]= useState(false);
+    useEffect(()=>{
+      setPreLoading(true);
+      setTimeout(()=>{
+        setPreLoading(false);
+      },1000);
+    },[]);
+    const styles={
+      height: '250px',
+    }
   return (
+    <>
+    {
+      preLoading?
+      <div className='d-flex justify-content-center text-center' style={styles}>
+          <HashLoader 
+          color="#36d7b7" 
+          // color={color}
+          loading={preLoading}
+          size={50}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+          className='mt-5'
+        />
+        </div>
+        :
     <div className={`container my-2 text-${props.mode==='dark'?'white':'dark'}`}>
     
       <h1 className={`text-center bg-${props.mode==='dark'?'secondary':'secondary'} text-${props.mode==='dark'?'white':'white'}`}>Cart</h1><hr />
@@ -240,5 +268,7 @@ export default function Cart(props) {
 
     
     </div>
+}
+    </>
   )
 }

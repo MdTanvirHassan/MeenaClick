@@ -17,11 +17,14 @@ export default function Details(props) {
         setPreLoading(false);
       },1000);
     },[]);
+    const styles={
+      height: '250px',
+    }
   return (
     <>
     {
         preLoading?
-        <div className='d-flex justify-content-center text-center'>
+        <div className='d-flex justify-content-center text-center' style={styles}>
             <HashLoader 
             color="#36d7b7" 
             // color={color}
@@ -29,6 +32,7 @@ export default function Details(props) {
             size={50}
             aria-label="Loading Spinner"
             data-testid="loader"
+            className='mt-5'
           />
           </div>
           :

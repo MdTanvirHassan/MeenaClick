@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 // import { Link } from "react-router-dom";
 import './Brands.css'
 import org from "../../image/org.jpg";
@@ -11,11 +13,36 @@ import org7 from "../../image/org7.jpg";
 import org8 from "../../image/org8.jpg";
 import org9 from "../../image/org9.jpg";
 import Grocery from "../Grocery/Grocery";
-// import Footer from "../Footer/Footer";
+
 
 export default function Brands(props) {
+      //! preloader2
+  const [preLoading,setPreLoading]= useState(false);
+  useEffect(()=>{
+    setPreLoading(true);
+    setTimeout(()=>{
+      setPreLoading(false);
+    },1000);
+  },[]);
+  const styles={
+    height: '250px',
+  }
   return (
     <div>
+        {
+        preLoading?
+        <div className='d-flex justify-content-center text-center' style={styles}>
+            <HashLoader 
+            color="#36d7b7" 
+            // color={color}
+            loading={preLoading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+            className='mt-5'
+          />
+          </div>
+          :
       <div className="mx-5">
         <div className="headerCover mb-4">
           
@@ -176,7 +203,7 @@ export default function Brands(props) {
         </section>
 
       </div>
-      {/* <Footer /> */}
+     }
     </div>
   );
 }
