@@ -11,7 +11,7 @@ import org7 from "../../image/org7.jpg";
 import org8 from "../../image/org8.jpg";
 import org9 from "../../image/org9.jpg";
 import Grocery from "../Grocery/Grocery";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 export default function Brands(props) {
   return (
@@ -176,7 +176,7 @@ export default function Brands(props) {
         </section>
 
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

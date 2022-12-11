@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import Grocery from '../Grocery/Grocery'
 import "./Details.css";
 import img from "../../image/p1.jpg";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 
 export default function Details(props) {
   const [cart, setCart] = useState(0);
@@ -61,7 +61,8 @@ export default function Details(props) {
                 </small>
               </span>
               <hr />
-              <h4 className="text-green">tk 380.00</h4>
+              <h5 className="text-muted "><del>tk 379.00</del></h5>
+              <h4 className="text-green">tk 360.00</h4>
               <small>
                 <b>Quantity : </b>
               </small>
@@ -97,7 +98,10 @@ export default function Details(props) {
                 <br />
               </div>
               <button className="btn addBtn2 col-4 mt-2" onClick={props.notify}>
-                <i className="bi bi-cart mx-1"></i>Add to cart
+                <span className={``} onClick={() => setCart(cart + 1)}>
+                <i className="bi bi-cart mx-1"></i>
+                Add to cart
+                </span>
               </button>
             </div>
             <div
@@ -119,7 +123,7 @@ export default function Details(props) {
               </div>
               <div className="card cash my-2">
                 <div className="card  d-flex flex-row p-">
-                  <i class="bi bi-currency-exchange p-2 fs-2"></i>
+                  <i className="bi bi-currency-exchange p-2 fs-2"></i>
                   <h6 className="p-2 flex-grow-1">
                     Cash on Delivery <br />
                     <small className="text-muted">Available</small>
@@ -136,7 +140,7 @@ export default function Details(props) {
               </div>
               <div className="card my-2">
                 <div className="card  d-flex flex-row p-">
-                  <i class="bi bi-house-fill p-2 fs-2"></i>
+                  <i className="bi bi-house-fill p-2 fs-2"></i>
                   <h6 className="p-2 flex-grow-1">
                     Sold by <br />
                     <small className="text-muted">
@@ -179,7 +183,7 @@ export default function Details(props) {
           {/* <Grocery mode={props.mode} notify={props.notify} img={props.img} category="Grocery" offerPrice="tk. 190.00" title="Span Virgin Olive Oil 1ltr" price="145.00"/> */}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

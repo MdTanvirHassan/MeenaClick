@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import Product from "../Product/Product";
 
 export default function Combo(props) {
@@ -47,7 +47,7 @@ export default function Combo(props) {
       </nav>
       {/* pagination-end */}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
     </>
   );

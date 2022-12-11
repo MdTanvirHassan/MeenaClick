@@ -5,9 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Alert from './components/Alert/Alert';
 import './App.css';
 import Header from './components/Header/Header';
-import Carousel from './components/Carousel/Carousel';
-import Feature from './components/Feature/Feature';
-import Product from './components/Product/Product';
+// import Carousel from './components/Carousel/Carousel';
+// import Feature from './components/Feature/Feature';
+// import Product from './components/Product/Product';
 import Footer from './components/Footer/Footer';
 import { Fragment } from 'react';
 import ScrollButton from './components/ScrollButton';
@@ -23,6 +23,7 @@ import Offer from './components/Offer/Offer';
 import TrackOrder from './components/TrackOrder/TrackOrder';
 import Details from './components/Details/Details';
 import Brands from './components/Brands/Brands';
+import Home from './Pages/Home';
 
 
 
@@ -100,7 +101,7 @@ function App() {
       <Alert alert={alert} />
       
       <Routes>
-        <Route path='/Home' element={<Header />} />
+        <Route path='/' exact element={<Home mode={mode} notify={notify}/>} />
         <Route path='/Area' element={<Area />} />
         <Route path='/Cart' element={<Cart mode={mode}/>} />
         <Route path='/Register' element={<Register/>} />
@@ -112,9 +113,9 @@ function App() {
         <Route path='/brands' element={<Brands mode={mode} notify={notify}/>} />
         
       </Routes>
-      <Carousel mode={mode}/>
+      {/* <Carousel mode={mode}/>
       <Feature mode={mode}/>
-      <Product mode={mode} notify={notify} handleCart={handleCart} title='Product Title Quantity' price='price'/>
+      <Product mode={mode} notify={notify} handleCart={handleCart} title='Product Title Quantity' price='price'/> */}
       <ToastContainer
           position="top-center"
           autoClose={1500}
@@ -132,10 +133,7 @@ function App() {
       <Footer mode={mode}/>
       <ScrollButton />
     </Fragment>
-    <div className="">
     
-      
-    </div>
     </>
   );
 }

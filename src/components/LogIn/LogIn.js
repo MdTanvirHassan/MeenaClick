@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './LogIn.css';
 import logo from '../../image/fvicon.jpg';
-import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
 
 export default function LogIn() {
   return (
@@ -65,7 +65,7 @@ export default function LogIn() {
     </div>
     
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </>
    
   )

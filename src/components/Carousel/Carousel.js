@@ -57,34 +57,44 @@ export default function Carousel(props) {
       <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-xl-3 col-xxl-3 ">
         <div className="mx-4">
       <div className={`list bg-${props.mode==='dark'?'secondary':'light'} `}>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'danger':'danger'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} 
+                    text-${props.mode==='dark'?'danger':'danger'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'danger':'danger'} bi bi-bag-fill me-1`}></i>
                     Essentials </Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'danger':'danger'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'danger':'danger'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'danger':'danger'} bi bi-box-fill me-1`}></i>
                         Frozen Item</Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-alexa me-1`}></i>
                         Accessories</Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-people-fill me-1`}>
                             </i>Baby Care</Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-columns-gap me-1`}></i>
                         Bakery and Snacks</Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-amd me-1`}></i>
                         Beauty and Hygiene</Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-archive-fill me-1`}></i>
                         Beverages</Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-slack me-1`}></i>
                         Fish</Link>
-                    <Link href='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                    <Link to='/Combo' className={`nav-link link-list bg-${props.mode==='dark'?'secondary':'light'}
+                     text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-bag me-1`}></i>
                         Fresh Product</Link>
-                        <Link href='/Combo' className={`nav-link link-list  bg-${props.mode==='dark'?'secondary':'light'} text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
+                        <Link to='/Combo' className={`nav-link link-list  bg-${props.mode==='dark'?'secondary':'light'}
+                         text-${props.mode==='dark'?'white':'dark'}  fw-bold`} >
                         <i className={`text-${props.mode==='dark'?'white':'success'} bi bi-house me-1`}></i>
                         Housing & cleaning</Link>
                     

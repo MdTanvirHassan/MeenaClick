@@ -6,7 +6,7 @@ import img3 from '../../image/p6.jpg';
 import img4 from '../../image/p3.jpg';
 import img5 from '../../image/p4.jpg';
 import img6 from '../../image/p5.jpg';
-import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
 
 import { Link } from 'react-router-dom';
 
@@ -70,7 +70,7 @@ export default function Offer(props) {
               </div>   
     </div>
     
-    <Footer/>
+    {/* <Footer/> */}
     </>
   )
 }

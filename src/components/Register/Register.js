@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 import logo from '../../image/fvicon.jpg';
-import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
 import './Register.css'
 
 export default function Register() {
@@ -108,7 +108,7 @@ export default function Register() {
     </div>
     
     </div>
-    <Footer></Footer>
+    {/* <Footer></Footer> */}
     </>
   )
 }
