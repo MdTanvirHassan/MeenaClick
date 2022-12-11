@@ -26,8 +26,6 @@ import Brands from './components/Brands/Brands';
 import Home from './Pages/Home';
 
 
-
-
 function App() {
   //! preloader
   const [loading,setLoading]= useState(true);
@@ -106,7 +104,7 @@ function App() {
         <Route path='/Cart' element={<Cart mode={mode}/>} />
         <Route path='/Register' element={<Register/>} />
         <Route path='/LogIn' element={<LogIn/>} />
-        <Route path='/Combo' element={<Combo  notify={notify}/>} />
+        <Route path='/Combo' element={<Combo  notify={notify} />} />
         <Route path='/offer' element={<Offer mode={mode} notify={notify} />} />
         <Route path='/TrackOrder' element={<TrackOrder />} />
         <Route path='/details' element={<Details mode={mode} notify={notify} />} />

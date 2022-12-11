@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 import Grocery from '../Grocery/Grocery'
 import img from '../../image/p1.jpg';
 import img2 from '../../image/p2.jpg';
@@ -11,8 +13,29 @@ import img6 from '../../image/p5.jpg';
 import { Link } from 'react-router-dom';
 
 export default function Offer(props) {
+    //! preloader2
+    const [preLoading,setPreLoading]= useState(false);
+    useEffect(()=>{
+      setPreLoading(true);
+      setTimeout(()=>{
+        setPreLoading(false);
+      },1000);
+    },[]);
   return (
     <>
+    {
+        preLoading?
+        <div className='d-flex justify-content-center text-center'>
+            <HashLoader 
+            color="#36d7b7" 
+            // color={color}
+            loading={preLoading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+          </div>
+          :
     <div className='mx-4'>
         <div className="text-success text-center">
             <h4 className="">Offers</h4><hr />
@@ -70,7 +93,7 @@ export default function Offer(props) {
               </div>   
     </div>
     
-    {/* <Footer/> */}
+    }
     </>
   )
 }

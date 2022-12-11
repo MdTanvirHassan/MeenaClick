@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 import { Link } from 'react-router-dom';
 
 import './LogIn.css';
@@ -6,8 +8,29 @@ import logo from '../../image/fvicon.jpg';
 // import Footer from '../Footer/Footer';
 
 export default function LogIn() {
+    //! preloader2
+    const [preLoading,setPreLoading]= useState(false);
+    useEffect(()=>{
+      setPreLoading(true);
+      setTimeout(()=>{
+        setPreLoading(false);
+      },1000);
+    },[]);
   return (
     <>
+    {
+        preLoading?
+        <div className='d-flex justify-content-center text-center'>
+            <HashLoader 
+            color="#36d7b7" 
+            // color={color}
+            loading={preLoading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+          </div>
+          :
     <div className='rb'>
     <div className='container my-2'>
        <div className="area justify-content-center mt-1">
@@ -65,7 +88,7 @@ export default function LogIn() {
     </div>
     
     </div>
-    {/* <Footer/> */}
+    }
     </>
    
   )

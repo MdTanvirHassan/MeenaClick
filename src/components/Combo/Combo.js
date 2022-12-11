@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 // import Footer from "../Footer/Footer";
 import Product from "../Product/Product";
 
 export default function Combo(props) {
+    //! preloader2
+    const [preLoading,setPreLoading]= useState(false);
+    useEffect(()=>{
+      setPreLoading(true);
+      setTimeout(()=>{
+        setPreLoading(false);
+      },1000);
+    },[]);
   return (
     <>
-    <div className={`mx-4 mt-2 bg-${props.mode==='dark'?'':''}`}>
+    {
+        preLoading?
+        <div className='d-flex justify-content-center text-center'>
+            <HashLoader 
+            color="#36d7b7" 
+            // color={color}
+            loading={preLoading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+          </div>
+          :
+    <div className={`mx- mt-2 bg-${props.mode==='dark'?'':''}`}>
       <div>
         <h4 className={`text-center text-success`}>Products</h4>
       </div>
@@ -49,6 +72,7 @@ export default function Combo(props) {
 
       {/* <Footer /> */}
     </div>
+}
     </>
   );
 }

@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";
 import { Link } from "react-router-dom";
 // import Grocery from '../Grocery/Grocery'
 import "./Details.css";
@@ -7,8 +9,29 @@ import img from "../../image/p1.jpg";
 
 export default function Details(props) {
   const [cart, setCart] = useState(0);
+    //! preloader2
+    const [preLoading,setPreLoading]= useState(false);
+    useEffect(()=>{
+      setPreLoading(true);
+      setTimeout(()=>{
+        setPreLoading(false);
+      },1000);
+    },[]);
   return (
     <>
+    {
+        preLoading?
+        <div className='d-flex justify-content-center text-center'>
+            <HashLoader 
+            color="#36d7b7" 
+            // color={color}
+            loading={preLoading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+          </div>
+          :
       <div>
         <div className=" my-2 mx-lg-5 mx-md-5 mx-xl-5 mx-xxl-5 my-1">
           <div
@@ -51,10 +74,10 @@ export default function Details(props) {
               <span>
                 <small>
                   <b>Brand : </b>
-                  <a href="/" className="text-decoration-none text-green me-2">
+                  <Link to="/" className="text-decoration-none text-green me-2">
                     {" "}
                     Radhuni{" "}
-                  </a>
+                  </Link>
                   <Link to="/" className="text-decoration-none text-green">
                     Meena Bazar
                   </Link>
@@ -183,7 +206,7 @@ export default function Details(props) {
           {/* <Grocery mode={props.mode} notify={props.notify} img={props.img} category="Grocery" offerPrice="tk. 190.00" title="Span Virgin Olive Oil 1ltr" price="145.00"/> */}
         </div>
       </div>
-      {/* <Footer /> */}
-    </>
+     
+             } </>
   );
 }

@@ -2,7 +2,12 @@ import React from 'react'
 import './TrackOrder.css'
 
 export default function TrackOrder() {
+  const styles={
+    height: '250px',
+  }
   return (
+    <div className="content" style={styles}>
+      <small className={`text-center d-flex justify-content-center mt-5`}>Click again!</small>
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div className="modal-dialog">
       <div className="modal-content">
@@ -28,6 +33,7 @@ export default function TrackOrder() {
         </div>
       </div>
     </div>
+  </div>
   </div>
   )
 }

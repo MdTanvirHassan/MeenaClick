@@ -1,8 +1,13 @@
 import React from 'react'
 
 export default function Area() {
+  const styles={
+    height: '250px',
+  }
   return (
-    
+    <div className="content" style={styles}>
+      <small className={`text-center d-flex justify-content-center mt-5`}>Click area again!</small>
+      
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div className="modal-dialog">
       <div className="modal-content">
@@ -37,6 +42,7 @@ export default function Area() {
       </div>
     </div>
   </div>
+  </div> 
     
   )
 }

@@ -1,13 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import HashLoader from "react-spinners/HashLoader";import { Link } from 'react-router-dom';
 
 import logo from '../../image/fvicon.jpg';
 // import Footer from '../Footer/Footer';
 import './Register.css'
 
 export default function Register() {
+    //! preloader2
+    const [preLoading,setPreLoading]= useState(false);
+    useEffect(()=>{
+      setPreLoading(true);
+      setTimeout(()=>{
+        setPreLoading(false);
+      },1000);
+    },[]);
   return (
     <>
+    {
+        preLoading?
+        <div className='d-flex justify-content-center text-center'>
+            <HashLoader 
+            color="#36d7b7" 
+            // color={color}
+            loading={preLoading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+          </div>
+          :
     <div className='rb '>
     <div className='container mb-5 '>
             <div className="area justify-content-center mt-1">
@@ -108,7 +130,7 @@ export default function Register() {
     </div>
     
     </div>
-    {/* <Footer></Footer> */}
+    }
     </>
   )
 }

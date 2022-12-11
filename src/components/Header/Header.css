@@ -214,6 +214,9 @@ option,select{
         margin: 0;
         padding: 0;
     }
+    .bn:active,.bnn:active{
+        color: blue !important;;
+    }
     .bn:hover,.bnn:hover{
         background: none !important;
         border: none !important;
