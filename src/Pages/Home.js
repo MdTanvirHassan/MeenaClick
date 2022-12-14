@@ -17,14 +17,20 @@ export default function Home(props) {
     setPreLoading(true);
     setTimeout(()=>{
       setPreLoading(false);
-    },10);
+    },500);
   },[]);
+  const style={
+    cursor:"default"
+  }
+  const styles={
+    height: '250px',
+  }
     
   return (
     <div>
         {
         preLoading?
-        <div className='d-flex justify-content-center text-center'>
+        <div className='d-flex justify-content-center text-center mt-5' style={styles}>
             <HashLoader 
             color="#36d7b7" 
             // color={color}
@@ -32,10 +38,11 @@ export default function Home(props) {
             size={50}
             aria-label="Loading Spinner"
             data-testid="loader"
+            opacity=".3"
           />
           </div>
           :
-        <Link to='/' className='text-decoration-none'>
+        <Link to='/' className='text-decoration-none' style={style}>
         <Carousel mode={props.mode}/>
          <Feature mode={props.mode}/>
          <Product mode={props.mode} notify={props.notify} handleCart={props.handleCart} onClick={() => setPreLoading(!preLoading)} title='Product Title Quantity' price='price'/>
