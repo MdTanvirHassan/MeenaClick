@@ -15,6 +15,8 @@ export default function Cart(props) {
     const styles={
       height: '250px',
     }
+
+
   return (
     <>
     {
@@ -34,18 +36,6 @@ export default function Cart(props) {
     <div className={`container my-2 text-${props.mode==='dark'?'white':'dark'}`}>
     
       <h1 className={`text-center bg-${props.mode==='dark'?'secondary':'secondary'} text-${props.mode==='dark'?'white':'white'}`}>Cart</h1><hr />
-      
-      
-
-{/* <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" ariaLabelledBy="offcanvasRightLabel">
-  <div className="offcanvas-header">
-    <h5 className="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
-    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div className="offcanvas-body">
-    ...
-  </div>
-</div> */}
 
 <main>
 <div className="row g-5">

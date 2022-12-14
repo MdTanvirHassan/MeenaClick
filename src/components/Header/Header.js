@@ -183,7 +183,7 @@ export default function Header(props) {
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-md-start">
         <li className="nav-item "> 
             {/*//*combo-------  */}
-        <Link to='/Combo' className="text-decoration-none p-0 px-lg-1  nav-btn " type='button' aria-current="page" href='/'><i className='bi bi- text-white'> </i>
+        <Link to='/Combo' className=" p-0 px-lg-1 nav-btn " type='button' aria-current="page" href='/'>
              <small>Combo</small> 
              </Link>
         </li>
