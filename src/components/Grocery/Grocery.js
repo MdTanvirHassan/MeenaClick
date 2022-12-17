@@ -5,11 +5,17 @@ import './Grocery.css';
 
 export default function Grocery(props) {
     const [cart, setCart] = useState(0)
+    // const tagStyle ={
+    //     display:'none',
+    // }
   return (
        <div className=''>
             <div className={` my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
                 <div className={` mb-1`}>
                  <div className={`card xl p-2 bg-${props.mode==='dark'?'secondary':'body'} box`}  >
+                 <span class="position-absolute top-0   badge rounded-pill bg-danger " 
+                 style={{zIndex:'1', right:"0%", top:'0%'}}> {!props.tag? '':props.tag}
+                </span>
                     <Link to='/details' className="text-decoration-none">
                     <img src={props.img} className="card-img-top" alt="..."/><hr />
                     
