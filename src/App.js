@@ -59,6 +59,7 @@ function App() {
       setAlert(null);
     }, 2000);
   };
+  //*cart
   const [cart, setCart] = useState(0);
   const handleCart = (item, action) => {
     setCart((prevCart) => {

@@ -190,7 +190,7 @@ export default function Header(props) {
         <li className="nav-item px-2" >
         <Link to='/offer' className=" p-0 px-1 nav-btn" type='button' aria-current="page" href='/'><i className='bi bi- text-white'> </i>
             <small> Offer</small> 
-              <span className="badge text-bg-danger rounded-pill align-text-bottom"> 99+</span>
+              <span className="badge text-bg-danger rounded-pill align-text-bottom notification"> 99+</span>
             </Link>
         </li>
         <li className="nav-item">
@@ -210,7 +210,7 @@ export default function Header(props) {
              </Link>
         </li>
         <li className="nav-item px-2">
-        <Link to='/TrackOrder' className='p-0 px-1 text-danger nav-btn2' type='button' aria-current="page">
+        <Link to='/TrackOrder' className='p-0 px-1  text-danger nav-btn2' type='button' aria-current="page">
                <span className="" href='/' data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <small>Track Order</small>
                 </span>
@@ -226,7 +226,7 @@ export default function Header(props) {
         </li>
         <li className="nav-item">
         <div className="d-flex me- text-light">
-                    <div className="dropdown">
+                    <div className="dropdown notification">
                         <div className="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif" data-bs-toggle="dropdown" aria-expanded="false">
                             <i className="bi bi-bell bi-sm ms-1 fw-bold fs-5 hover-rounded-light notification"></i>
                             <span className="badge text-bg-danger rounded-pill align-text-bottom">0</span>

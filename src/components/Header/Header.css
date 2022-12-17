@@ -370,6 +370,8 @@ option,select{
             display: grid;
             row-gap: 50px;
             grid-template-columns: auto auto auto;
+            padding: 1px;
+            margin-bottom: 1px;
         }
         
         .cat-margin{
@@ -378,6 +380,9 @@ option,select{
           }
           .nav-margin{
             margin-left: 0% ;
+          }
+          .notification{
+            display: none;
           }
 }
 @media only screen and (min-width: 1700px) and (max-width: 2400px) {
