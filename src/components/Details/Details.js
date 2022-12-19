@@ -61,15 +61,18 @@ export default function Details(props) {
               </ol>
             </nav>
           </div>
-          <div className={`details my-4 row my-1`}>
+          <div className={` my-4 row my-1`}>
             {/* //*image */}
             <div
-              className={`card col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1`}>
-              <img src={img} alt="" />
+              className={`details card col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1`}>
+              <span className="position-absolute top-1   badge bg-danger " 
+                 style={{zIndex:'1', right:"0%", top:'.5%'}}> {!props.tag? 'tk29.00 OFF':props.tag}
+                </span>
+              <img src={img} alt="" className='details-img' />
             </div>
             {/* //*title,price,cart */}
             <div
-              className={`card col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1 
+              className={`details card col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1 
             d-flex flex-grow-1 mb-1 bg-${
               props.mode === "dark" ? "secondary" : "body"
             } 
@@ -134,7 +137,7 @@ export default function Details(props) {
             <div
               className={` col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1 `}>
               <div
-                className={`card homeDelivery d-flex flex-row bg-${
+                className={`details card homeDelivery d-flex flex-row bg-${
                   props.mode === "dark" ? "secondary" : "body"
                 } text-${props.mode === "dark" ? "white" : "body"}`}>
                 <i className="bi bi-bus-front-fill  fs-2 p-2"></i>
@@ -148,7 +151,7 @@ export default function Details(props) {
                   </h6>
                 </span>
               </div>
-              <div className="card cash my-2">
+              <div className="details card cash my-2">
                 <div className="card  d-flex flex-row p-">
                   <i className="bi bi-currency-exchange p-2 fs-2"></i>
                   <h6 className="p-2 flex-grow-1">
@@ -162,10 +165,10 @@ export default function Details(props) {
                   </span>
                 </div>
               </div>
-              <div className="card sku  p-3 my-2">
+              <div className="details card sku  p-3 my-2">
                 <h6 className="text-center">SKU: GCSCOLOMU0003</h6>
               </div>
-              <div className="card my-2">
+              <div className="details card my-2">
                 <div className="card  d-flex flex-row p-">
                   <i className="bi bi-house-fill p-2 fs-2"></i>
                   <h6 className="p-2 flex-grow-1">
@@ -189,7 +192,7 @@ export default function Details(props) {
           {/* //* Product details-------------- */}
           <div className="row my-5">
             <div
-              className={`col-9 card p-2 bg-${
+              className={`col-9 details card p-2 bg-${
                 props.mode === "dark" ? "secondary" : "body"
               } text-${props.mode === "dark" ? "white" : "body"}`}>
               <h5 className="p-1 border-bottom">Product Details</h5>

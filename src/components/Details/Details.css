@@ -8,3 +8,11 @@
 .text-green{
     color: #20aa6b;
 }
+.details-img:hover{
+    width: 110%;
+    overflow: hidden;
+    text-align: center;
+}
+.details:hover{
+    border: 1px solid gray!important;
+}
