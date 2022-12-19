@@ -85,9 +85,7 @@ export default function Feature(props) {
              </div>
              </Link>
             </div>
-        </div>
-
-        <div className="row mt-3 mx-">
+        
             <div className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
             <Link to='/brands' className='text-decoration-none'>
             <div className="card">

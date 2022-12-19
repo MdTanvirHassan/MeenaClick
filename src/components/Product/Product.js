@@ -83,7 +83,7 @@ export default function Product(props) {
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-                    <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00" tag='5%'></Grocery>
+                    <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00" tag='5% OFF'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -98,7 +98,7 @@ export default function Product(props) {
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-                <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" price="1505.00" tag='10%'></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" offerPrice="1555" price="1505.00" tag='tk50.00 OFF'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -120,12 +120,12 @@ export default function Product(props) {
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xs-2">
                 
-                <Grocery mode={props.mode} notify={props.notify} img={b1} category="Grocery" title="Meena Sweets Sweet Toast-        :350gm" price="135.00"></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={b1} category="Grocery" title="Meena Sweets Sweet Toast-        :350gm" price="135.00" tag='new'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">
                 
-                <Grocery mode={props.mode} notify={props.notify} img={b2} category="Grocery" title="SUNFEAST D FANTASY CHOCO FILLS BIS 300G" price="420.00"></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={b2} category="Grocery" title="SUNFEAST D FANTASY CHOCO FILLS BIS 300G" price="420.00" tag='new'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6">

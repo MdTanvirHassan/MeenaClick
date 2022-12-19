@@ -35,7 +35,7 @@ export default function Home(props) {
             color="#36d7b7" 
             // color={color}
             loading={preLoading}
-            size={50}
+            size={80}
             aria-label="Loading Spinner"
             data-testid="loader"
             opacity=".3"
@@ -43,10 +43,11 @@ export default function Home(props) {
           </div>
           :
         <Link to='/' className='text-decoration-none' style={style}>
+
         <Carousel mode={props.mode}/>
          <Feature mode={props.mode}/>
-         <Product mode={props.mode} notify={props.notify} handleCart={props.handleCart} onClick={() => setPreLoading(!preLoading)} title='Product Title Quantity' price='price'/>
-      
+         <Product mode={props.mode} notify={props.notify} handleCart={props.handleCart}
+          onClick={() => setPreLoading(!preLoading)} title='Product Title Quantity' price='price'/>
 
       </Link>
 }

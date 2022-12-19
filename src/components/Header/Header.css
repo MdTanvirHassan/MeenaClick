@@ -74,7 +74,7 @@
 }
 
 .header-btn:hover{
-    color:  black!important;
+    color: black!important;
     background-color: greenyellow!important;
     border:2px solid #20aa6b!important;;
     transition: all .8s;
@@ -94,6 +94,9 @@
 .cart-btn:hover{
     background-color: greenyellow!important;
 
+}
+.dark-btn{
+    display: none!important;
 }
 /* //todo phone screen for header */
 @media (max-width: 940px) {
@@ -138,10 +141,13 @@
         display: none !important;
     }
     .from-check, .form-check-label {
-        display: flex;
+        display: none !important;
         margin: 1vh;
     }
     .from-check .form-check-label i{
+        display: flex;
+    }
+    .dark-btn{
         display: flex;
     }
 }
@@ -192,12 +198,7 @@
     color: #fbeb20!important;
     /* background-color: #ea2027!important; */
 }
-/* form{
-    position: relative;
-}
-input{
-    display: block;
-} */
+
 
 .button{
     position: absolute;
@@ -294,7 +295,7 @@ option,select{
   }
 
 /* responsive for mobile---------- */
-  @media (max-width: 940px) {
+  @media (max-width: 980px) {
     #navbarsExample{
         background-color: none !important;
         padding: 0;
@@ -341,8 +342,11 @@ option,select{
     }
     .dropdown-menu {
          top: calc(100% + .0rem);
-         padding: 3px;
+         padding: 5px;
+         padding-left: 6%;
+         left: -55%;
         }
+        .link{padding: 11%;}
 }
     @media (max-width: 980px) {
         .cat-header{
@@ -405,10 +409,10 @@ option,select{
       .dropdown-menu {
         left: -50%;
         top: calc(100% + .45rem);
-        padding: .05rem 6rem!important;
+        padding: .55rem 6rem!important;
       }
       .link{
-        padding: .75rem 0;
+        padding: .85rem 0;
       }
       
 }

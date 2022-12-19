@@ -104,9 +104,7 @@ function App() {
 
           <Routes>
             <Route
-              path="/"
-              exact
-              element={<Home mode={mode} notify={notify} />}
+              exact path="/" element={<Home mode={mode} notify={notify} />}
             />
             <Route path="/Area" element={<Area />} />
             <Route path="/Cart" element={<Cart mode={mode} />} />
@@ -132,9 +130,7 @@ function App() {
             />
           
           </Routes>
-          {/* <Carousel mode={mode}/>
-      <Feature mode={mode}/>
-      <Product mode={mode} notify={notify} handleCart={handleCart} title='Product Title Quantity' price='price'/> */}
+          
           <ToastContainer
             position="top-center"
             autoClose={1500}

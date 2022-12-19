@@ -13,7 +13,7 @@ export default function Grocery(props) {
             <div className={` my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
                 <div className={` mb-1`}>
                  <div className={`card xl p-2 bg-${props.mode==='dark'?'secondary':'body'} box`}  >
-                 <span className="position-absolute top-1   badge bg-orange " 
+                 <span className={`position-absolute top-1   badge bg-orange `} 
                  style={{zIndex:'1', right:"0%", top:'.5%'}}> {!props.tag? '':props.tag}
                 </span>
                     <Link to='/details' className="text-decoration-none">
@@ -24,10 +24,10 @@ export default function Grocery(props) {
                             <h6 className={`card-title text-${props.mode==='dark'?'white':'dark'}`}>{props.title}</h6>
                         </div>
                         <div className="offer-price">
-                        <small className="card-text text-decoration-line-through text-muted "> {props.offerPrice}</small>
+                        <small className={`card-text text-decoration-line-through text-${props.mode==='dark'?'white':'muted'} `}> {props.offerPrice}</small>
                         </div>
                         <div className="price">
-                        <h6 className="card-text text-green fw-bold mb-5 ">
+                        <h6 className={`card-text text-${props.mode==='dark'?'white':'green'} fw-bold mb-5 `}>
                             <small>tk{props.price}/EA</small>
                         </h6>
                         </div>
