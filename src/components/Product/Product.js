@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+// import { useState } from 'react'
 import PropTypes from 'prop-types';
 import img from '../../image/p1.jpg';
 import img2 from '../../image/p2.jpg';
@@ -39,7 +40,7 @@ import Category from '../Category/Category';
 
 
 export default function Product(props) {
-    const [cart, setCart] = useState(0)
+    //const [cart, setCart] = useState(0)
     //* const handleCart=(item,action)=>{
     //     setCart((prevCart)=>{
     //         return{
@@ -77,7 +78,7 @@ export default function Product(props) {
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-                    <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" offerPrice="379.00" price="360.00" tag='tk19.00 OFF'></Grocery>
+                    <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" offerPrice="tk379.00" price="360.00" tag='tk19.00 OFF'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -245,126 +246,46 @@ export default function Product(props) {
             </div>
             </div>
 {/* --------------------------------------------------Dairy-------------------------- */}
-        <div className="mx-lg-3 my-5 ">
-            <div className={`row mx-lg-4 mx-xxl-5 mx-xl-5 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} bg-${props.mode==='dark'?'secondary':'body'}`}>
-                <div className="col-9">
-                        <h5 className={`text-${props.mode==='dark'?'warning':'body'}`}>Dairy</h5>
-                </div>
-                <div className="col-3">
-                    <a href="/" className={`nav-link text-end text-${props.mode==='dark'?'warning':'body'} bg-${props.mode==='dark'?'secondary':'body'}`}>More <i className=" bi bi-caret-right-fill me-1"></i></a>
-                </div>
-            </div><hr />
-            <div className={`row mx-lg- mx-xxl- mx-xl-3 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
-                <div className={`col-lg-2 col-6 col-md-6 mb-1  `}>
-                 <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
-                    <img src={dd} className="card-img-top" alt="..."/><hr />
-                    <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Aarong Dairy Laban(500ml)</h5>
-                        <p className="card-text">tk. 65.00</p>
-                        <div className="flex addBtn">
-                             <span  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
-                            </span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-2 col-6 col-md-6 mb-1">
-                 <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
-                    <img src={dd2} className="card-img-top" alt="..."/><hr />
-                    <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Farm Fresh Butter 200gm</h5>
-                        <p className="card-text">tk. 230.00</p>
-                        <div className="flex bg-secondary p-0 rounded">
-                             <span  className='btn bg-secondary p-0' type='button' > 
-                               {/* <button className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</button> */}
-                                <span className='mx-1 w text-white ' >Out of Stock</span>
-                                {/* <button className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</button> */}
-                            </span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-2 col-6 col-md-6 mb-1">
-                 <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
-                    <img src={dd3} className="card-img-top" alt="..."/><hr />
-                    <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Danish Condensed Milk 397gm</h5>
-                        <p className="card-text">tk. 80.00</p>
-                        <div className="flex addBtn">
-                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
-                            </span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-2 col-6 col-md-6 mb-1">
-                 <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
-                    <img src={dd4} className="card-img-top" alt="..."/><hr />
-                    <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Farm Fresh Yoghurt Sour 500ml</h5>
-                        <p className="card-text">tk. 100.00</p>
-                        <div className="flex addBtn">
-                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
-                            </span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-2 col-6 col-md-6 mb-1">
-                 <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
-                    <img src={dd5} className="card-img-top" alt="..."/><hr />
-                    <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Diploma Milk Powder Poly 200gm</h5>
-                        <p className="card-text">tk. 180.00</p>
-                        <div className="flex addBtn">
-                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
-                            </span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-2 col-6 col-md-6 mb-1">
-                 <div className={`card p-2 bg-${props.mode==='dark'?'secondary':'body'}`} style={{width: "200px"}} >
-                    <img src={dd6} className="card-img-top" alt="..."/><hr />
-                    <div className={`car text-center mb-4`}>
-                        <h5 className="card-title">Radhuni Ready Mix Masala 80gm</h5>
-                        <p className="card-text">tk. 70.00</p>
-                        <div className="flex addBtn">
-                        <span  className='btn addBtn ' type='button' onClick={props.notify}> 
-                               <span className=' addBtn2' disabled={cart<0} onClick={()=>setCart(cart-1)}>{cart===0?<i className='bi bi-cart'></i>:'-'}</span>
-                                <span className='mx-1 w' onClick={()=>setCart(cart+1)}>{cart===0?'Add to Cart':cart}</span>
-                                <span className=' addBtn2' onClick={()=>setCart(cart+1)}>{cart===0?'':'+'}</span>
-                            </span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+<div className=" my-5 ">
+            <div className={`row mx-lg-4 mx-xxl-5 mx-xl-5 mx-md-3 my-1 mb-1 text-${props.mode==='dark'?'white':'body'} `}>
+            <Category mode={props.mode} category="Dairy"> </Category><hr />
+            <div className="row ">
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-            </div>
-
+                    <Grocery mode={props.mode} notify={props.notify} img={dd} category="Grocery" title="Aarong Dairy Laban(500ml)" offerPrice="tk79.00" price="60.00" tag='tk19.00 OFF'></Grocery>
+                
+                </div>
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                
+                    <Grocery mode={props.mode} notify={props.notify} img={dd4} category="Grocery" title="Farm Fresh Butter 200gm" price="230.00" tag='5%'></Grocery>
+                
+                </div>
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                
+                <Grocery mode={props.mode} notify={props.notify} img={dd3} category="Grocery" title="Danish Condensed Milk 397gm" price="80.00" tag='tk10.00 OFF'></Grocery>
+                
+                </div>
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                
+                <Grocery mode={props.mode} notify={props.notify} img={dd2} category="Grocery" title="Farm Fresh Yoghurt Sour 500ml" price="120.00" tag='new'></Grocery>
+                
+                </div>
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                
+                <Grocery mode={props.mode} notify={props.notify} img={dd5} category="Grocery" title="Diploma Milk Powder Poly 200gm" offerPrice="tk180.00" price="155.00" tag='tk25.00 OFF'></Grocery>
+                
+                </div>
+                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                
+                <Grocery mode={props.mode} notify={props.notify} img={dd6} category="Grocery" title="Radhuni Ready Mix Masala 80gm" price="70.00" tag=''></Grocery>
+                
+                </div>
+             
             
-
+            </div>
+            </div>               
         </div>
-
-
-    </div>
+</div>
   )
 }
 

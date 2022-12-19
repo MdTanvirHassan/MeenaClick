@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import HashLoader from "react-spinners/HashLoader";
-// import Footer from "../Footer/Footer";
 import Product from "../Product/Product";
 
 export default function Combo(props) {
@@ -32,7 +31,7 @@ export default function Combo(props) {
           />
           </div>
           :
-    <div className={`mx- mt-2 bg-${props.mode==='dark'?'':''}`}>
+    <div className={` mt-2 bg-${props.mode==='dark'?'':''}`}>
       <div>
         <h4 className={`text-center text-success`}>Products</h4>
       </div>
@@ -43,6 +42,7 @@ export default function Combo(props) {
         </div>
       </div>
       {/* pagination.append */}
+      <div className="mx-md-5">
       <nav aria-label={`Page navigation example bg-${props.mode==='dark'?'dark':'body'}`}>
         <ul className={`pagination justify-content-end bg-${props.mode==='dark'?'':''}`}>
           <li className={`page-item disabled bg-${props.mode==='dark'?'dark':'body'}`}>
@@ -72,9 +72,10 @@ export default function Combo(props) {
           </li>
         </ul>
       </nav>
+      </div>
       {/* pagination-end */}
 
-      {/* <Footer /> */}
+      
     </div>
 }
     </>
