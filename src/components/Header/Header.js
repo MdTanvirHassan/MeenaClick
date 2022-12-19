@@ -217,9 +217,9 @@ export default function Header(props) {
               </Link>
         </li>
         <li className="nav-item">
-        <Link to='/orderDetails'className=" p-0 px-1 text-danger nav-btn2"  type='button' aria-current="page">
+        <Link to='/coupons'className=" p-0 px-1 text-danger nav-btn2"  type='button' aria-current="page">
               <span>
-              <small>Order Details</small>
+              <small>Coupons</small>
               </span>
               
             </Link>

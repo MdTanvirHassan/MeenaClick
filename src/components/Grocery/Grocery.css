@@ -1,6 +1,8 @@
 .xl{
-    width:200px;
+    width:190px;
+    border: none!important;
 }
+
 .box{
     box-shadow: 1px 1px 5px lightgray;
 }
@@ -10,16 +12,59 @@
 .text-green{
     color: #20aa6b;
 }
-.title{
-    height: 75px;
+.bg-orange{
+    background-color: orangered;
 }
+.card-height{
+    height: 160px!important;
+}
+.title{
+    height: 65px!important;
+}
+.offer-price{
+    height: 25px!important;
+}
+.price{
+    height: 60px!important;
+}
+.addBtn2{  
+    border: none;
+    background-color: #20aa6b;
+    color: #ffff;
+    font-weight: bold;
+    
+}
+.addBtn2 i{
+    display: none;
+}
+.addBtn{
+    background-color: #20aa6b!important;
+    color:#ffff!important;
+    border-radius: 0px ;
+    width: 100%;
+    padding: 0px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1%;
+}
+.addBtn:hover{
+    border: 1px solid gray;
+}
+.addBtn2:hover,.addBtn:hover{
+    border: none;
+}
+
+
 @media only screen and (min-width: 1400px) and (max-width: 2500px) {
     .xl{
-        width: 300px;
+        width: 280px;
     }
 }
 @media (max-width: 800px) {
     .xl{
         width:175px;
+    }
+    .addBtn2 i{
+        display: inline;
     }
 }

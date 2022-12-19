@@ -3,7 +3,7 @@ import './TrackOrder.css'
 
 export default function TrackOrder() {
   const styles={
-    height: '250px',
+    height: '400px',
   }
   return (
     <div className="content" style={styles}>

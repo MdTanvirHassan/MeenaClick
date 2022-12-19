@@ -14,6 +14,7 @@ import org6 from "../../image/org6.jpg";
 import org7 from "../../image/org7.jpg";
 import org8 from "../../image/org8.jpg";
 import org9 from "../../image/org9.jpg";
+import coupons from "../../image/cupons.jpg";
 // import Footer from '../Footer/Footer';
 
 import { Link } from 'react-router-dom';
@@ -47,6 +48,9 @@ export default function Offer(props) {
           </div>
           :
     <div className='mx-4'>
+      <div className="my-3 text-center">
+        <img src={coupons} alt="" width='50%' className='border-danger'/>
+      </div>
         <div className="text-success text-center">
             <h4 className="">Offer Products</h4><hr />
         </div>
@@ -60,7 +64,7 @@ export default function Offer(props) {
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
                     <Grocery mode={props.mode} notify={props.notify} 
-                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" offerPrice="tk140.00" price="130.00" tag='10%'/>
+                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" offerPrice="tk140.00" price="130.00" tag='tk10.00 OFF'/>
                
                 </div>
 
@@ -74,14 +78,14 @@ export default function Offer(props) {
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
                     <Grocery mode={props.mode} notify={props.notify} 
-                    img={org6} category="Grocery" title="Organikare Glycerine 120ml" offerPrice="tk190.00" price="160.00" tag='10%'/>
+                    img={org6} category="Grocery" title="Organikare Glycerine 120ml" offerPrice="tk190.00" price="160.00" tag='tk30.00 OFF'/>
                 
                 </div>
 
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
                     <Grocery mode={props.mode} notify={props.notify} 
-                    img={org7} category="Grocery" title="Organikare Glycerine 60ml" offerPrice="tk135.00" price="120.00" tag='10%'/>
+                    img={org7} category="Grocery" title="Organikare Glycerine 60ml" offerPrice="tk135.00" price="120.00" tag='tk15.00 OFF'/>
                 
                 </div>
 
@@ -95,7 +99,7 @@ export default function Offer(props) {
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
                     <Grocery mode={props.mode} notify={props.notify} 
-                    img={org9} category="Grocery" title="Organikare Face Wash Cleansing Milk 100gm" offerPrice="tk360.00" price="328.00" tag='10%'/>
+                    img={org9} category="Grocery" title="Organikare Face Wash Cleansing Milk 100gm" offerPrice="tk360.00" price="328.00" tag='tk32.00 OFF'/>
                 
                 </div>
                        
@@ -110,29 +114,29 @@ export default function Offer(props) {
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" 
-                title="Span Virgin Olive Oil 1ltr" offerPrice="tk165.00" price="145.00" tag='10%'></Grocery>
+                title="Span Virgin Olive Oil 1ltr" offerPrice="tk165.00" price="145.00" tag='tk20.00 OFF'></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" 
-                title="Aarong Butter  200gm" offerPrice="tk195.00" price="160.00" tag='10%'></Grocery>
+                title="Aarong Butter  200gm" offerPrice="tk195.00" price="160.00" tag='tk35.00 OFF'></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" 
-                title="Aarong Ghee  300gm" offerPrice="tk145.00" price="120.00" tag='10%'></Grocery>
+                title="Aarong Ghee  300gm" offerPrice="tk145.00" price="120.00" tag='tk25.00 OFF'></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery"
-                 title="Olitalia Sunflower Oil 5ltr" offerPrice="tk1555.00" price="1505.00" tag='10%'></Grocery>
+                 title="Olitalia Sunflower Oil 5ltr" offerPrice="tk1555.00" price="1505.00" tag='tk50.00 OFF'></Grocery>
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                <Grocery mode={props.mode} notify={props.notify} img={img6} category="Grocery" title="Olitalia Pomace Olive Oil 1ltr" offerPrice="tk310.00" price="273.00" tag='10%'></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={img6} category="Grocery" title="Olitalia Pomace Olive Oil 1ltr" offerPrice="tk310.00" price="273.00" tag='tk37.00 OFF'></Grocery>
                 </div>
                 
            </div> 
 
                <div className="mx-4">
                 <Link to='/details' className='text-decoration-none'>
-        <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" offerPrice="tk170.00" title="Span Virgin Olive Oil 1ltr" price="145.00" tag='10%'/></Link>
+        <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" offerPrice="tk170.00" title="Span Virgin Olive Oil 1ltr" price="145.00" tag='tk25.00 OFF'/></Link>
         
         </div>
                {/* pagination */}

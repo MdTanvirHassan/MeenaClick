@@ -77,7 +77,7 @@ export default function Product(props) {
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-                    <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" price="380.00" tag='new'></Grocery>
+                    <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" offerPrice="379.00" price="360.00" tag='tk19.00 OFF'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">

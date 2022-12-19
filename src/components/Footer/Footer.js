@@ -6,7 +6,7 @@ import store from "../../image/store.jpg";
 
 export default function Footer(props) {
   return (
-    <div className={`bg-${props.mode === "dark" ? "footer" : "footer"}`}> 
+    <div className={`bg-${props.mode === "dark" ? "footer" : "footer"} `}> 
       <div className="full-container mx-lg-5 mx-xl-5 mx-xxl-5">
         <footer className="py-0">
           <div className="row pt-3 pb-2">

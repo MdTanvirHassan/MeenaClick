@@ -24,6 +24,7 @@ import TrackOrder from "./components/TrackOrder/TrackOrder";
 import Details from "./components/Details/Details";
 import Brands from "./components/Brands/Brands";
 import Home from "./Pages/Home";
+import Coupons from "./components/Coupons/Coupons";
 
 function App() {
   //! preloader
@@ -125,6 +126,11 @@ function App() {
               path="/brands"
               element={<Brands mode={mode} notify={notify} />}
             />
+            <Route
+              path="/coupons"
+              element={<Coupons mode={mode} notify={notify} />}
+            />
+          
           </Routes>
           {/* <Carousel mode={mode}/>
       <Feature mode={mode}/>

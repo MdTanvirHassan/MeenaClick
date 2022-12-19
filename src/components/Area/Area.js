@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Area() {
   const styles={
-    height: '250px',
+    height: '400px',
   }
   return (
     <div className="content" style={styles}>
