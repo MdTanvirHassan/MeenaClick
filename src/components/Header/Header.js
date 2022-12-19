@@ -107,13 +107,13 @@ export default function Header(props) {
     {/* //! --------------------------------------------second-navbar-sticky-------------------------------------------- */}
     <nav className={`navbar navbar-expand-lg bg-${props.mode==='dark'?'nav':'nav'} p-0`}>
   <div className="container-fluid">
-    <div className="navbar-brand cat-header p-1 cat-margin" >
-      {/* //todo start-- category */}
+    <div className="navbar-brand cat-header  cat-margin" >
+      {/* //todo -----start-- category --------------------------------------------*/}
       <div className=" " id="navbarsExample">
             
             <div className="dropdown " data-dropdown id="navbarsExample08">
-            <button className="link " >
-              <h5 className='link text-white'data-dropdown-button>
+            <button className="link p-0 " >
+              <h5 className=' text-white'data-dropdown-button>
                       <FontAwesomeIcon icon={faList} className='pe-3' data-dropdown-button/>
                       All Categories 
                       <small className='px-4'>
