@@ -6,7 +6,7 @@
     color: gray!important;
     font-weight: bold;
     width: 100%;
-    height: 100vh;
+    height: 115vh;
     margin: 0;
 }
 .area{
@@ -21,6 +21,41 @@
     padding: 2%;
     box-shadow: 15px 15px 35px  black!important;
     
+}
+.facebook-log{
+    border: 1px solid #3e4e7c;
+    color: white;
+    background-color: #49639f;
+    padding: 3%;
+    opacity: 1;
+    width: 60%;
+    margin: auto;
+    cursor: pointer;
+}
+.facebook-log:hover{  
+    background-color: #3e4e7c;
+}
+.email-log{
+    border: 1px solid #3e4e7c;
+    color: rgb(95, 89, 89);
+    background-color: whitesmoke;
+    padding: 3%;
+    opacity: 1;
+    width: 60%;
+    margin: auto;
+    cursor: pointer;
+}
+.email-log:hover{
+    background-color: antiquewhite;
+}
+.number{
+    border: none;
+    border-bottom: 1px solid #3e4e7c;
+    
+    padding: 3%;
+    opacity: 1;
+    width: 60%;
+    margin: auto;
 }
 
 /* --------------------------- MOBILE VERSION ------------------------------ */

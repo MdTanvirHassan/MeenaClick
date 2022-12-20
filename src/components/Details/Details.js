@@ -94,6 +94,10 @@ export default function Details(props) {
               <h5 className="text-muted "><del>tk 379.00</del></h5>
               <h4 className="text-green">tk 360.00</h4>
               <small>
+
+              <label htmlFor="exampleColorInput" className="form-label">Color picker</label>
+<input type="color" className="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color"></input>
+
                 <b>Quantity : </b>
               </small>
               <div className="d-flex fw-bold ">
