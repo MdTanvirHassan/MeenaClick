@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import "./Details.css";
 import img from "../../image/p1.jpg";
 // import Footer from "../Footer/Footer";
+import Rating from '../Rating/Rating';
 
 export default function Details(props) {
   const [cart, setCart] = useState(0);
@@ -70,13 +71,14 @@ export default function Details(props) {
                 </span>
               <img src={img} alt="" className='details-img' />
             </div>
-            {/* //*title,price,cart */}
+            {/* //todo-----title,price,cart,rating */}
             <div
               className={`details card col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1 
             d-flex flex-grow-1 mb-1 bg-${
               props.mode === "dark" ? "secondary" : "body"
             } 
             text-${props.mode === "dark" ? "white" : "body"}`}>
+              {/* //*about product name */}
               <h5>Radhuni Mustard Oil 1ltr</h5>
               <span>
                 <small>
@@ -91,12 +93,16 @@ export default function Details(props) {
                 </small>
               </span>
               <hr />
+              {/* //!offer price, price, cart, rating */}
+              <div className="row">
+                <div className="col-6">
               <h5 className="text-muted "><del>tk 379.00</del></h5>
-              <h4 className="text-green">tk 360.00</h4>
+              <h4 className="text-green d-flex">tk 360.00</h4>
               <small>
-
-              <label htmlFor="exampleColorInput" className="form-label">Color picker</label>
-<input type="color" className="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color"></input>
+              <div className="color-picker d-flex justify-content-start">
+              <label htmlFor="exampleColorInput d-flex" className="form-label me-1">Color picker: </label>
+                  <input type="color" className="form-control form-control-color d-flex" id="exampleColorInput" defaultValue="#563d7c" title="Choose your color"></input>
+                  </div>
 
                 <b>Quantity : </b>
               </small>
@@ -127,17 +133,26 @@ export default function Details(props) {
                         +
                       </button>
                     </span>
+
                   </span>
                 </span>
                 <br />
+                {/* add button */}
               </div>
-              <button className="btn addBtn2 col-4 mt-2" onClick={props.notify}>
+              <button className="btn addBtn2 col- my-2 px-5" onClick={props.notify}>
                 <span className={``} onClick={() => setCart(cart + 1)}>
                 <i className="bi bi-cart mx-1"></i>
                 Add to cart
                 </span>
               </button>
+              </div>
+              {/* //todo Rating */}
+              <div className="col-6">
+                <Rating />
+              </div>
             </div>
+            </div>
+            {/* //* about purchase */}
             <div
               className={` col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1 `}>
               <div

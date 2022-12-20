@@ -16,3 +16,6 @@
 .details:hover{
     border: 1px solid gray!important;
 }
+.btn:hover{
+    border: 1px solid #20aa6b;
+}
