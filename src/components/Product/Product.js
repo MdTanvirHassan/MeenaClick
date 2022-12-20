@@ -78,7 +78,7 @@ export default function Product(props) {
             <div className="row ">
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-                    <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni MAster Oil 1Ltr" offerPrice="tk379.00" price="360.00" tag='tk19.00 OFF'></Grocery>
+                    <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni Master Oil 1Ltr" offerPrice="tk379.00" price="360.00" tag='tk19.00 OFF'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -88,7 +88,7 @@ export default function Product(props) {
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-                <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" title="Aarong Butter  200gm" price="160.00" tag='new'></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" title="Aarong Butter  200gm" price="160.00" tag='OUT OF STOKE'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -98,7 +98,7 @@ export default function Product(props) {
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
-                <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" offerPrice="1555" price="1505.00" tag='tk50.00 OFF'></Grocery>
+                <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" offerPrice="tk1555" price="1505.00" tag='tk50.00 OFF'></Grocery>
                 
                 </div>
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
@@ -204,7 +204,7 @@ export default function Product(props) {
                 <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
                 
                     <Grocery mode={props.mode} notify={props.notify} 
-                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" price="130.00" />
+                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" price="130.00" tag='new'/>
                 
                 </div>
 

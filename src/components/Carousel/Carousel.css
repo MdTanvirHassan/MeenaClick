@@ -31,7 +31,7 @@
 }
 @media only screen and (min-width: 1400px) and (max-width: 2000px) {
     .link-list{
-        padding:1.1rem 1rem;
+        padding:1rem 1rem;
     }
     .list{
         width:100%;

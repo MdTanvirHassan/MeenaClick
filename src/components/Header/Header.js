@@ -92,7 +92,7 @@ export default function Header(props) {
                   {/*//todo MOde -------------*/}
         <span className={`nav-item nav-link form-check  fs-5 mt-1 form-switch text-${props.mode==='dark'?'light':'secondary'} d-flex`}>
           
-               <label className="form-check-label text-white"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault">
+               <label className="form-check-label text-white badge text-bg-secondary rounded-pill"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault">
                   <i className={` w-10 bi bi-${props.mode==='dark'?'sun-fill':'moon-stars-fill'}`}></i>
                  </label>
          </span>
