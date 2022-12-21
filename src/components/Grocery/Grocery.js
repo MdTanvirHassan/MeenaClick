@@ -8,6 +8,9 @@ export default function Grocery(props) {
     // const tagStyle ={
     //     display:'none',
     // }
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
   return (
        <div className=''>
             <div className={` my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
@@ -21,7 +24,7 @@ export default function Grocery(props) {
                     
                     <div className={`card-height text-center `}>
                         <div className="title ">
-                            <h6 className={`card-title text-${props.mode==='dark'?'white':'dark'}`}>{props.title}</h6>
+                            <h6 className={`card-title text-${props.mode==='dark'?'white':'dark'}`}>{capitalizeFirstLetter(props.title)}</h6>
                         </div>
                         <div className="offer-price">
                         <small className={`card-text text-decoration-line-through text-${props.mode==='dark'?'white':'muted'} `}> {props.offerPrice}</small>
