@@ -52,7 +52,7 @@ function Rating(props) {
         placeholder="What's your experience?"
         style={styles.textarea}
       />
-      <button className="btn addBtn2 mt-2" onClick={props.notify}>
+      <button className="btn addBtn2 mt-2 px-5" onClick={props.notify}>
                   Submit
               </button>
 

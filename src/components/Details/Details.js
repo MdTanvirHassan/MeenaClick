@@ -40,7 +40,7 @@ export default function Details(props) {
       <div>
         <div className=" my-2 mx-lg-5 mx-md-5 mx-xl-5 mx-xxl-5 my-1">
           <div
-            className={`container-fluid card bg-${
+            className={`container-fluid details card bg-${
               props.mode === "dark" ? "secondary" : "body"
             }
            text-${props.mode === "dark" ? "white" : "body"}`}>
@@ -141,7 +141,7 @@ export default function Details(props) {
               </div>
               <button className="btn addBtn2 col- my-2 px-5" onClick={props.notify}>
                 <span className={``} onClick={() => setCart(cart + 1)}>
-                <i className="bi bi-cart mx-1"></i>
+                
                 Add to cart
                 </span>
               </button>
@@ -154,7 +154,7 @@ export default function Details(props) {
             </div>
             {/* //* about purchase */}
             <div
-              className={` col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1 `}>
+              className={` col-lg-3 col-md-6 col-xl-3 col-xxl-3 col-sm-12 col-xs-12 mx-1 `}>
               <div
                 className={`details card homeDelivery d-flex flex-row bg-${
                   props.mode === "dark" ? "secondary" : "body"
