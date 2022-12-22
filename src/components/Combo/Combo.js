@@ -51,38 +51,38 @@ export default function Combo(props) {
       </div>
       <hr />
       <div className="row mx-4">
-        <div className="col-3">
+        <div className="col-md-3 col-sm-6 col-xs-6">
           <Filter />
         </div>
-        <div className="col-9">
+        <div className="col-md-9 col-sm-6">
         <div className={``}>
         <div className="row ">
-                <div className="col-lg-3 col-md-3 col-6 col-xl-23 col-xxl-3 col-xs-6">
+                <div className="col-lg-3 col-md-3 col-6 col-xl-3 col-xxl-3 col-xs-12 col-sm-12">
                 
                     <Grocery mode={props.mode} notify={props.notify} img={img} category="Grocery" title="Radhuni Master Oil 1Ltr" offerPrice="tk379.00" price="360.00" tag='tk19.00 OFF'></Grocery>
                 
                 </div>
-                <div className="col-lg-3 col-md-3 col-6 col-xl-23 col-xxl-3 col-xs-6">
+                <div className="col-lg-3 col-md-3 col-6 col-xl-3 col-xxl-3 col-xs-12 col-sm-12">
                 
                     <Grocery mode={props.mode} notify={props.notify} img={img4} category="Grocery" title="Span Virgin Olive Oil 1ltr" price="145.00" tag='5% OFF'></Grocery>
                 
                 </div>
-                <div className="col-lg-3 col-md-3 col-6 col-xl-23 col-xxl-3 col-xs-6">
+                <div className="col-lg-3 col-md-3 col-6 col-xl-3 col-xxl-3 col-xs-6">
                 
                 <Grocery mode={props.mode} notify={props.notify} img={img3} category="Grocery" title="Aarong Butter  200gm" price="160.00" tag='OUT OF STOKE'></Grocery>
                 
                 </div>
-                <div className="col-lg-3 col-md-3 col-6 col-xl-23 col-xxl-3 col-xs-6">
+                <div className="col-lg-3 col-md-3 col-6 col-xl-3 col-xxl-3 col-xs-6">
                 
                 <Grocery mode={props.mode} notify={props.notify} img={img2} category="Grocery" title="Aarong Ghee  300gm" price="120.00" tag='new'></Grocery>
                 
                 </div>
-                <div className="col-lg-3 col-md-3 col-6 col-xl-23 col-xxl-3 col-xs-6">
+                <div className="col-lg-3 col-md-3 col-6 col-xl-3 col-xxl-3 col-xs-6">
                 
                 <Grocery mode={props.mode} notify={props.notify} img={img5} category="Grocery" title="Olitalia Sunflower Oil 5ltr" offerPrice="tk1555" price="1505.00" tag='tk50.00 OFF'></Grocery>
                 
                 </div>
-                <div className="col-lg-3 col-md-3 col-6 col-xl-23 col-xxl-3 col-xs-6">
+                <div className="col-lg-3 col-md-3 col-6 col-xl-3 col-xxl-3 col-xs-6">
                 
                 <Grocery mode={props.mode} notify={props.notify} img={img6} category="Grocery" title="Olitalia Pomace Olive Oil 1ltr" price="273.00" tag='new'></Grocery>
   
