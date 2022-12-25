@@ -5,7 +5,7 @@ export default function Area() {
     height: '400px',
   }
   return (
-    <div className="content" style={styles}>
+    <div className="content" style={styles} >
       <small className={`text-center d-flex justify-content-center mt-5`}>Click area again!</small>
       
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

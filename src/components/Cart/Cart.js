@@ -33,7 +33,7 @@ export default function Cart(props) {
         />
         </div>
         :
-    <div className={`container my-2 text-${props.mode==='dark'?'white':'dark'}`}>
+    <div className={`container my-2 text-${props.mode==='dark'?'white':'dark'}`} setProgress={props.setProgress(props.progress + 10)}>
     
       <h1 className={`text-center bg-${props.mode==='dark'?'secondary':'secondary'} text-${props.mode==='dark'?'white':'white'}`}>Cart</h1><hr />
 

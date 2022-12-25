@@ -14,27 +14,27 @@ export default function Filter() {
     <div className="sidebar">
     <header>Related Categories</header>
     <ul>
-     <li className='list-group-item'><Link to='/Combo' ><i className="fas fa-qrcode"></i>Accessories</Link></li>
-     <li><Link to='/Combo' ><i className="fas fa-link"></i>Essentials</Link></li>
-     <li><Link to='/Combo' ><i className="fas fa-stream"></i>Frozen Item</Link></li>
-     <li><Link to='/Combo' ><i className="fas fa-calendar-week"></i>Baby Care</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-question-circle"></i>Bakery and Snacks</Link></li>
-     <li><Link to='/Combo' ><i className="fas fa-sliders-h"></i>Bakery and Snacks</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Beauty and Hygiene</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Beauty</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Housing & cleaning</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Fresh Product</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Beverages</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Fish</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Meat</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Rice</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>noodles</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Chocolate &Candy</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Cleaning</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Vegetables</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Tea & Coffee</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Bath</Link></li>
-     <li><Link to='/Combo' ><i className="far fa-envelope"></i>Grocery</Link></li>
+     <li className='list-group-item li'><Link to='/Combo' ><i className="fas fa-qrcode"></i>Accessories</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="fas fa-link"></i>Essentials</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="fas fa-stream"></i>Frozen Item</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="fas fa-calendar-week"></i>Baby Care</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-question-circle"></i>Bakery and Snacks</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="fas fa-sliders-h"></i>Bakery and Snacks</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Beauty and Hygiene</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Beauty</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Housing & cleaning</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Fresh Product</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Beverages</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Fish</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Meat</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Rice</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>noodles</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Chocolate &Candy</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Cleaning</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Vegetables</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Tea & Coffee</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Bath</Link></li>
+     <li className='li'><Link to='/Combo' ><i className="far fa-envelope"></i>Grocery</Link></li>
     </ul>
    </div>
 

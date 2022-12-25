@@ -47,7 +47,7 @@ export default function Offer(props) {
           />
           </div>
           :
-    <div className='mx-4'>
+    <div className='mx-4' setProgress={props.setProgress(props.progress + 100)}>
       <div className="my-3 text-center">
         <img src={coupons} alt="" width='50%' className='border-danger'/>
       </div>

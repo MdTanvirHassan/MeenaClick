@@ -11,6 +11,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Fragment } from "react";
 import ScrollButton from "./components/ScrollButton";
+import LoadingBar from 'react-top-loading-bar'
+
 // import { Content, Heading } from './components/Styles';
 
 import { Routes, Route } from "react-router-dom";
@@ -36,6 +38,8 @@ function App() {
       setLoading(false);
     }, 300);
   }
+  //todo react top loading progress bar
+  const [progress, setProgress] = useState(0)
   //todo Dark mode
   const [mode, setMode] = useState("light");
   const toggleMode = () => {
@@ -92,41 +96,39 @@ function App() {
             mode={mode}
             toggleMode={toggleMode}
             handleCart={handleCart}
-            style={({ isActive, isPending }) => {
-              return {
-                color: isActive ? "red" : "inherit",
-              };
-            }}
-            className={({ isActive, isPending }) => {
-              return isActive ? "active" : isPending ? "pending" : "";
-            }}></Header>
+            />
+            <LoadingBar
+                color='#f11946'
+                progress={progress}
+                onLoaderFinished={() => setProgress(0)}
+            />
           <Alert alert={alert} />
 
           <Routes>
             <Route
-              exact path="/" element={<Home mode={mode} notify={notify} />}
+              exact path="/" element={<Home mode={mode} notify={notify} setProgress={setProgress} progress={progress}/>}
             />
-            <Route path="/Area" element={<Area />} />
-            <Route path="/Cart" element={<Cart mode={mode} />} />
-            <Route path="/Register" element={<Register />} />
-            <Route path="/LogIn" element={<LogIn />} />
-            <Route path="/Combo" element={<Combo notify={notify} />} />
+            <Route path="/Area" element={<Area />} setProgress={setProgress} progress={progress}/>
+            <Route path="/Cart" element={<Cart mode={mode} setProgress={setProgress} progress={progress}/>} />
+            <Route path="/Register" element={<Register setProgress={setProgress} progress={progress}/>} />
+            <Route path="/LogIn" element={<LogIn setProgress={setProgress} progress={progress}/>} />
+            <Route path="/Combo" element={<Combo notify={notify} setProgress={setProgress} progress={progress}/>} />
             <Route
               path="/offer"
-              element={<Offer mode={mode} notify={notify} />}
+              element={<Offer mode={mode} notify={notify} setProgress={setProgress} progress={progress}/>}
             />
-            <Route path="/TrackOrder" element={<TrackOrder />} />
+            <Route path="/TrackOrder" element={<TrackOrder setProgress={setProgress} progress={progress}/>} />
             <Route
               path="/details"
-              element={<Details mode={mode} notify={notify} />}
+              element={<Details mode={mode} notify={notify} setProgress={setProgress} progress={progress}/>}
             />
             <Route
               path="/brands"
-              element={<Brands mode={mode} notify={notify} />}
+              element={<Brands mode={mode} notify={notify} setProgress={setProgress} progress={progress}/>}
             />
             <Route
               path="/coupons"
-              element={<Coupons mode={mode} notify={notify} />}
+              element={<Coupons mode={mode} notify={notify} setProgress={setProgress} progress={progress}/>}
             />
           
           </Routes>

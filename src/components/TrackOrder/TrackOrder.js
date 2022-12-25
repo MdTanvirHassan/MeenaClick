@@ -1,12 +1,12 @@
 import React from 'react'
 import './TrackOrder.css'
 
-export default function TrackOrder() {
+export default function TrackOrder(props) {
   const styles={
     height: '400px',
   }
   return (
-    <div className="content" style={styles}>
+    <div className="content" style={styles} setProgress={props.setProgress(props.progress + 100)}>
       <small className={`text-center d-flex justify-content-center mt-5`}>Click again!</small>
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div className="modal-dialog">

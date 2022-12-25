@@ -38,7 +38,7 @@
 ul li{
     list-style-type: none;
 }
-ul li:hover a{
+ul li .li:hover {
   padding-left: 0px;
   background-color: lightgray;
 }

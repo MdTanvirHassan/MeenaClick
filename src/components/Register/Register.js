@@ -6,7 +6,7 @@ import logo from '../../image/fvicon.jpg';
 // import Footer from '../Footer/Footer';
 import './Register.css'
 
-export default function Register() {
+export default function Register(props) {
     //! preloader2
     const [preLoading,setPreLoading]= useState(false);
     useEffect(()=>{
@@ -34,7 +34,7 @@ export default function Register() {
           />
           </div>
           :
-    <div className='rb '>
+    <div className='rb ' setProgress={props.setProgress(props.progress + 100)}>
     <div className='container mb-5 '>
             <div className="area justify-content-center mt-1">
             <div className="login mx-3">

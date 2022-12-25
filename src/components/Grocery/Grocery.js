@@ -12,7 +12,7 @@ export default function Grocery(props) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       }
   return (
-       <div className=''>
+       <div className='' >
             <div className={` my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
                 <div className={` mb-1`}>
                  <div className={`card xl p-2 bg-${props.mode==='dark'?'secondary':'body'} box`}  >
