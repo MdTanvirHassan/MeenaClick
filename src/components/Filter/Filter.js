@@ -45,7 +45,7 @@ export default function Filter() {
         <Link to='/Combo' >
             <div className="form-check">
             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                <label className="form-check-label" for="flexCheckDefault">
+                <label className="form-check-label" htmlFor="flexCheckDefault">
                     Rok
                 </label>
             </div>

@@ -47,7 +47,8 @@ export default function Combo(props) {
           :
     <div className={` mt-2 bg-${props.mode==='dark'?'':''}`}>
       <div>
-        <h4 className={`text-center text-success`} setProgress={props.setProgress(props.progress + 10)}>Products</h4>
+        <h4 className={`text-center text-success`} >Products</h4>
+        {/* setProgress={props.setProgress(props.progress + 10)} */}
       </div>
       <hr />
       <div className="row mx-4">

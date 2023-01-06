@@ -89,10 +89,11 @@ export default function Header(props) {
           </Link>
                 </li>
                 <li className="nav-item">
+
                   {/*//todo MOde -------------*/}
         <span className={`nav-item nav-link form-check  fs-5 mt-1 form-switch text-${props.mode==='dark'?'light':'secondary'} d-flex`}>
           
-               <label className="form-check-label text-white badge text-bg-secondary rounded-pill"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault">
+               <label className="form-check-label text-white badge text-bg-secondary rounded-pill cursor"  onClick={props.toggleMode} htmlFor="flexSwitchCheckDefault">
                   <i className={` w-10 bi bi-${props.mode==='dark'?'sun-fill':'moon-stars-fill'}`}></i>
                  </label>
          </span>
@@ -224,7 +225,7 @@ export default function Header(props) {
               
             </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item cursor">
         <div className="d-flex me- text-light">
                     <div className="dropdown notification">
                         <div className="d-flex justify-content-between align-items-center cursor-pointer" id="dropdownnotif" data-bs-toggle="dropdown" aria-expanded="false">

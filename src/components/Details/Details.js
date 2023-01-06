@@ -38,7 +38,8 @@ export default function Details(props) {
           </div>
           :
       <div>
-        <div className=" my-2 mx-lg-5 mx-md-5 mx-xl-5 mx-xxl-5 my-1" setProgress={props.setProgress(props.progress + 10)}>
+        <div className=" my-2 mx-lg-5 mx-md-5 mx-xl-5 mx-xxl-5 my-1" >
+          {/* setProgress={props.setProgress(props.progress + 10)} */}
           <div
             className={`container-fluid details card bg-${
               props.mode === "dark" ? "secondary" : "body"

@@ -98,6 +98,9 @@
 .dark-btn{
     display: none!important;
 }
+.cursor{
+    cursor:pointer;
+}
 /* //todo phone screen for header */
 @media (max-width: 940px) {
     .header-banner{

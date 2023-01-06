@@ -25,7 +25,7 @@ export default function Home(props) {
   const styles={
     height: '250px',
   }
-  const setProgress=props.setProgress
+  //const setProgress=props.setProgress
     
   return (
     <div>
@@ -43,7 +43,8 @@ export default function Home(props) {
           />
           </div>
           :
-        <Link to='/' className='text-decoration-none' style={style} setProgress={setProgress(props.progress + 10)}>
+        <Link to='/' className='text-decoration-none' style={style} >
+          {/* setProgress={setProgress(props.progress + 10)} */}
           
         <Carousel mode={props.mode}/>
          <Feature mode={props.mode}/>

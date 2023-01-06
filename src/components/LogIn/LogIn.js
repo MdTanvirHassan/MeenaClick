@@ -37,7 +37,8 @@ export default function LogIn(props) {
           />
           </div>
           :
-    <div className='rb' setProgress={props.setProgress(props.progress + 100)}>
+    <div className='rb' >
+      {/* setProgress={props.setProgress(props.progress + 100)} */}
     <div className='container my-'>
        <div className="area justify-content-center mt-">
             <div className="login mx-3">

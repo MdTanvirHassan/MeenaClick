@@ -34,7 +34,8 @@ export default function Register(props) {
           />
           </div>
           :
-    <div className='rb ' setProgress={props.setProgress(props.progress + 100)}>
+    <div className='rb ' >
+      {/* setProgress={props.setProgress(props.progress + 100)} */}
     <div className='container mb-5 '>
             <div className="area justify-content-center mt-1">
             <div className="login mx-3">
