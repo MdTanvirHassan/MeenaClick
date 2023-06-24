@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-
 import './Grocery.css';
 
 export default function Grocery(props) {
@@ -16,9 +15,10 @@ export default function Grocery(props) {
             <div className={` my-1 mb-1 text-${props.mode==='dark'?'white':'body'}`}>
                 <div className={` mb-1`}>
                  <div className={`card xl p-2 bg-${props.mode==='dark'?'secondary':'body'} box`}  >
-                 <span className={`position-absolute top-1   badge bg-orange `} 
-                 style={{zIndex:'1', right:"0%", top:'.5%'}}> {!props.tag? '':props.tag}
+                 <span className={`position-absolute top-1 badge bg-orange`} style={{ zIndex: '1', right: "4%", top: '2%' }}>
+                     {props.tag && <span>{props.tag}</span>}
                 </span>
+
                     <Link to='/details' className="text-decoration-none">
                     <img src={props.img} className="card-img-top" alt="..."/><hr />
                     

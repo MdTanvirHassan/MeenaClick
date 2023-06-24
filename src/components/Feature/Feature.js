@@ -56,7 +56,7 @@ const daily = [
   { id: 6, name: "", img: d6, url: "/brands" },
 ];
 export default function Feature(props) {
-  return ( <div className="conatiner m-auto">
+  return ( <div className="">
     <div className="mx-lg-4 mx-xxl-5 mx-xl-5 mx-sm-4 mx-xs-4 my-2">
       <Link
         to="/brands"
@@ -73,7 +73,7 @@ export default function Feature(props) {
         {features.map((item, index) => {
           return (
             <div
-              key={index}
+              key={item.id}
               className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
               <Link to={item.url} className="text-decoration-none">
                 <div className="card">
@@ -99,7 +99,7 @@ export default function Feature(props) {
         {core.map((item, index) => {
           return (
             <div
-              key={index}
+              key={item.id}
               className="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-1">
               <Link to={item.url} className="text-decoration-none">
                 <div className="card">
@@ -124,7 +124,7 @@ export default function Feature(props) {
       <div className="row">
         {order.map((item, index) => {
           return (
-            <div key={index} className="col-lg-3 col-sm-12 col-md-6 mb-1">
+            <div key={item.id} className="col-lg-3 col-sm-12 col-md-6 mb-1">
               <Link to={item.url} className="text-decoration-none">
                 <div className="card">
                   <img src={item.img} className="card-img-top" alt={item.img} />
@@ -148,7 +148,7 @@ export default function Feature(props) {
       <div className="row">
         {category.map((item, index) => {
           return (
-            <div key={index} className="col-lg-3 col-sm-12 col-md-6 mb-1">
+            <div key={item.id} className="col-lg-3 col-sm-12 col-md-6 mb-1">
               <Link to={item.url} className="text-decoration-none">
                 <div className="card">
                   <img src={item.img} className="card-img-top" alt={item.img} />
@@ -172,7 +172,7 @@ export default function Feature(props) {
       <div className="row">
         {daily.map((item, index) => {
           return (
-            <div key={index} className="col-lg-2 col-sm-12 col-md-6 mb-1">
+            <div key={item.id} className="col-lg-2 col-sm-12 col-md-6 mb-1">
               <Link to={item.url} className="text-decoration-none">
                 <div className="card">
                   <img src={item.img} className="card-img-top" alt={item.img} />

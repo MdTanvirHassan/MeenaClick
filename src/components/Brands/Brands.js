@@ -14,6 +14,29 @@ import org8 from "../../image/org8.jpg";
 import org9 from "../../image/org9.jpg";
 import Grocery from "../Grocery/Grocery";
 
+const brand= [
+ {id:1, img: org4, category:"Grocery", title:"Organikare Safe Ins Hand Sanitizer spray 100ml", url:'/details', tag:'15% OFF',offerPrice:'tk 150 /EA', price:135.00},
+ {id:2, img: org5, category:"Grocery", title:"Organikare Skin Lotion Dry Skin 200ml", url:'/details', tag:"tk 25 OFF",offerPrice:'tk 200.00/EA', price:175.00},
+ {id:3, img: org6, category:"Grocery", title:"Organikare Glycerine 120ml", url:'/details', tag:"",offerPrice:'', price:160.00},
+ {id:4, img: org7, category:"Grocery", title:"Organikare Glycerine 60ml", url:'/details', tag:"",offerPrice:'', price:120.00},
+ {id:5, img: org8, category:"Grocery", title:"Organikare Hair Oil 75ml", url:'/details', tag:"",offerPrice:'', price:995.00},
+ {id:6, img: org9, category:"Grocery", title:"Organikare Face Wash Cleansing Milk 100gm", url:'/details', tag:"",offerPrice:'', price:338.00},
+ {id:7, img: org4, category:"Grocery", title:"Organikare Safe Ins Hand Sanitizer spray 100ml", url:'/details', tag:"",offerPrice:'', price:130.00},
+ {id:8, img: org5, category:"Grocery", title:"Organikare Skin Lotion Dry Skin 200ml", url:'/details', tag:"",offerPrice:'', price:175.00},
+ {id:9, img: org6, category:"Grocery", title:"Organikare Glycerine 120ml", url:'/details', tag:"",offerPrice:'', price:160.00},
+ {id:10, img: org7, category:"Grocery", title:"Organikare Glycerine 60ml", url:'/details', tag:"",offerPrice:'', price:120.00},
+ {id:11, img: org8, category:"Grocery", title:"Organikare Hair Oil 75ml", url:'/details', tag:"",offerPrice:'', price:995.00},
+ {id:12, img: org9, category:"Grocery", title:"Organikare Face Wash Cleansing Milk 100gm", url:'/details', tag:"",offerPrice:'', price:338.00},
+ {id:13, img: org4, category:"Grocery", title:"Organikare Safe Ins Hand Sanitizer spray 100ml", url:'/details', tag:"",offerPrice:'', price:130.00},
+ {id:14, img: org5, category:"Grocery", title:"Organikare Skin Lotion Dry Skin 200ml", url:'/details', tag:"",offerPrice:'', price:175.00},
+ {id:15, img: org6, category:"Grocery", title:"Organikare Glycerine 120ml", url:'/details', tag:"",offerPrice:'', price:160.00},
+ {id:16, img: org7, category:"Grocery", title:"Organikare Glycerine 60ml", url:'/details', tag:"",offerPrice:'', price:120.00},
+ {id:17, img: org8, category:"Grocery", title:"Organikare Hair Oil 75ml", url:'/details', tag:"",offerPrice:'', price:995.00},
+ {id:18, img: org9, category:"Grocery", title:"Organikare Face Wash Cleansing Milk 100gm", url:'/details', tag:"",offerPrice:'', price:338.00},
+ 
+
+]
+
 
 export default function Brands(props) {
       //! preloader2
@@ -65,141 +88,15 @@ export default function Brands(props) {
         {/* //todo brands product */}
         <section>
         <div className="row my-2">
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" price="130.00" />
-               
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org5} category="Grocery" title="Organikare Skin Lotion Dry Skin 200ml" price="175.00" />
-                
-                </div>
-                
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org6} category="Grocery" title="Organikare Glycerine 120ml" price="160.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org7} category="Grocery" title="Organikare Glycerine 60ml" price="120.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org8} category="Grocery" title="Organikare Hair Oil 75ml" price="995.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org9} category="Grocery" title="Organikare Face Wash Cleansing Milk 100gm" price="328.00" />
-                
-                </div>
-                       
-            </div>
-
-
-            <div className="row my-2">
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" price="130.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org5} category="Grocery" title="Organikare Skin Lotion Dry Skin 200ml" price="175.00" />
-                
-                </div>
-                
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org6} category="Grocery" title="Organikare Glycerine 120ml" price="160.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org7} category="Grocery" title="Organikare Glycerine 60ml" price="120.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org8} category="Grocery" title="Organikare Hair Oil 75ml" price="995.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org9} category="Grocery" title="Organikare Face Wash Cleansing Milk 100gm" price="328.00" />
-                
-                </div>
-                       
-            </div>
-
-            {/* row-3 */}
-            <div className="row my-2">
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org4} category="Grocery" title="Organikare Safe Ins Hand Sanitizer spray 100ml" price="130.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org5} category="Grocery" title="Organikare Skin Lotion Dry Skin 200ml" price="175.00" />
-                
-                </div>
-                
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org6} category="Grocery" title="Organikare Glycerine 120ml" price="160.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org7} category="Grocery" title="Organikare Glycerine 60ml" price="120.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org8} category="Grocery" title="Organikare Hair Oil 75ml" price="995.00" />
-                
-                </div>
-
-                <div className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                
-                    <Grocery mode={props.mode} notify={props.notify} 
-                    img={org9} category="Grocery" title="Organikare Face Wash Cleansing Milk 100gm" price="328.00" />
-                
-                </div>
-                       
-            </div>
+            {brand.map((item,index)=>{
+                return(
+                    <div key={item.id} className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
+                     <Grocery mode={props.mode} notify={props.notify} 
+                        img={item.img} category={item.category} title={item.title} tag={item.tag} offerPrice={item.offerPrice} price={item.price} url={item.url}/>
+                    </div>
+                )
+            })}          
+         </div>
         </section>
 
       </div>
