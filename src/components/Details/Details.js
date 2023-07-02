@@ -38,7 +38,7 @@ export default function Details(props) {
           </div>
           :
       <div>
-        <div className=" my-2 mx-lg-5 mx-md-5 mx-xl-5 mx-xxl-5 my-1" >
+        <div className=" my-2 mx-lg-5 mx-md-5 mx-xl-5 mx-xxl-5 my-1" key={props.id} >
           {/* setProgress={props.setProgress(props.progress + 10)} */}
           <div
             className={`container-fluid details card bg-${
@@ -58,7 +58,7 @@ export default function Details(props) {
                   </Link>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  productDetails
+                  {props.title}productDetails
                 </li>
               </ol>
             </nav>

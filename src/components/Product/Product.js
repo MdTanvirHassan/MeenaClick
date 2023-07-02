@@ -34,7 +34,7 @@ import org9 from "../../image/org9.jpg";
 import './Product.css';
 import Grocery from '../Grocery/Grocery';
 import Category from '../Category/Category';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import { Route, Router } from 'react-router';
 
 
@@ -111,10 +111,10 @@ export default function Product(props) {
             {cooking.map((item,index)=>{
                 return( 
                     <div key={item.id} className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                        <Link to={item.url} key={index}  className='text-decoration-none'>
+                        {/* <Link to={item.url} key={index}  className='text-decoration-none'> */}
                         <Grocery mode={props.mode} notify={props.notify} 
                         img={item.img} category={item.category} title={item.title} tag={item.tag} offerPrice={item.offerPrice} price={item.price} url={item.url}/>
-                         </Link>
+                         {/* </Link> */}
                     </div>  
                 )
             })} 
@@ -131,10 +131,10 @@ export default function Product(props) {
             {bakery.map((item,index)=>{
                 return( 
                     <div key={item.id} className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                        <Link to={item.url} key={index} className='text-decoration-none'>
+                        {/* <Link to={item.url} key={index} className='text-decoration-none'> */}
                         <Grocery mode={props.mode} notify={props.notify} 
                         img={item.img} category={item.category} title={item.title} tag={item.tag} offerPrice={item.offerPrice} price={item.price} url={item.url}/>
-                         </Link>
+                         {/* </Link> */}
                     </div>  
                 )
             })} 
@@ -150,10 +150,10 @@ export default function Product(props) {
             {grocery.map((item,index)=>{
                 return( 
                     <div key={item.id} className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                        <Link to={item.url} key={index}  className='text-decoration-none'>
+                        {/* <Link to={item.url} key={index}  className='text-decoration-none'> */}
                         <Grocery mode={props.mode} notify={props.notify} 
                         img={item.img} category={item.category} title={item.title} tag={item.tag} offerPrice={item.offerPrice} price={item.price} url={item.url}/>
-                         </Link>
+                         {/* </Link> */}
                     </div>  
                 )
             })} 
@@ -169,10 +169,10 @@ export default function Product(props) {
             {beauty.map((item,index)=>{
                 return( 
                     <div key={item.id} className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                        <Link to={item.url} key={index} className='text-decoration-none'>
+                        {/* <Link to={item.url} key={index} className='text-decoration-none'> */}
                         <Grocery mode={props.mode} notify={props.notify} 
                         img={item.img} category={item.category} title={item.title} tag={item.tag} offerPrice={item.offerPrice} price={item.price} url={item.url}/>
-                         </Link>
+                         {/* </Link> */}
                     </div>  
                 )
             })} 
@@ -187,10 +187,10 @@ export default function Product(props) {
             {dairy.map((item,index)=>{
                 return( 
                     <div key={item.id} className="col-lg-2 col-md-4 col-6 col-xl-2 col-xxl-2 col-xs-6">
-                        <Link to={item.url} key={index} className='text-decoration-none'>
+                        {/* <Link to={item.url} key={index} className='text-decoration-none'> */}
                         <Grocery mode={props.mode} notify={props.notify} 
                         img={item.img} category={item.category} title={item.title} tag={item.tag} offerPrice={item.offerPrice} price={item.price} url={item.url}/>
-                         </Link>
+                         {/* </Link> */}
                     </div>  
                 )
             })}  
